@@ -1,0 +1,1162 @@
+Starting job on  2020. 08. 27. (목) 09:55:31 KST
+Running on  Linux ccp1u 2.6.32-220.el6.x86_64 #1 SMP Wed Nov 9 08:03:13 EST 2011 x86_64 x86_64 x86_64 GNU/Linux
+System release  Red Hat Enterprise Linux Server release 6.2 (Santiago)
+name: WZAToLNuLLA_4f_NLO
+carddir: cards/WZAToLNuLLA_4f_NLO
+queue: local
+scram_arch: slc6_amd64_gcc630
+cmssw_version: CMSSW_9_3_16
+# On branch master
+# Untracked files:
+#   (use "git add <file>..." to include in what will be committed)
+#
+#	WZAToLNuLLA_4f_NLO.log
+#	WZA_grid_run.log
+#	WZG_NLO_inclusive.log
+#	WZG_NLO_inclusive/
+#	cards/WZAToLNuLLA_4f_NLO/
+#	wplustest_4f_NLO.log
+#	wplustest_4f_NLO/
+#	wplustest_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+#	wplustest_5f_LO.log
+#	wplustest_5f_LO/
+#	wplustest_5f_LO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+nothing added to commit but untracked files present (use "git add" to track)
+Current git revision is:
+91b1bfb5f363d9d07c66d21a20dae19a0bb272d2
+/x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO
+patching file models/loop_qcd_qed_sm/restrict_lepton_masses_no_lepton_yukawas.dat
+patching file models/loop_sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_ckm_lepton_masses.dat
+patching file models/sm/restrict_ckm_lepton_masses_no_b_mass.dat
+patching file models/sm/restrict_ckm_no_b_mass.dat
+patching file models/sm/restrict_lepton_masses_no_b_mass.dat
+patching file Template/NLO/SubProcesses/MCmasses_PYTHIA8.inc
+patching file madgraph/interface/reweight_interface.py
+patching file madgraph/interface/loop_interface.py
+patching file madgraph/various/systematics.py
+Hunk #1 succeeded at 325 (offset 97 lines).
+Hunk #2 succeeded at 359 (offset 98 lines).
+Hunk #3 succeeded at 533 (offset 117 lines).
+patching file Template/LO/Source/.make_opts
+Hunk #1 succeeded at 118 (offset 4 lines).
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/export_v4.py
+Hunk #1 succeeded at 521 (offset 23 lines).
+patching file madgraph/iolibs/template_files/pdf_opendata.f
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+Hunk #2 succeeded at 38 with fuzz 1.
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file Template/LO/Source/.make_opts
+Hunk #1 succeeded at 100 (offset 4 lines).
+patching file Template/LO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
+patching file Template/NLO/Source/PDF/pdf_lhapdf6.cc
+Hunk #1 succeeded at 16 with fuzz 2 (offset 4 lines).
+patching file Template/NLO/Source/make_opts.inc
+patching file madgraph/iolibs/template_files/pdf_wrap_lhapdf.f
+patching file Template/LO/SubProcesses/refine.sh
+Hunk #3 succeeded at 113 with fuzz 2.
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/interface/reweight_interface.py
+Hunk #1 succeeded at 1885 (offset 37 lines).
+patching file madgraph/interface/common_run_interface.py
+Hunk #1 succeeded at 1701 (offset 101 lines).
+patching file Template/LO/SubProcesses/refine.sh
+patching file Template/LO/SubProcesses/refine_splitted.sh
+patching file Template/LO/SubProcesses/survey.sh
+patching file Template/NLO/SubProcesses/ajob_template
+patching file Template/NLO/SubProcesses/reweight_xsec_events.local
+patching file madgraph/various/misc.py
+Hunk #1 succeeded at 450 (offset 48 lines).
+patching file madgraph/interface/amcatnlo_run_interface.py
+patching file madgraph/interface/madevent_interface.py
+Hunk #1 succeeded at 6598 (offset 17 lines).
+Hunk #2 succeeded at 6614 (offset 17 lines).
+patching file MadSpin/decay.py
+patching file Template/NLO/SubProcesses/handling_lhe_events.f
+patching file madgraph/interface/amcatnlo_run_interface.py
+patching file madgraph/interface/reweight_interface.py
+patching file Template/NLO/SubProcesses/driver_mintFO.f
+patching file Template/NLO/SubProcesses/driver_mintMC.f
+patching file madgraph/core/helas_objects.py
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.5                 2018-02-03         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from /home/jwkim/.mg5/mg5_configuration.txt 
+load MG5 configuration from input/mg5_configuration.txt 
+fastjet-config does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+lhapdf-config does not seem to correspond to a valid lhapdf-config executable. 
+Please set the 'lhapdf' variable to the (absolute) /PATH/TO/lhapdf-config (including lhapdf-config).
+Note that you can still compile and run aMC@NLO with the built-in PDFs
+ MG5_aMC> set lhapdf /PATH/TO/lhapdf-config
+
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/mgconfigscript
+The import format was not given, so we guess it as command
+set auto_update 0
+save options auto_update
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set automatic_html_opening False
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+set lhapdf /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+save options lhapdf
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set run_mode 2
+This option will be the default in any output that you are going to create in this session.
+In order to keep this changes permanent please run 'save options'
+save options
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+quit
+/x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work
+************************************************************
+*                                                          *
+*                     W E L C O M E to                     *
+*              M A D G R A P H 5 _ a M C @ N L O           *
+*                                                          *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 2.6.5                 2018-02-03         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*    https://server06.fynu.ucl.ac.be/projects/madgraph     *
+*                            and                           *
+*            http://amcatnlo.web.cern.ch/amcatnlo/         *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*           Type 'tutorial' to learn how MG5 works         *
+*    Type 'tutorial aMCatNLO' to learn how aMC@NLO works   *
+*    Type 'tutorial MadLoop' to learn how MadLoop works    *
+*                                                          *
+************************************************************
+load MG5 configuration from /home/jwkim/.mg5/mg5_configuration.txt 
+load MG5 configuration from MG5_aMC_v2_6_5/input/mg5_configuration.txt 
+None does not seem to correspond to a valid fastjet-config executable (v3+). We will use fjcore instead.
+ Please set the 'fastjet'variable to the full (absolute) /PATH/TO/fastjet-config (including fastjet-config).
+ MG5_aMC> set fastjet /PATH/TO/fastjet-config
+
+set lhapdf to /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/../../bin/lhapdf-config
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+import /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/WZAToLNuLLA_4f_NLO_proc_card.dat
+The import format was not given, so we guess it as command
+set group_subprocesses Auto
+Set group_subprocesses to Auto
+Note that you need to regenerate all processes
+set ignore_six_quark_processes False
+set loop_color_flows False
+set loop color flows to False
+set gauge unitary
+Passing to gauge unitary.
+set complex_mass_scheme False
+Complex mass already desactivated.
+set max_npoint_for_channel 0
+import model loop_sm
+INFO: load particles 
+INFO: load vertices 
+INFO: Restrict model loop_sm with file MG5_aMC_v2_6_5/models/loop_sm/restrict_default.dat . 
+INFO: Run "set stdout_level DEBUG" before import for more information. 
+INFO: Change particles name to pass to MG5 convention 
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+Defined multiparticle l+ = e+ mu+
+Defined multiparticle l- = e- mu-
+Defined multiparticle vl = ve vm vt
+Defined multiparticle vl~ = ve~ vm~ vt~
+Defined multiparticle all = g gh gh~ d u s c d~ u~ s~ c~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ b t b~ t~ z w+ h w- ta- ta+
+define p = g u c d s u~ c~ d~ s~
+Defined multiparticle p = g u c d s u~ c~ d~ s~
+define j = g u c d s u~ c~ d~ s~
+Defined multiparticle j = g u c d s u~ c~ d~ s~
+define lep = e+ mu+ ta+ e- mu- ta-
+Defined multiparticle lep = e- mu- e+ mu+ ta- ta+
+define nu = ve vm vt ve~ vm~ vt~
+Defined multiparticle nu = ve vm vt ve~ vm~ vt~
+generate p p > lep nu z a [QCD] @0
+INFO: Generating FKS-subtracted matrix elements for born process: u d~ > e+ ve z a [ all = QCD ] (1 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u d~ > mu+ vm z a [ all = QCD ] (2 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u d~ > ta+ vt z a [ all = QCD ] (3 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c s~ > e+ ve z a [ all = QCD ] (4 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c s~ > mu+ vm z a [ all = QCD ] (5 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c s~ > ta+ vt z a [ all = QCD ] (6 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d u~ > e- ve~ z a [ all = QCD ] (7 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d u~ > mu- vm~ z a [ all = QCD ] (8 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d u~ > ta- vt~ z a [ all = QCD ] (9 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s c~ > e- ve~ z a [ all = QCD ] (10 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s c~ > mu- vm~ z a [ all = QCD ] (11 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s c~ > ta- vt~ z a [ all = QCD ] (12 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ d > e- ve~ z a [ all = QCD ] (13 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ d > mu- vm~ z a [ all = QCD ] (14 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: u~ d > ta- vt~ z a [ all = QCD ] (15 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ s > e- ve~ z a [ all = QCD ] (16 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ s > mu- vm~ z a [ all = QCD ] (17 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: c~ s > ta- vt~ z a [ all = QCD ] (18 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ u > e+ ve z a [ all = QCD ] (19 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ u > mu+ vm z a [ all = QCD ] (20 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: d~ u > ta+ vt z a [ all = QCD ] (21 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ c > e+ ve z a [ all = QCD ] (22 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ c > mu+ vm z a [ all = QCD ] (23 / 24) 
+INFO: Generating FKS-subtracted matrix elements for born process: s~ c > ta+ vt z a [ all = QCD ] (24 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u d~ > e+ ve z a QED<=4 [ all = QCD ] (1 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u d~ > mu+ vm z a QED<=4 [ all = QCD ] (2 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u d~ > ta+ vt z a QED<=4 [ all = QCD ] (3 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c s~ > e+ ve z a QED<=4 [ all = QCD ] (4 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c s~ > mu+ vm z a QED<=4 [ all = QCD ] (5 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c s~ > ta+ vt z a QED<=4 [ all = QCD ] (6 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d u~ > e- ve~ z a QED<=4 [ all = QCD ] (7 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d u~ > mu- vm~ z a QED<=4 [ all = QCD ] (8 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d u~ > ta- vt~ z a QED<=4 [ all = QCD ] (9 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s c~ > e- ve~ z a QED<=4 [ all = QCD ] (10 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s c~ > mu- vm~ z a QED<=4 [ all = QCD ] (11 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s c~ > ta- vt~ z a QED<=4 [ all = QCD ] (12 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ d > e- ve~ z a QED<=4 [ all = QCD ] (13 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ d > mu- vm~ z a QED<=4 [ all = QCD ] (14 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: u~ d > ta- vt~ z a QED<=4 [ all = QCD ] (15 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ s > e- ve~ z a QED<=4 [ all = QCD ] (16 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ s > mu- vm~ z a QED<=4 [ all = QCD ] (17 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: c~ s > ta- vt~ z a QED<=4 [ all = QCD ] (18 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ u > e+ ve z a QED<=4 [ all = QCD ] (19 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ u > mu+ vm z a QED<=4 [ all = QCD ] (20 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: d~ u > ta+ vt z a QED<=4 [ all = QCD ] (21 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ c > e+ ve z a QED<=4 [ all = QCD ] (22 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ c > mu+ vm z a QED<=4 [ all = QCD ] (23 / 24) 
+INFO: Generating virtual matrix elements using MadLoop: 
+INFO: Generating virtual matrix element with MadLoop for process: s~ c > ta+ vt z a QED<=4 [ all = QCD ] (24 / 24) 
+INFO: Generated 24 subprocesses with 5184 real emission diagrams, 600 born diagrams and 2328 virtual diagrams 
+output WZAToLNuLLA_4f_NLO -nojpeg
+[1mFirst output using loop matrix-elements has been detected. Now asking for loop reduction:[0m
+For loop computations, MadLoop requires dedicated tools to perform the reduction of loop Feynman diagrams using OPP-based and/or TIR approaches.
+
+Which one do you want to install? (this needs to be done only once)
+1. [34mcuttools  (OPP) [0711.3596]  [0m : will be installed (required)
+2. [34miregi     (TIR) [1405.0301]  [0m : will be installed (required)
+3. [34mninja     (OPP) [1403.1229]  [0m : [92mwill be installed [0m(recommended)
+4. [34mcollier   (TIR) [1604.06792] [0m : [92mwill be installed [0m(recommended)
+5. [34mgolem     (TIR) [0807.0605]  [0m : [91mdo not install[0m
+You can:
+ -> hit 'enter' to proceed
+ -> type a number to cycle its options
+ -> enter the following command:
+    [34m{tool_name}[0m [[34minstall[0m|[34mnoinstall[0m|[34m{prefixed_installation_path}[0m]
+
+[1m[91mIf you are unsure about what this question means, just type enter to proceed. [0m
+[1;34mfound line : display multiparticles[0m
+[1;34mThis answer is not valid for current question. Keep it for next question and use here default: 0[0m
+set golem ''
+save options golem
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+save options golem
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+set pjfry ''
+save options pjfry
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+save options pjfry
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+install collier
+[1m   You are installing 'collier', please cite ref(s): [92marXiv:1604.06792[0m. [0m
+Downloading the HEPToolInstaller at:
+   http://madgraph.phys.ucl.ac.be/Downloads/HEPToolsInstaller/HEPToolsInstaller_V132.tar.gz
+Now installing collier. Be patient...
+[1;32mcollier successfully installed in /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/HEPTools.[0m
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+install ninja
+[1m   You are installing 'ninja', please cite ref(s): [92marXiv:1203.0291, arXiv:1403.1229, arXiv:1604.01363[0m. [0m
+Downloading the HEPToolInstaller at:
+   http://madgraph.physics.illinois.edu/Downloads/HEPToolsInstaller/HEPToolsInstaller_V132.tar.gz
+Now installing ninja. Be patient...
+[1;32mninja successfully installed in /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/HEPTools.[0m
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt
+INFO: Writing out the aMC@NLO code, using optimized Loops 
+INFO: initialize a new directory: WZAToLNuLLA_4f_NLO 
+INFO: remove old information in WZAToLNuLLA_4f_NLO 
+[1mINFO: Compiling CutTools. This has to be done only once and can take a couple of minutes. [0m
+[1mINFO: Compiling IREGI. This has to be done only once and can take a couple of minutes. [0m
+INFO: Generating real emission matrix-elements... 
+INFO: Generating Helas calls for FKS process: u d~ > e+ ve z a [ all = QCD ] (1 / 24) 
+INFO: Processing color information for process: u d~ > e+ ve z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: u d~ > mu+ vm z a [ all = QCD ] (2 / 24) 
+INFO: Generating Helas calls for FKS process: u d~ > ta+ vt z a [ all = QCD ] (3 / 24) 
+INFO: Reusing existing color information for process: u d~ > ta+ vt z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: c s~ > e+ ve z a [ all = QCD ] (4 / 24) 
+INFO: Generating Helas calls for FKS process: c s~ > mu+ vm z a [ all = QCD ] (5 / 24) 
+INFO: Generating Helas calls for FKS process: c s~ > ta+ vt z a [ all = QCD ] (6 / 24) 
+INFO: Generating Helas calls for FKS process: d u~ > e- ve~ z a [ all = QCD ] (7 / 24) 
+INFO: Processing color information for process: d u~ > e- ve~ z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: d u~ > mu- vm~ z a [ all = QCD ] (8 / 24) 
+INFO: Generating Helas calls for FKS process: d u~ > ta- vt~ z a [ all = QCD ] (9 / 24) 
+INFO: Reusing existing color information for process: d u~ > ta- vt~ z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: s c~ > e- ve~ z a [ all = QCD ] (10 / 24) 
+INFO: Generating Helas calls for FKS process: s c~ > mu- vm~ z a [ all = QCD ] (11 / 24) 
+INFO: Generating Helas calls for FKS process: s c~ > ta- vt~ z a [ all = QCD ] (12 / 24) 
+INFO: Generating Helas calls for FKS process: u~ d > e- ve~ z a [ all = QCD ] (13 / 24) 
+INFO: Processing color information for process: u~ d > e- ve~ z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: u~ d > mu- vm~ z a [ all = QCD ] (14 / 24) 
+INFO: Generating Helas calls for FKS process: u~ d > ta- vt~ z a [ all = QCD ] (15 / 24) 
+INFO: Reusing existing color information for process: u~ d > ta- vt~ z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: c~ s > e- ve~ z a [ all = QCD ] (16 / 24) 
+INFO: Generating Helas calls for FKS process: c~ s > mu- vm~ z a [ all = QCD ] (17 / 24) 
+INFO: Generating Helas calls for FKS process: c~ s > ta- vt~ z a [ all = QCD ] (18 / 24) 
+INFO: Generating Helas calls for FKS process: d~ u > e+ ve z a [ all = QCD ] (19 / 24) 
+INFO: Processing color information for process: d~ u > e+ ve z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: d~ u > mu+ vm z a [ all = QCD ] (20 / 24) 
+INFO: Generating Helas calls for FKS process: d~ u > ta+ vt z a [ all = QCD ] (21 / 24) 
+INFO: Reusing existing color information for process: d~ u > ta+ vt z a [ all = QCD ] 
+INFO: Generating Helas calls for FKS process: s~ c > e+ ve z a [ all = QCD ] (22 / 24) 
+INFO: Generating Helas calls for FKS process: s~ c > mu+ vm z a [ all = QCD ] (23 / 24) 
+INFO: Generating Helas calls for FKS process: s~ c > ta+ vt z a [ all = QCD ] (24 / 24) 
+INFO: ... Done 
+INFO: Writing files in P0_udx_epveza (1 / 8) 
+INFO: Creating files in directory V0_udx_epveza 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u d~ > e+ ve z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u d~ > e+ ve z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_udx_tapvtza (2 / 8) 
+INFO: Creating files in directory V0_udx_tapvtza 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u d~ > ta+ vt z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u d~ > ta+ vt z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_dux_emvexza (3 / 8) 
+INFO: Creating files in directory V0_dux_emvexza 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d u~ > e- ve~ z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d u~ > e- ve~ z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_dux_tamvtxza (4 / 8) 
+INFO: Creating files in directory V0_dux_tamvtxza 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d u~ > ta- vt~ z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d u~ > ta- vt~ z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_uxd_emvexza (5 / 8) 
+INFO: Creating files in directory V0_uxd_emvexza 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ d > e- ve~ z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u~ d > e- ve~ z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_uxd_tamvtxza (6 / 8) 
+INFO: Creating files in directory V0_uxd_tamvtxza 
+ALOHA: aloha creates FFV1 set of routines with options: L2,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: u~ d > ta- vt~ z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: u~ d > ta- vt~ z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_dxu_epveza (7 / 8) 
+INFO: Creating files in directory V0_dxu_epveza 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ u > e+ ve z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d~ u > e+ ve z a QED<=4 [ all = QCD ] 
+INFO: Writing files in P0_dxu_tapvtza (8 / 8) 
+INFO: Creating files in directory V0_dxu_tapvtza 
+ALOHA: aloha creates FFV1 set of routines with options: L1,P0
+INFO: Computing diagram color coefficients 
+INFO: Drawing loop Feynman diagrams for Process: d~ u > ta+ vt z a QED<=4 [ all = QCD ] 
+INFO: Generating born Feynman diagrams for Process: d~ u > ta+ vt z a QED<=4 [ all = QCD ] 
+History written to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/WZAToLNuLLA_4f_NLO/Cards/proc_card_mg5.dat
+ALOHA: aloha creates FFV1 routines
+ALOHA: aloha creates FFV2 routines
+ALOHA: aloha creates FFV3 routines
+ALOHA: aloha creates VVV1 routines
+ALOHA: aloha creates FFV4 routines
+ALOHA: aloha creates FFV5 routines
+ALOHA: aloha creates VVVV5 routines
+ALOHA: aloha creates R2_QQ_1 routines
+ALOHA: aloha creates FFV2_5 routines
+ALOHA: aloha creates FFV2_4 routines
+ALOHA: aloha creates FFV2_3 routines
+save configuration file to /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/WZAToLNuLLA_4f_NLO/Cards/amcatnlo_configuration.txt
+INFO: Use Fortran compiler gfortran 
+INFO: Use c++ compiler g++ 
+INFO: Generate web pages 
+INFO: Compiling StdHEP. This has to be done only once. 
+INFO: Done. 
+Type "launch" to generate events from this process, or see
+/x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/WZAToLNuLLA_4f_NLO/README
+Run "open index.html" to see more information about this process.
+display multiparticles
+Multiparticle labels:
+all = g gh gh~ d u s c d~ u~ s~ c~ a ve vm vt e- mu- ve~ vm~ vt~ e+ mu+ b t b~ t~ z w+ h w- ta- ta+
+l- = e- mu-
+j = g u c d s u~ c~ d~ s~
+vl = ve vm vt
+l+ = e+ mu+
+lep = e- mu- e+ mu+ ta- ta+
+p = g u c d s u~ c~ d~ s~
+vl~ = ve~ vm~ vt~
+nu = ve vm vt ve~ vm~ vt~
+quit
+copying generated process to working directory
+
+        WARNING: You've chosen not to use the PDF sets recommended for 2017 production!
+        If this isn't intentional, and you prefer to use the recommended sets,
+        insert the following lines into your process-name_run_card.dat:
+
+            '$DEFAULT_PDF_SETS = lhaid'
+            '$DEFAULT_PDF_MEMBERS = reweight_PDF'
+        
+copying run_card.dat file
+starting NLO mode
+No module named madgraph
+INFO: ************************************************************
+*                                                          *
+*           W E L C O M E  to  M A D G R A P H 5           *
+*                       a M C @ N L O                      *
+*                                                          *
+*                 *                       *                *
+*                   *        * *        *                  *
+*                     * * * * 5 * * * *                    *
+*                   *        * *        *                  *
+*                 *                       *                *
+*                                                          *
+*         VERSION 5.2.6.5               20xx-xx-xx         *
+*                                                          *
+*    The MadGraph5_aMC@NLO Development Team - Find us at   *
+*                 http://amcatnlo.cern.ch                  *
+*                                                          *
+*               Type 'help' for in-line help.              *
+*                                                          *
+************************************************************ 
+INFO: load configuration from /home/jwkim/.mg5/mg5_configuration.txt  
+INFO: load configuration from /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+INFO: load configuration from /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/MG5_aMC_v2_6_5/input/mg5_configuration.txt  
+INFO: load configuration from /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/processtmp/Cards/amcatnlo_configuration.txt  
+Using default text editor "vi". Set another one in ./input/mg5_configuration.txt
+Using default eps viewer "evince". Set another one in ./input/mg5_configuration.txt
+Using default web browser "firefox". Set another one in ./input/mg5_configuration.txt
+launch -n pilotrun
+[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
+The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [31mPYTHIA8[0m     
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.[60s to answer] 
+>The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [32mOFF[0m         
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [32mOFF[0m         
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+>The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [32mOFF[0m         
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+The following switches determine which programs are run:
+/=============================================================================\
+1. Type of perturbative computation         [1m      order[0m = [32mNLO[0m         
+2. No MC@[N]LO matching / event generation  [1mfixed_order[0m = [32mOFF[0m         
+3. Shower the generated events              [1m     shower[0m = [32mOFF[0m         
+4. Decay onshell particles                  [1m    madspin[0m = [31mOFF[0m         
+5. Add weights to events for new hypp.      [1m   reweight[0m = [31mOFF[0m         
+6. Run MadAnalysis5 on the events generated [1mmadanalysis[0m = [01mNot Avail.[0m  
+\=============================================================================/
+Either type the switch number (1 to 6) to change its setting,
+Set any switch explicitly (e.g. type 'fixed_order=ON' at the prompt)
+Type 'help' for the list of all valid option
+Type '0', 'auto', 'done' or just press enter when you are done.
+>INFO: will run in mode: noshower 
+[1;34mWARNING: You have chosen not to run a parton shower.
+    NLO events without showering are NOT physical.
+    Please, shower the LesHouches events before using them for physics analyses.
+    You have to choose NOW which parton-shower you WILL use and specify it in the run_card. [0m
+[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
+Do you want to edit a card (press enter to bypass editing)?
+/------------------------------------------------------------\
+|  [31m1[0m. param : [32mparam_card.dat[0m                                 |
+|  [31m2[0m. run   : [32mrun_card.dat[0m                                   |
+\------------------------------------------------------------/
+ you can also
+   - enter the path to a valid card or banner.
+   - use the 'set' command to modify a parameter directly.
+     The set option works only for param_card and run_card.
+     Type 'help set' for more information on this command.
+   - call an external program (ASperGE/MadWidth/...).
+     Type 'help' for the list of available command
+ [[4m0[0m, done, 1, param, 2, run, enter path][90s to answer] 
+>INFO: Update the dependent parameter of the param_card.dat 
+[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
+INFO: Starting run 
+INFO: Compiling the code 
+[1;34mrun_card missed argument pt_min_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument pt_max_pdg. Takes default: {}[0m
+[1;34mrun_card missed argument mxx_min_pdg. Takes default: {}[0m
+run_card missed argument shower_scale_factor. Takes default: 1.0
+run_card missed argument muf_ref_fixed. Takes default: 91.188
+run_card missed argument dynamical_scale_choice. Takes default: [-1]
+run_card missed argument muf_over_ref. Takes default: 1.0
+run_card missed argument rw_rscale. Takes default: [1.0, 2.0, 0.5]
+run_card missed argument rw_fscale. Takes default: [1.0, 2.0, 0.5]
+run_card missed argument iappl. Takes default: 0
+INFO: Using LHAPDF v6.2.1 interface for PDFs 
+INFO: Compiling source... 
+INFO:           ...done, continuing with P* directories 
+INFO: Compiling directories... 
+INFO: Compiling on 24 cores 
+INFO:  Compiling P0_udx_epveza... 
+INFO:  Compiling P0_udx_tapvtza... 
+INFO:  Compiling P0_dux_emvexza... 
+INFO:  Compiling P0_dux_tamvtxza... 
+INFO:  Compiling P0_uxd_emvexza... 
+INFO:  Compiling P0_uxd_tamvtxza... 
+INFO:  Compiling P0_dxu_tapvtza... 
+INFO:  Compiling P0_dxu_epveza... 
+INFO:     P0_dxu_epveza done. 
+INFO:     P0_dux_emvexza done. 
+INFO:     P0_udx_epveza done. 
+INFO:     P0_uxd_emvexza done. 
+INFO:     P0_udx_tapvtza done. 
+INFO:     P0_dux_tamvtxza done. 
+INFO:     P0_dxu_tapvtza done. 
+INFO:     P0_uxd_tamvtxza done. 
+INFO: Checking test output: 
+INFO: P0_udx_epveza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_udx_tapvtza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dux_emvexza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dux_tamvtxza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uxd_emvexza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_uxd_tamvtxza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dxu_epveza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: P0_dxu_tapvtza 
+INFO:  Result for test_ME: 
+INFO:    Passed. 
+INFO:  Result for test_MC: 
+INFO:    Passed. 
+INFO:  Result for check_poles: 
+INFO:    Poles successfully cancel for 20 points over 20 (tolerance=1.0e-05) 
+INFO: Starting run 
+INFO: Using 24 cores 
+INFO: Cleaning previous results 
+INFO: Generating events without running the shower. 
+INFO: Setting up grids 
+INFO:  Idle: 168,  Running: 24,  Completed: 0 [ current time: 10h10 ] 
+INFO:  Idle: 167,  Running: 24,  Completed: 1 [  1m 35s  ] 
+INFO:  Idle: 165,  Running: 24,  Completed: 3 [  1m 51s  ] 
+INFO:  Idle: 164,  Running: 24,  Completed: 4 [  1m 57s  ] 
+INFO:  Idle: 163,  Running: 24,  Completed: 5 [  1m 59s  ] 
+INFO:  Idle: 162,  Running: 24,  Completed: 6 [  3m 7s  ] 
+INFO:  Idle: 161,  Running: 24,  Completed: 7 [  3m 10s  ] 
+INFO:  Idle: 160,  Running: 24,  Completed: 8 [  3m 11s  ] 
+INFO:  Idle: 159,  Running: 24,  Completed: 9 [  3m 20s  ] 
+INFO:  Idle: 158,  Running: 24,  Completed: 10 [  3m 22s  ] 
+INFO:  Idle: 157,  Running: 24,  Completed: 11 [  3m 22s  ] 
+INFO:  Idle: 156,  Running: 24,  Completed: 12 [  3m 31s  ] 
+INFO:  Idle: 155,  Running: 24,  Completed: 13 [  3m 33s  ] 
+INFO:  Idle: 154,  Running: 24,  Completed: 14 [  3m 39s  ] 
+INFO:  Idle: 153,  Running: 24,  Completed: 15 [  3m 53s  ] 
+INFO:  Idle: 152,  Running: 24,  Completed: 16 [  4m 56s  ] 
+INFO:  Idle: 151,  Running: 24,  Completed: 17 [  5m 6s  ] 
+INFO:  Idle: 150,  Running: 24,  Completed: 18 [  5m 21s  ] 
+INFO:  Idle: 149,  Running: 24,  Completed: 19 [  5m 36s  ] 
+INFO:  Idle: 148,  Running: 24,  Completed: 20 [  5m 47s  ] 
+INFO:  Idle: 147,  Running: 24,  Completed: 21 [  5m 51s  ] 
+INFO:  Idle: 146,  Running: 24,  Completed: 22 [  5m 57s  ] 
+INFO:  Idle: 145,  Running: 24,  Completed: 23 [  6m 2s  ] 
+INFO:  Idle: 144,  Running: 24,  Completed: 24 [  6m 38s  ] 
+INFO:  Idle: 143,  Running: 24,  Completed: 25 [  6m 39s  ] 
+INFO:  Idle: 142,  Running: 24,  Completed: 26 [  6m 40s  ] 
+INFO:  Idle: 141,  Running: 24,  Completed: 27 [  6m 48s  ] 
+INFO:  Idle: 140,  Running: 24,  Completed: 28 [  6m 48s  ] 
+INFO:  Idle: 139,  Running: 24,  Completed: 29 [  7m 15s  ] 
+INFO:  Idle: 138,  Running: 24,  Completed: 30 [  7m 25s  ] 
+INFO:  Idle: 137,  Running: 24,  Completed: 31 [  7m 32s  ] 
+INFO:  Idle: 136,  Running: 24,  Completed: 32 [  7m 55s  ] 
+INFO:  Idle: 135,  Running: 24,  Completed: 33 [  8m 10s  ] 
+INFO:  Idle: 134,  Running: 24,  Completed: 34 [  8m 25s  ] 
+INFO:  Idle: 133,  Running: 24,  Completed: 35 [  8m 34s  ] 
+INFO:  Idle: 132,  Running: 24,  Completed: 36 [  9m 9s  ] 
+INFO:  Idle: 131,  Running: 24,  Completed: 37 [  9m 24s  ] 
+INFO:  Idle: 130,  Running: 24,  Completed: 38 [  10m 4s  ] 
+INFO:  Idle: 129,  Running: 24,  Completed: 39 [  10m 9s  ] 
+INFO:  Idle: 128,  Running: 24,  Completed: 40 [  10m 15s  ] 
+INFO:  Idle: 127,  Running: 24,  Completed: 41 [  10m 17s  ] 
+INFO:  Idle: 126,  Running: 24,  Completed: 42 [  10m 27s  ] 
+INFO:  Idle: 125,  Running: 24,  Completed: 43 [  10m 38s  ] 
+INFO:  Idle: 124,  Running: 24,  Completed: 44 [  10m 51s  ] 
+INFO:  Idle: 123,  Running: 24,  Completed: 45 [  12m 16s  ] 
+INFO:  Idle: 122,  Running: 24,  Completed: 46 [  12m 27s  ] 
+INFO:  Idle: 121,  Running: 24,  Completed: 47 [  12m 50s  ] 
+INFO:  Idle: 120,  Running: 24,  Completed: 48 [  13m 26s  ] 
+INFO:  Idle: 119,  Running: 24,  Completed: 49 [  13m 31s  ] 
+INFO:  Idle: 118,  Running: 24,  Completed: 50 [  13m 49s  ] 
+INFO:  Idle: 117,  Running: 24,  Completed: 51 [  13m 55s  ] 
+INFO:  Idle: 116,  Running: 24,  Completed: 52 [  14m 36s  ] 
+INFO:  Idle: 115,  Running: 24,  Completed: 53 [  15m 15s  ] 
+INFO:  Idle: 114,  Running: 24,  Completed: 54 [  15m 31s  ] 
+INFO:  Idle: 113,  Running: 24,  Completed: 55 [  15m 36s  ] 
+INFO:  Idle: 112,  Running: 24,  Completed: 56 [  15m 40s  ] 
+INFO:  Idle: 111,  Running: 24,  Completed: 57 [  16m 20s  ] 
+INFO:  Idle: 110,  Running: 24,  Completed: 58 [  16m 46s  ] 
+INFO:  Idle: 109,  Running: 24,  Completed: 59 [  16m 49s  ] 
+INFO:  Idle: 108,  Running: 24,  Completed: 60 [  17m 14s  ] 
+INFO:  Idle: 107,  Running: 24,  Completed: 61 [  17m 23s  ] 
+INFO:  Idle: 106,  Running: 24,  Completed: 62 [  17m 48s  ] 
+INFO:  Idle: 105,  Running: 24,  Completed: 63 [  17m 50s  ] 
+INFO:  Idle: 104,  Running: 24,  Completed: 64 [  17m 53s  ] 
+INFO:  Idle: 103,  Running: 24,  Completed: 65 [  18m 30s  ] 
+INFO:  Idle: 102,  Running: 24,  Completed: 66 [  18m 56s  ] 
+INFO:  Idle: 101,  Running: 24,  Completed: 67 [  19m 28s  ] 
+INFO:  Idle: 100,  Running: 24,  Completed: 68 [  19m 30s  ] 
+INFO:  Idle: 99,  Running: 24,  Completed: 69 [  19m 51s  ] 
+INFO:  Idle: 98,  Running: 24,  Completed: 70 [  20m 1s  ] 
+INFO:  Idle: 97,  Running: 24,  Completed: 71 [  21m 41s  ] 
+INFO:  Idle: 96,  Running: 24,  Completed: 72 [  21m 52s  ] 
+INFO:  Idle: 95,  Running: 24,  Completed: 73 [  21m 52s  ] 
+INFO:  Idle: 94,  Running: 24,  Completed: 74 [  22m 4s  ] 
+INFO:  Idle: 93,  Running: 24,  Completed: 75 [  22m 27s  ] 
+INFO:  Idle: 92,  Running: 24,  Completed: 76 [  22m 40s  ] 
+INFO:  Idle: 91,  Running: 24,  Completed: 77 [  22m 45s  ] 
+INFO:  Idle: 90,  Running: 24,  Completed: 78 [  23m 12s  ] 
+INFO:  Idle: 89,  Running: 24,  Completed: 79 [  23m 29s  ] 
+INFO:  Idle: 88,  Running: 24,  Completed: 80 [  24m 6s  ] 
+INFO:  Idle: 87,  Running: 24,  Completed: 81 [  24m 45s  ] 
+INFO:  Idle: 86,  Running: 24,  Completed: 82 [  24m 57s  ] 
+INFO:  Idle: 85,  Running: 24,  Completed: 83 [  25m 3s  ] 
+INFO:  Idle: 84,  Running: 24,  Completed: 84 [  25m 9s  ] 
+INFO:  Idle: 83,  Running: 24,  Completed: 85 [  25m 22s  ] 
+INFO:  Idle: 82,  Running: 24,  Completed: 86 [  25m 37s  ] 
+INFO:  Idle: 81,  Running: 24,  Completed: 87 [  25m 38s  ] 
+INFO:  Idle: 80,  Running: 24,  Completed: 88 [  25m 47s  ] 
+INFO:  Idle: 79,  Running: 24,  Completed: 89 [  26m 31s  ] 
+INFO:  Idle: 78,  Running: 24,  Completed: 90 [  26m 32s  ] 
+INFO:  Idle: 77,  Running: 24,  Completed: 91 [  26m 36s  ] 
+INFO:  Idle: 76,  Running: 24,  Completed: 92 [  26m 39s  ] 
+INFO:  Idle: 75,  Running: 24,  Completed: 93 [  27m 5s  ] 
+INFO:  Idle: 74,  Running: 24,  Completed: 94 [  27m 43s  ] 
+INFO:  Idle: 73,  Running: 24,  Completed: 95 [  27m 52s  ] 
+INFO:  Idle: 72,  Running: 24,  Completed: 96 [  28m 14s  ] 
+INFO:  Idle: 71,  Running: 24,  Completed: 97 [  28m 17s  ] 
+INFO:  Idle: 70,  Running: 24,  Completed: 98 [  28m 20s  ] 
+INFO:  Idle: 69,  Running: 24,  Completed: 99 [  29m 4s  ] 
+INFO:  Idle: 68,  Running: 24,  Completed: 100 [  29m 19s  ] 
+INFO:  Idle: 67,  Running: 24,  Completed: 101 [  29m 22s  ] 
+INFO:  Idle: 66,  Running: 24,  Completed: 102 [  29m 34s  ] 
+INFO:  Idle: 65,  Running: 24,  Completed: 103 [  29m 48s  ] 
+INFO:  Idle: 64,  Running: 24,  Completed: 104 [  29m 53s  ] 
+INFO:  Idle: 63,  Running: 24,  Completed: 105 [  29m 57s  ] 
+INFO:  Idle: 62,  Running: 24,  Completed: 106 [  29m 59s  ] 
+INFO:  Idle: 61,  Running: 24,  Completed: 107 [  30m 18s  ] 
+INFO:  Idle: 60,  Running: 24,  Completed: 108 [  30m 32s  ] 
+INFO:  Idle: 59,  Running: 24,  Completed: 109 [  31m 35s  ] 
+INFO:  Idle: 58,  Running: 24,  Completed: 110 [  31m 36s  ] 
+INFO:  Idle: 57,  Running: 24,  Completed: 111 [  31m 52s  ] 
+INFO:  Idle: 56,  Running: 24,  Completed: 112 [  31m 59s  ] 
+INFO:  Idle: 55,  Running: 24,  Completed: 113 [  32m 12s  ] 
+INFO:  Idle: 54,  Running: 24,  Completed: 114 [  32m 14s  ] 
+INFO:  Idle: 53,  Running: 24,  Completed: 115 [  32m 41s  ] 
+INFO:  Idle: 52,  Running: 24,  Completed: 116 [  32m 56s  ] 
+INFO:  Idle: 51,  Running: 24,  Completed: 117 [  33m 0s  ] 
+INFO:  Idle: 50,  Running: 24,  Completed: 118 [  33m 18s  ] 
+INFO:  Idle: 49,  Running: 24,  Completed: 119 [  33m 19s  ] 
+INFO:  Idle: 48,  Running: 24,  Completed: 120 [  33m 19s  ] 
+INFO:  Idle: 47,  Running: 24,  Completed: 121 [  34m 10s  ] 
+INFO:  Idle: 46,  Running: 24,  Completed: 122 [  34m 53s  ] 
+INFO:  Idle: 45,  Running: 24,  Completed: 123 [  34m 54s  ] 
+INFO:  Idle: 44,  Running: 24,  Completed: 124 [  35m 1s  ] 
+INFO:  Idle: 43,  Running: 24,  Completed: 125 [  35m 10s  ] 
+INFO:  Idle: 42,  Running: 24,  Completed: 126 [  35m 51s  ] 
+INFO:  Idle: 41,  Running: 24,  Completed: 127 [  36m 0s  ] 
+INFO:  Idle: 40,  Running: 24,  Completed: 128 [  36m 5s  ] 
+INFO:  Idle: 39,  Running: 24,  Completed: 129 [  36m 41s  ] 
+INFO:  Idle: 38,  Running: 24,  Completed: 130 [  37m 17s  ] 
+INFO:  Idle: 37,  Running: 24,  Completed: 131 [  37m 22s  ] 
+INFO:  Idle: 36,  Running: 24,  Completed: 132 [  37m 35s  ] 
+INFO:  Idle: 35,  Running: 24,  Completed: 133 [  37m 38s  ] 
+INFO:  Idle: 34,  Running: 24,  Completed: 134 [  38m 3s  ] 
+INFO:  Idle: 33,  Running: 24,  Completed: 135 [  38m 32s  ] 
+INFO:  Idle: 32,  Running: 24,  Completed: 136 [  38m 41s  ] 
+INFO:  Idle: 31,  Running: 24,  Completed: 137 [  38m 46s  ] 
+INFO:  Idle: 30,  Running: 24,  Completed: 138 [  39m 8s  ] 
+INFO:  Idle: 29,  Running: 24,  Completed: 139 [  39m 12s  ] 
+INFO:  Idle: 28,  Running: 24,  Completed: 140 [  39m 13s  ] 
+INFO:  Idle: 27,  Running: 24,  Completed: 141 [  39m 25s  ] 
+INFO:  Idle: 26,  Running: 24,  Completed: 142 [  39m 27s  ] 
+INFO:  Idle: 25,  Running: 24,  Completed: 143 [  39m 47s  ] 
+INFO:  Idle: 24,  Running: 24,  Completed: 144 [  40m 46s  ] 
+INFO:  Idle: 23,  Running: 24,  Completed: 145 [  40m 56s  ] 
+INFO:  Idle: 22,  Running: 24,  Completed: 146 [  41m 2s  ] 
+INFO:  Idle: 21,  Running: 24,  Completed: 147 [  41m 21s  ] 
+INFO:  Idle: 20,  Running: 24,  Completed: 148 [  41m 30s  ] 
+INFO:  Idle: 19,  Running: 24,  Completed: 149 [  41m 40s  ] 
+INFO:  Idle: 18,  Running: 24,  Completed: 150 [  41m 40s  ] 
+INFO:  Idle: 17,  Running: 24,  Completed: 151 [  41m 45s  ] 
+INFO:  Idle: 16,  Running: 24,  Completed: 152 [  41m 46s  ] 
+INFO:  Idle: 15,  Running: 24,  Completed: 153 [  41m 48s  ] 
+INFO:  Idle: 14,  Running: 24,  Completed: 154 [  42m 48s  ] 
+INFO:  Idle: 13,  Running: 24,  Completed: 155 [  42m 55s  ] 
+INFO:  Idle: 12,  Running: 24,  Completed: 156 [  43m 2s  ] 
+INFO:  Idle: 11,  Running: 24,  Completed: 157 [  43m 30s  ] 
+INFO:  Idle: 10,  Running: 24,  Completed: 158 [  43m 32s  ] 
+INFO:  Idle: 9,  Running: 24,  Completed: 159 [  43m 44s  ] 
+INFO:  Idle: 8,  Running: 24,  Completed: 160 [  43m 46s  ] 
+INFO:  Idle: 7,  Running: 24,  Completed: 161 [  44m 2s  ] 
+INFO:  Idle: 6,  Running: 24,  Completed: 162 [  44m 5s  ] 
+INFO:  Idle: 5,  Running: 24,  Completed: 163 [  44m 6s  ] 
+INFO:  Idle: 4,  Running: 24,  Completed: 164 [  44m 15s  ] 
+INFO:  Idle: 3,  Running: 24,  Completed: 165 [  44m 20s  ] 
+INFO:  Idle: 2,  Running: 24,  Completed: 166 [  44m 25s  ] 
+INFO:  Idle: 1,  Running: 24,  Completed: 167 [  44m 26s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 168 [  45m 18s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 169 [  45m 23s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 170 [  45m 54s  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 171 [  46m 0s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 172 [  46m 2s  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 173 [  46m 6s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 174 [  46m 21s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 175 [  46m 44s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 176 [  47m 12s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 177 [  47m 34s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 178 [  47m 41s  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 179 [  47m 43s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 180 [  48m 6s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 181 [  48m 19s  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 182 [  48m 27s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 183 [  48m 34s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 184 [  48m 39s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 185 [  49m 8s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 186 [  49m 33s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 187 [  50m 7s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 188 [  50m 9s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 189 [  50m 9s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 190 [  50m 46s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 191 [  51m 11s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 192 [  58m 12s  ] 
+INFO: Determining the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      7.402e-02 +- 2.3e-04 pb
+      Total abs(cross section): 8.368e-02 +- 2.4e-04 pb 
+
+ 
+INFO: Computing upper envelope 
+INFO:  Idle: 168,  Running: 24,  Completed: 0 [ current time: 11h09 ] 
+INFO:  Idle: 167,  Running: 24,  Completed: 1 [  1m 24s  ] 
+INFO:  Idle: 166,  Running: 24,  Completed: 2 [  1m 32s  ] 
+INFO:  Idle: 165,  Running: 24,  Completed: 3 [  1m 36s  ] 
+INFO:  Idle: 164,  Running: 24,  Completed: 4 [  1m 39s  ] 
+INFO:  Idle: 163,  Running: 24,  Completed: 5 [  1m 42s  ] 
+INFO:  Idle: 162,  Running: 24,  Completed: 6 [  1m 47s  ] 
+INFO:  Idle: 161,  Running: 24,  Completed: 7 [  1m 47s  ] 
+INFO:  Idle: 160,  Running: 24,  Completed: 8 [  1m 50s  ] 
+INFO:  Idle: 159,  Running: 24,  Completed: 9 [  3m 0s  ] 
+INFO:  Idle: 158,  Running: 24,  Completed: 10 [  3m 42s  ] 
+INFO:  Idle: 157,  Running: 24,  Completed: 11 [  3m 51s  ] 
+INFO:  Idle: 156,  Running: 24,  Completed: 12 [  3m 53s  ] 
+INFO:  Idle: 155,  Running: 24,  Completed: 13 [  4m 11s  ] 
+INFO:  Idle: 154,  Running: 24,  Completed: 14 [  4m 21s  ] 
+INFO:  Idle: 153,  Running: 24,  Completed: 15 [  4m 35s  ] 
+INFO:  Idle: 152,  Running: 24,  Completed: 16 [  6m 11s  ] 
+INFO:  Idle: 151,  Running: 24,  Completed: 17 [  8m 14s  ] 
+INFO:  Idle: 150,  Running: 24,  Completed: 18 [  8m 35s  ] 
+INFO:  Idle: 149,  Running: 24,  Completed: 19 [  8m 48s  ] 
+INFO:  Idle: 148,  Running: 24,  Completed: 20 [  10m 45s  ] 
+INFO:  Idle: 147,  Running: 24,  Completed: 21 [  11m 28s  ] 
+INFO:  Idle: 146,  Running: 24,  Completed: 22 [  11m 33s  ] 
+INFO:  Idle: 145,  Running: 24,  Completed: 23 [  13m 19s  ] 
+INFO:  Idle: 144,  Running: 24,  Completed: 24 [  13m 29s  ] 
+INFO:  Idle: 143,  Running: 24,  Completed: 25 [  15m 32s  ] 
+INFO:  Idle: 142,  Running: 24,  Completed: 26 [  16m 17s  ] 
+INFO:  Idle: 141,  Running: 24,  Completed: 27 [  16m 19s  ] 
+INFO:  Idle: 140,  Running: 24,  Completed: 28 [  18m 7s  ] 
+INFO:  Idle: 139,  Running: 24,  Completed: 29 [  19m 38s  ] 
+INFO:  Idle: 138,  Running: 24,  Completed: 30 [  20m 17s  ] 
+INFO:  Idle: 137,  Running: 24,  Completed: 31 [  20m 44s  ] 
+INFO:  Idle: 136,  Running: 24,  Completed: 32 [  20m 55s  ] 
+INFO:  Idle: 135,  Running: 24,  Completed: 33 [  21m 52s  ] 
+INFO:  Idle: 134,  Running: 24,  Completed: 34 [  22m 17s  ] 
+INFO:  Idle: 133,  Running: 24,  Completed: 35 [  22m 30s  ] 
+INFO:  Idle: 132,  Running: 24,  Completed: 36 [  22m 51s  ] 
+INFO:  Idle: 131,  Running: 24,  Completed: 37 [  23m 32s  ] 
+INFO:  Idle: 130,  Running: 24,  Completed: 38 [  24m 5s  ] 
+INFO:  Idle: 129,  Running: 24,  Completed: 39 [  24m 9s  ] 
+INFO:  Idle: 128,  Running: 24,  Completed: 40 [  24m 20s  ] 
+INFO:  Idle: 127,  Running: 24,  Completed: 41 [  25m 7s  ] 
+INFO:  Idle: 126,  Running: 24,  Completed: 42 [  25m 18s  ] 
+INFO:  Idle: 124,  Running: 24,  Completed: 44 [  25m 45s  ] 
+INFO:  Idle: 123,  Running: 24,  Completed: 45 [  26m 4s  ] 
+INFO:  Idle: 122,  Running: 24,  Completed: 46 [  26m 52s  ] 
+INFO:  Idle: 121,  Running: 24,  Completed: 47 [  28m 39s  ] 
+INFO:  Idle: 119,  Running: 24,  Completed: 49 [  28m 48s  ] 
+INFO:  Idle: 118,  Running: 24,  Completed: 50 [  30m 36s  ] 
+INFO:  Idle: 117,  Running: 24,  Completed: 51 [  30m 41s  ] 
+INFO:  Idle: 116,  Running: 24,  Completed: 52 [  30m 52s  ] 
+INFO:  Idle: 115,  Running: 24,  Completed: 53 [  33m 12s  ] 
+INFO:  Idle: 114,  Running: 24,  Completed: 54 [  33m 48s  ] 
+INFO:  Idle: 113,  Running: 24,  Completed: 55 [  33m 58s  ] 
+INFO:  Idle: 112,  Running: 24,  Completed: 56 [  35m 29s  ] 
+INFO:  Idle: 111,  Running: 24,  Completed: 57 [  35m 43s  ] 
+INFO:  Idle: 110,  Running: 24,  Completed: 58 [  36m 24s  ] 
+INFO:  Idle: 109,  Running: 24,  Completed: 59 [  37m 15s  ] 
+INFO:  Idle: 108,  Running: 24,  Completed: 60 [  38m 35s  ] 
+INFO:  Idle: 107,  Running: 24,  Completed: 61 [  40m 25s  ] 
+INFO:  Idle: 106,  Running: 24,  Completed: 62 [  41m 30s  ] 
+INFO:  Idle: 105,  Running: 24,  Completed: 63 [  41m 43s  ] 
+INFO:  Idle: 104,  Running: 24,  Completed: 64 [  42m 57s  ] 
+INFO:  Idle: 103,  Running: 24,  Completed: 65 [  45m 45s  ] 
+INFO:  Idle: 102,  Running: 24,  Completed: 66 [  46m 0s  ] 
+INFO:  Idle: 101,  Running: 24,  Completed: 67 [  47m 40s  ] 
+INFO:  Idle: 100,  Running: 24,  Completed: 68 [  48m 37s  ] 
+INFO:  Idle: 99,  Running: 24,  Completed: 69 [  48m 47s  ] 
+INFO:  Idle: 98,  Running: 24,  Completed: 70 [  49m 9s  ] 
+INFO:  Idle: 97,  Running: 24,  Completed: 71 [  49m 20s  ] 
+INFO:  Idle: 96,  Running: 24,  Completed: 72 [  49m 32s  ] 
+INFO:  Idle: 95,  Running: 24,  Completed: 73 [  49m 51s  ] 
+INFO:  Idle: 94,  Running: 24,  Completed: 74 [  51m 12s  ] 
+INFO:  Idle: 93,  Running: 24,  Completed: 75 [  51m 27s  ] 
+INFO:  Idle: 92,  Running: 24,  Completed: 76 [  51m 49s  ] 
+INFO:  Idle: 91,  Running: 24,  Completed: 77 [  52m 3s  ] 
+INFO:  Idle: 90,  Running: 24,  Completed: 78 [  52m 23s  ] 
+INFO:  Idle: 89,  Running: 24,  Completed: 79 [  53m 17s  ] 
+INFO:  Idle: 88,  Running: 24,  Completed: 80 [  53m 24s  ] 
+INFO:  Idle: 87,  Running: 24,  Completed: 81 [  53m 33s  ] 
+INFO:  Idle: 86,  Running: 24,  Completed: 82 [  53m 42s  ] 
+INFO:  Idle: 85,  Running: 24,  Completed: 83 [  53m 46s  ] 
+INFO:  Idle: 84,  Running: 24,  Completed: 84 [  54m 14s  ] 
+INFO:  Idle: 83,  Running: 24,  Completed: 85 [  54m 17s  ] 
+INFO:  Idle: 82,  Running: 24,  Completed: 86 [  54m 30s  ] 
+INFO:  Idle: 81,  Running: 24,  Completed: 87 [  54m 51s  ] 
+INFO:  Idle: 80,  Running: 24,  Completed: 88 [  55m 18s  ] 
+INFO:  Idle: 79,  Running: 24,  Completed: 89 [  56m 18s  ] 
+INFO:  Idle: 78,  Running: 24,  Completed: 90 [  57m 5s  ] 
+INFO:  Idle: 77,  Running: 24,  Completed: 91 [  57m 43s  ] 
+INFO:  Idle: 76,  Running: 24,  Completed: 92 [  58m 24s  ] 
+INFO:  Idle: 75,  Running: 24,  Completed: 93 [  59m 26s  ] 
+INFO:  Idle: 74,  Running: 24,  Completed: 94 [  59m 58s  ] 
+INFO:  Idle: 73,  Running: 24,  Completed: 95 [  1h 0m  ] 
+INFO:  Idle: 72,  Running: 24,  Completed: 96 [  1h 1m  ] 
+INFO:  Idle: 71,  Running: 24,  Completed: 97 [  1h 2m  ] 
+INFO:  Idle: 70,  Running: 24,  Completed: 98 [  1h 3m  ] 
+INFO:  Idle: 69,  Running: 24,  Completed: 99 [  1h 6m  ] 
+INFO:  Idle: 68,  Running: 24,  Completed: 100 [  1h 7m  ] 
+INFO:  Idle: 67,  Running: 24,  Completed: 101 [  1h 7m  ] 
+INFO:  Idle: 66,  Running: 24,  Completed: 102 [  1h 8m  ] 
+INFO:  Idle: 65,  Running: 24,  Completed: 103 [  1h 9m  ] 
+INFO:  Idle: 64,  Running: 24,  Completed: 104 [  1h 9m  ] 
+INFO:  Idle: 63,  Running: 24,  Completed: 105 [  1h 10m  ] 
+INFO:  Idle: 62,  Running: 24,  Completed: 106 [  1h 12m  ] 
+INFO:  Idle: 61,  Running: 24,  Completed: 107 [  1h 12m  ] 
+INFO:  Idle: 60,  Running: 24,  Completed: 108 [  1h 12m  ] 
+INFO:  Idle: 59,  Running: 24,  Completed: 109 [  1h 15m  ] 
+INFO:  Idle: 58,  Running: 24,  Completed: 110 [  1h 17m  ] 
+INFO:  Idle: 57,  Running: 24,  Completed: 111 [  1h 17m  ] 
+INFO:  Idle: 56,  Running: 24,  Completed: 112 [  1h 18m  ] 
+INFO:  Idle: 55,  Running: 24,  Completed: 113 [  1h 19m  ] 
+INFO:  Idle: 54,  Running: 24,  Completed: 114 [  1h 19m  ] 
+INFO:  Idle: 53,  Running: 24,  Completed: 115 [  1h 20m  ] 
+INFO:  Idle: 52,  Running: 24,  Completed: 116 [  1h 20m  ] 
+INFO:  Idle: 51,  Running: 24,  Completed: 117 [  1h 20m  ] 
+INFO:  Idle: 50,  Running: 24,  Completed: 118 [  1h 22m  ] 
+INFO:  Idle: 49,  Running: 24,  Completed: 119 [  1h 22m  ] 
+INFO:  Idle: 48,  Running: 24,  Completed: 120 [  1h 23m  ] 
+INFO:  Idle: 47,  Running: 24,  Completed: 121 [  1h 23m  ] 
+INFO:  Idle: 46,  Running: 24,  Completed: 122 [  1h 24m  ] 
+INFO:  Idle: 45,  Running: 24,  Completed: 123 [  1h 24m  ] 
+INFO:  Idle: 44,  Running: 24,  Completed: 124 [  1h 25m  ] 
+INFO:  Idle: 43,  Running: 24,  Completed: 125 [  1h 26m  ] 
+INFO:  Idle: 42,  Running: 24,  Completed: 126 [  1h 26m  ] 
+INFO:  Idle: 41,  Running: 24,  Completed: 127 [  1h 26m  ] 
+INFO:  Idle: 40,  Running: 24,  Completed: 128 [  1h 26m  ] 
+INFO:  Idle: 39,  Running: 24,  Completed: 129 [  1h 27m  ] 
+INFO:  Idle: 38,  Running: 24,  Completed: 130 [  1h 27m  ] 
+INFO:  Idle: 37,  Running: 24,  Completed: 131 [  1h 27m  ] 
+INFO:  Idle: 36,  Running: 24,  Completed: 132 [  1h 27m  ] 
+INFO:  Idle: 35,  Running: 24,  Completed: 133 [  1h 28m  ] 
+INFO:  Idle: 34,  Running: 24,  Completed: 134 [  1h 28m  ] 
+INFO:  Idle: 33,  Running: 24,  Completed: 135 [  1h 29m  ] 
+INFO:  Idle: 32,  Running: 24,  Completed: 136 [  1h 30m  ] 
+INFO:  Idle: 31,  Running: 24,  Completed: 137 [  1h 30m  ] 
+INFO:  Idle: 30,  Running: 24,  Completed: 138 [  1h 31m  ] 
+INFO:  Idle: 29,  Running: 24,  Completed: 139 [  1h 32m  ] 
+INFO:  Idle: 28,  Running: 24,  Completed: 140 [  1h 32m  ] 
+INFO:  Idle: 27,  Running: 24,  Completed: 141 [  1h 34m  ] 
+INFO:  Idle: 26,  Running: 24,  Completed: 142 [  1h 36m  ] 
+INFO:  Idle: 25,  Running: 24,  Completed: 143 [  1h 39m  ] 
+INFO:  Idle: 24,  Running: 24,  Completed: 144 [  1h 41m  ] 
+INFO:  Idle: 23,  Running: 24,  Completed: 145 [  1h 41m  ] 
+INFO:  Idle: 22,  Running: 24,  Completed: 146 [  1h 42m  ] 
+INFO:  Idle: 21,  Running: 24,  Completed: 147 [  1h 43m  ] 
+INFO:  Idle: 20,  Running: 24,  Completed: 148 [  1h 44m  ] 
+INFO:  Idle: 19,  Running: 24,  Completed: 149 [  1h 44m  ] 
+INFO:  Idle: 18,  Running: 24,  Completed: 150 [  1h 44m  ] 
+INFO:  Idle: 17,  Running: 24,  Completed: 151 [  1h 45m  ] 
+INFO:  Idle: 16,  Running: 24,  Completed: 152 [  1h 46m  ] 
+INFO:  Idle: 15,  Running: 24,  Completed: 153 [  1h 47m  ] 
+INFO:  Idle: 14,  Running: 24,  Completed: 154 [  1h 47m  ] 
+INFO:  Idle: 13,  Running: 24,  Completed: 155 [  1h 49m  ] 
+INFO:  Idle: 12,  Running: 24,  Completed: 156 [  1h 51m  ] 
+INFO:  Idle: 11,  Running: 24,  Completed: 157 [  1h 51m  ] 
+INFO:  Idle: 10,  Running: 24,  Completed: 158 [  1h 51m  ] 
+INFO:  Idle: 9,  Running: 24,  Completed: 159 [  1h 52m  ] 
+INFO:  Idle: 8,  Running: 24,  Completed: 160 [  1h 52m  ] 
+INFO:  Idle: 7,  Running: 24,  Completed: 161 [  1h 53m  ] 
+INFO:  Idle: 6,  Running: 24,  Completed: 162 [  1h 53m  ] 
+INFO:  Idle: 5,  Running: 24,  Completed: 163 [  1h 54m  ] 
+INFO:  Idle: 4,  Running: 24,  Completed: 164 [  1h 54m  ] 
+INFO:  Idle: 3,  Running: 24,  Completed: 165 [  1h 55m  ] 
+INFO:  Idle: 2,  Running: 24,  Completed: 166 [  1h 56m  ] 
+INFO:  Idle: 1,  Running: 24,  Completed: 167 [  1h 56m  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 168 [  1h 57m  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 169 [  1h 57m  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 170 [  1h 57m  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 171 [  1h 58m  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 172 [  1h 59m  ] 
+INFO:  Idle: 0,  Running: 19,  Completed: 173 [  1h 59m  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 174 [  1h 59m  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 175 [  1h 59m  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 176 [  2h 0m  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 177 [  2h 1m  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 178 [  2h 2m  ] 
+INFO:  Idle: 0,  Running: 13,  Completed: 179 [  2h 2m  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 180 [  2h 3m  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 181 [  2h 4m  ] 
+INFO:  Idle: 0,  Running: 10,  Completed: 182 [  2h 9m  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 183 [  2h 10m  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 184 [  2h 14m  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 185 [  2h 15m  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 186 [  2h 16m  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 187 [  2h 19m  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 188 [  2h 21m  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 189 [  2h 26m  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 190 [  3h 3m  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 191 [  3h 16m  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 192 [  3h 31m  ] 
+INFO: Updating the number of unweighted events per channel
+
+      Intermediate results:
+      Random seed: 33
+      Total cross section:      7.619e-02 +- 7.5e-05 pb
+      Total abs(cross section): 8.666e-02 +- 7.3e-05 pb 
+
+ 
+INFO: Generating events 
+INFO:  Idle: 47,  Running: 24,  Completed: 5 [ current time: 14h40 ] 
+INFO:  Idle: 45,  Running: 24,  Completed: 7 [  0.12s  ] 
+INFO:  Idle: 44,  Running: 24,  Completed: 8 [  0.24s  ] 
+INFO:  Idle: 42,  Running: 24,  Completed: 10 [  0.3s  ] 
+INFO:  Idle: 41,  Running: 24,  Completed: 11 [  0.31s  ] 
+INFO:  Idle: 40,  Running: 24,  Completed: 12 [  0.43s  ] 
+INFO:  Idle: 39,  Running: 24,  Completed: 13 [  0.44s  ] 
+INFO:  Idle: 38,  Running: 24,  Completed: 14 [  0.61s  ] 
+INFO:  Idle: 37,  Running: 24,  Completed: 15 [  0.64s  ] 
+INFO:  Idle: 36,  Running: 24,  Completed: 16 [  0.76s  ] 
+INFO:  Idle: 35,  Running: 24,  Completed: 17 [  0.77s  ] 
+INFO:  Idle: 34,  Running: 24,  Completed: 18 [  0.8s  ] 
+INFO:  Idle: 32,  Running: 24,  Completed: 20 [  0.87s  ] 
+INFO:  Idle: 30,  Running: 24,  Completed: 22 [  0.99s  ] 
+INFO:  Idle: 29,  Running: 24,  Completed: 23 [  1.2s  ] 
+INFO:  Idle: 27,  Running: 24,  Completed: 25 [  1.4s  ] 
+INFO:  Idle: 26,  Running: 24,  Completed: 26 [  1.5s  ] 
+INFO:  Idle: 25,  Running: 24,  Completed: 27 [  1.5s  ] 
+INFO:  Idle: 23,  Running: 24,  Completed: 29 [  1.6s  ] 
+INFO:  Idle: 22,  Running: 24,  Completed: 30 [  1.6s  ] 
+INFO:  Idle: 21,  Running: 24,  Completed: 31 [  1.7s  ] 
+INFO:  Idle: 20,  Running: 24,  Completed: 32 [  1.7s  ] 
+INFO:  Idle: 18,  Running: 24,  Completed: 34 [  1.9s  ] 
+INFO:  Idle: 16,  Running: 24,  Completed: 36 [  2.1s  ] 
+INFO:  Idle: 13,  Running: 24,  Completed: 39 [  2.2s  ] 
+INFO:  Idle: 12,  Running: 24,  Completed: 40 [  2.3s  ] 
+INFO:  Idle: 11,  Running: 24,  Completed: 41 [  2.4s  ] 
+INFO:  Idle: 10,  Running: 24,  Completed: 42 [  2.4s  ] 
+INFO:  Idle: 8,  Running: 24,  Completed: 44 [  2.5s  ] 
+INFO:  Idle: 7,  Running: 24,  Completed: 45 [  2.6s  ] 
+INFO:  Idle: 6,  Running: 24,  Completed: 46 [  2.6s  ] 
+INFO:  Idle: 5,  Running: 24,  Completed: 47 [  2.7s  ] 
+INFO:  Idle: 4,  Running: 24,  Completed: 48 [  2.7s  ] 
+INFO:  Idle: 2,  Running: 24,  Completed: 50 [  2.7s  ] 
+INFO:  Idle: 1,  Running: 24,  Completed: 51 [  2.9s  ] 
+INFO:  Idle: 0,  Running: 24,  Completed: 52 [  2.9s  ] 
+INFO:  Idle: 0,  Running: 23,  Completed: 53 [  2.9s  ] 
+INFO:  Idle: 0,  Running: 22,  Completed: 54 [  2.9s  ] 
+INFO:  Idle: 0,  Running: 21,  Completed: 55 [  3s  ] 
+INFO:  Idle: 0,  Running: 20,  Completed: 56 [  3s  ] 
+INFO:  Idle: 0,  Running: 18,  Completed: 58 [  3s  ] 
+INFO:  Idle: 0,  Running: 17,  Completed: 59 [  3.1s  ] 
+INFO:  Idle: 0,  Running: 16,  Completed: 60 [  3.1s  ] 
+INFO:  Idle: 0,  Running: 15,  Completed: 61 [  3.2s  ] 
+INFO:  Idle: 0,  Running: 14,  Completed: 62 [  3.2s  ] 
+INFO:  Idle: 0,  Running: 12,  Completed: 64 [  3.3s  ] 
+INFO:  Idle: 0,  Running: 11,  Completed: 65 [  3.4s  ] 
+INFO:  Idle: 0,  Running: 9,  Completed: 67 [  3.5s  ] 
+INFO:  Idle: 0,  Running: 8,  Completed: 68 [  3.6s  ] 
+INFO:  Idle: 0,  Running: 7,  Completed: 69 [  3.8s  ] 
+INFO:  Idle: 0,  Running: 6,  Completed: 70 [  3.9s  ] 
+INFO:  Idle: 0,  Running: 5,  Completed: 71 [  4.6s  ] 
+INFO:  Idle: 0,  Running: 4,  Completed: 72 [  6.4s  ] 
+INFO:  Idle: 0,  Running: 3,  Completed: 73 [  6.6s  ] 
+INFO:  Idle: 0,  Running: 2,  Completed: 74 [  7.3s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 75 [  8.2s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 76 [  12.3s  ] 
+INFO:    Doing reweight 
+INFO:  Idle: 0,  Running: 0,  Completed: 76 [ current time: 14h40 ] 
+INFO: Collecting events 
+INFO: 
+   --------------------------------------------------------------
+      Summary:
+      Process p p > lep nu z a [QCD] @0
+      Run at p-p collider (6500.0 + 6500.0 GeV)
+      Number of events generated: 250
+      Total cross section: 6.551e-02 +- 7.0e-05 pb
+   --------------------------------------------------------------
+ 
+INFO: The /x5/cms/jwkim/Generator/genproductions/bin/MadGraph5_aMCatNLO/WZAToLNuLLA_4f_NLO/WZAToLNuLLA_4f_NLO_gridpack/work/processtmp/Events/pilotrun/events.lhe.gz file has been generated.
+ 
+INFO: Events generated 
+reweight -from_cards
+decay_events -from_cards
+[1;34mWARNING: You have chosen not to run a parton shower. NLO events without showering are NOT physical.
+Please, shower the Les Houches events before using them for physics analyses. [0m
+INFO:  
+quit
+INFO:  
+finished pilot run
+cleaning unneeded files from gridpack
