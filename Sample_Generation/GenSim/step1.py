@@ -5,6 +5,21 @@
 # with command line options: Configuration/GenProduction/python/SMP-RunIISummer15wmLHEGS-00184-fragment.py --fileout file:SMP-RunIISummer15wmLHEGS-00184.root --mc --eventcontent RAWSIM,LHE --customise SLHCUpgradeSimulations/Configuration/postLS1Customs.customisePostLS1,Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM,LHE --conditions MCRUN2_71_V1::All --beamspot Realistic50ns13TeVCollision --step LHE,GEN,SIM --magField 38T_PostLS1 --python_filename SMP-RunIISummer15wmLHEGS-00184_1_cfg.py --no_exec -n 10
 import FWCore.ParameterSet.Config as cms
 
+
+### Default set -------->-------------------------------------------------------------------------
+
+## p p > l nl a z
+# gridpack_path = "/x5/cms/jwkim/WZA_gridpack_store/WZAToLNuLLA_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+
+## p p > l nl a l+ l-
+gridpack_path = "/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+
+maxEvent = 5
+###<---------------------------------------------------------------------------------
+
+
+
+
 process = cms.Process('SIM')
 
 # import of standard configurations
@@ -24,13 +39,13 @@ process.load('Configuration.StandardSequences.EndOfProcess_cff')
 process.load('Configuration.StandardSequences.FrontierConditions_GlobalTag_cff')
 
 process.maxEvents = cms.untracked.PSet(
-    input = cms.untracked.int32($maxEvent)
+    input = cms.untracked.int32(maxEvent)
 )
 
 # Input source
 process.source = cms.Source("EmptySource",
-		     firstRun = cms.untracked.uint32($firstRun),
-                     firstEvent = cms.untracked.uint32($firstEvent)
+		     firstRun = cms.untracked.uint32(1),
+                     firstEvent = cms.untracked.uint32(1)
 
 )
 
@@ -38,10 +53,11 @@ process.options = cms.untracked.PSet(
 
 )
 
+
 # Production Info
 process.configurationMetadata = cms.untracked.PSet(
     version = cms.untracked.string('$Revision: 1.19 $'),
-    annotation = cms.untracked.string('Configuration/GenProduction/python/SMP-RunIISummer15wmLHEGS-00184-fragment.py nevts:$maxEvent'),
+    annotation = cms.untracked.string('Configuration/GenProduction/python/SMP-RunIISummer15wmLHEGS-00184-fragment.py nevts:maxEvent'),
     name = cms.untracked.string('Applications')
 )
 
@@ -51,7 +67,7 @@ process.RAWSIMoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.RAWSIMEventContent.outputCommands,
-    fileName = cms.untracked.string('file:$outrootFile'),
+    fileName = cms.untracked.string('file:out.root'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('GEN-SIM')
@@ -65,7 +81,7 @@ process.LHEoutput = cms.OutputModule("PoolOutputModule",
     splitLevel = cms.untracked.int32(0),
     eventAutoFlushCompressedSize = cms.untracked.int32(5242880),
     outputCommands = process.LHEEventContent.outputCommands,
-    fileName = cms.untracked.string('file:$inLHEFile'),
+    fileName = cms.untracked.string('file:out.lhe'),
     dataset = cms.untracked.PSet(
         filterName = cms.untracked.string(''),
         dataTier = cms.untracked.string('LHE')
@@ -133,11 +149,11 @@ process.generator = cms.EDFilter("Pythia8HadronizerFilter",
 
 
 process.externalLHEProducer = cms.EDProducer("ExternalLHEProducer",
-    nEvents = cms.untracked.uint32($maxEvent),
+    nEvents = cms.untracked.uint32(maxEvent),
     outputFile = cms.string('cmsgrid_final.lhe'),
     scriptName = cms.FileInPath('GeneratorInterface/LHEInterface/data/run_generic_tarball_cvmfs.sh'),
     numberOfParameters = cms.uint32(1),
-    args = cms.vstring('/cvmfs/cms.cern.ch/phys_generator/gridpacks/slc6_amd64_gcc481/13TeV/madgraph/V5_2.6.0/VA01j_5f_NLO_FXFX/ZATo2LA01j_5f_NLO_FXFX_slc6_amd64_gcc481_CMSSW_7_1_28_tarball.tar.xz')
+    args = cms.vstring(gridpack_path)
 )
 
 #set different random numbers seeds every time one runs cmsRun
