@@ -13,5 +13,6 @@ cd genproductions/bin/MadGraph5_aMCatNLO/
 ```bash                                                                                                                                     
 ./gridpack_generation.sh WZAToLNuLLA_4f_NLO cards/WZAToLNuLLA_4f_NLO                                                                        
 ```                                                                                                                                                                                                                         
- - Gridpack location: https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/gridpack/gridpack_path.txt
+ - [gridpack location](https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/gridpack/gridpack_path.txt)
+ - [run/proc cards](https://github.com/ico1036/WVA_study/tree/master/Sample_Generation/cards)
  
