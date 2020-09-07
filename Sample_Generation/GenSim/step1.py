@@ -12,9 +12,9 @@ import FWCore.ParameterSet.Config as cms
 # gridpack_path = "/x5/cms/jwkim/WZA_gridpack_store/WZAToLNuLLA_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
 
 ## p p > l nl a l+ l-
-gridpack_path = "/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+gridpack_path = "/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
 
-maxEvent = 5
+maxEvent = 250
 ###<---------------------------------------------------------------------------------
 
 
