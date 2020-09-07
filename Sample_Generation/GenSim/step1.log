@@ -3,12 +3,12 @@
    ______________________________________     
          Running Generic Tarball/Gridpack     
    ______________________________________     
-gridpack tarball path = /x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
-%MSG-MG5 number of events requested = 5
-%MSG-MG5 random seed used for the run = 515386013
+gridpack tarball path = /x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+%MSG-MG5 number of events requested = 250
+%MSG-MG5 random seed used for the run = 557742013
 %MSG-MG5 residual arguments = 
-%MSG-MG5 number of events requested = 5
-%MSG-MG5 random seed used for the run = 515386013
+%MSG-MG5 number of events requested = 250
+%MSG-MG5 random seed used for the run = 557742013
 %MSG-MG5 number of cpus = 1
 %MSG-MG5 SCRAM_ARCH version = slc6_amd64_gcc630
 %MSG-MG5 CMSSW version = CMSSW_9_3_16
@@ -136,7 +136,7 @@ Do you want to edit a card (press enter to bypass editing)?
    - call an external program (ASperGE/MadWidth/...).
      Type 'help' for the list of available command
  [[4m0[0m, done, 1, param, 2, run, enter path][90s to answer] 
->[1mINFO: modify parameter nevents of the run_card.dat to 5 [0m
+>[1mINFO: modify parameter nevents of the run_card.dat to 250 [0m
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
 |  [31m1[0m. param : [32mparam_card.dat[0m                                 |
@@ -150,7 +150,7 @@ Do you want to edit a card (press enter to bypass editing)?
    - call an external program (ASperGE/MadWidth/...).
      Type 'help' for the list of available command
  [[4m0[0m, done, 1, param, 2, run, enter path] 
->[1mINFO: modify parameter iseed of the run_card.dat to 515386013 [0m
+>[1mINFO: modify parameter iseed of the run_card.dat to 557742013 [0m
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
 |  [31m1[0m. param : [32mparam_card.dat[0m                                 |
@@ -164,7 +164,7 @@ Do you want to edit a card (press enter to bypass editing)?
    - call an external program (ASperGE/MadWidth/...).
      Type 'help' for the list of available command
  [[4m0[0m, done, 1, param, 2, run, enter path] 
->[1mINFO: modify parameter nevt_job of the run_card.dat to 10 [0m
+>[1mINFO: modify parameter nevt_job of the run_card.dat to 250 [0m
 Do you want to edit a card (press enter to bypass editing)?
 /------------------------------------------------------------\
 |  [31m1[0m. param : [32mparam_card.dat[0m                                 |
@@ -187,24 +187,344 @@ INFO: Generating events without running the shower.
 INFO: Updating the number of unweighted events per channel
 
       Intermediate results:
-      Random seed: 515386013
+      Random seed: 557742013
       Total cross section:      1.188e-02 +- 1.1e-05 pb
       Total abs(cross section): 1.387e-02 +- 1.1e-05 pb 
 
  
 INFO: Generating events 
-INFO:  Idle: 0,  Running: 1,  Completed: 4 [ current time: 15h29 ] 
-INFO:  Idle: 0,  Running: 0,  Completed: 5 [  0.27s  ] 
+INFO:  Idle: 168,  Running: 1,  Completed: 3 [ current time: 11h25 ] 
+INFO:  Idle: 167,  Running: 1,  Completed: 4 [  0.22s  ] 
+INFO:  Idle: 166,  Running: 1,  Completed: 5 [  0.69s  ] 
+INFO:  Idle: 165,  Running: 1,  Completed: 6 [  1.3s  ] 
+INFO:  Idle: 164,  Running: 1,  Completed: 7 [  1.5s  ] 
+INFO:  Idle: 163,  Running: 1,  Completed: 8 [  1.9s  ] 
+INFO:  Idle: 162,  Running: 1,  Completed: 9 [  2.3s  ] 
+INFO:  Idle: 161,  Running: 1,  Completed: 10 [  3.2s  ] 
+INFO:  Idle: 160,  Running: 1,  Completed: 11 [  3.7s  ] 
+INFO:  Idle: 159,  Running: 1,  Completed: 12 [  4.1s  ] 
+INFO:  Idle: 158,  Running: 1,  Completed: 13 [  4.4s  ] 
+INFO:  Idle: 157,  Running: 1,  Completed: 14 [  5s  ] 
+INFO:  Idle: 156,  Running: 1,  Completed: 15 [  5.2s  ] 
+INFO:  Idle: 155,  Running: 1,  Completed: 16 [  5.5s  ] 
+INFO:  Idle: 154,  Running: 1,  Completed: 17 [  5.9s  ] 
+INFO:  Idle: 153,  Running: 1,  Completed: 18 [  6.1s  ] 
+INFO:  Idle: 152,  Running: 1,  Completed: 19 [  6.5s  ] 
+INFO:  Idle: 151,  Running: 1,  Completed: 20 [  6.8s  ] 
+INFO:  Idle: 150,  Running: 1,  Completed: 21 [  7s  ] 
+INFO:  Idle: 149,  Running: 1,  Completed: 22 [  7.3s  ] 
+INFO:  Idle: 148,  Running: 1,  Completed: 23 [  7.5s  ] 
+INFO:  Idle: 147,  Running: 1,  Completed: 24 [  7.8s  ] 
+INFO:  Idle: 146,  Running: 1,  Completed: 25 [  7.9s  ] 
+INFO:  Idle: 145,  Running: 1,  Completed: 26 [  8.2s  ] 
+INFO:  Idle: 144,  Running: 1,  Completed: 27 [  8.4s  ] 
+INFO:  Idle: 143,  Running: 1,  Completed: 28 [  8.8s  ] 
+INFO:  Idle: 142,  Running: 1,  Completed: 29 [  9.2s  ] 
+INFO:  Idle: 141,  Running: 1,  Completed: 30 [  9.7s  ] 
+INFO:  Idle: 140,  Running: 1,  Completed: 31 [  10.1s  ] 
+INFO:  Idle: 139,  Running: 1,  Completed: 32 [  11.6s  ] 
+INFO:  Idle: 138,  Running: 1,  Completed: 33 [  12.1s  ] 
+INFO:  Idle: 137,  Running: 1,  Completed: 34 [  12.5s  ] 
+INFO:  Idle: 136,  Running: 1,  Completed: 35 [  12.7s  ] 
+INFO:  Idle: 135,  Running: 1,  Completed: 36 [  12.8s  ] 
+INFO:  Idle: 134,  Running: 1,  Completed: 37 [  13.1s  ] 
+INFO:  Idle: 133,  Running: 1,  Completed: 38 [  13.5s  ] 
+INFO:  Idle: 132,  Running: 1,  Completed: 39 [  13.7s  ] 
+INFO:  Idle: 131,  Running: 1,  Completed: 40 [  14.1s  ] 
+INFO:  Idle: 130,  Running: 1,  Completed: 41 [  14.3s  ] 
+INFO:  Idle: 129,  Running: 1,  Completed: 42 [  14.6s  ] 
+INFO:  Idle: 128,  Running: 1,  Completed: 43 [  14.8s  ] 
+INFO:  Idle: 127,  Running: 1,  Completed: 44 [  15.1s  ] 
+INFO:  Idle: 126,  Running: 1,  Completed: 45 [  15.3s  ] 
+INFO:  Idle: 125,  Running: 1,  Completed: 46 [  15.5s  ] 
+INFO:  Idle: 124,  Running: 1,  Completed: 47 [  15.9s  ] 
+INFO:  Idle: 123,  Running: 1,  Completed: 48 [  16.2s  ] 
+INFO:  Idle: 122,  Running: 1,  Completed: 49 [  16.5s  ] 
+INFO:  Idle: 121,  Running: 1,  Completed: 50 [  17.2s  ] 
+INFO:  Idle: 120,  Running: 1,  Completed: 51 [  17.5s  ] 
+INFO:  Idle: 119,  Running: 1,  Completed: 52 [  17.9s  ] 
+INFO:  Idle: 118,  Running: 1,  Completed: 53 [  18.2s  ] 
+INFO:  Idle: 117,  Running: 1,  Completed: 54 [  18.4s  ] 
+INFO:  Idle: 116,  Running: 1,  Completed: 55 [  18.6s  ] 
+INFO:  Idle: 115,  Running: 1,  Completed: 56 [  18.8s  ] 
+INFO:  Idle: 114,  Running: 1,  Completed: 57 [  19.1s  ] 
+INFO:  Idle: 113,  Running: 1,  Completed: 58 [  19.3s  ] 
+INFO:  Idle: 112,  Running: 1,  Completed: 59 [  19.5s  ] 
+INFO:  Idle: 111,  Running: 1,  Completed: 60 [  20.2s  ] 
+INFO:  Idle: 110,  Running: 1,  Completed: 61 [  20.4s  ] 
+INFO:  Idle: 109,  Running: 1,  Completed: 62 [  20.7s  ] 
+INFO:  Idle: 108,  Running: 1,  Completed: 63 [  20.8s  ] 
+INFO:  Idle: 107,  Running: 1,  Completed: 64 [  21s  ] 
+INFO:  Idle: 106,  Running: 1,  Completed: 65 [  21.1s  ] 
+INFO:  Idle: 105,  Running: 1,  Completed: 66 [  21.5s  ] 
+INFO:  Idle: 104,  Running: 1,  Completed: 67 [  21.9s  ] 
+INFO:  Idle: 103,  Running: 1,  Completed: 68 [  22.2s  ] 
+INFO:  Idle: 102,  Running: 1,  Completed: 69 [  22.8s  ] 
+INFO:  Idle: 101,  Running: 1,  Completed: 70 [  23s  ] 
+INFO:  Idle: 100,  Running: 1,  Completed: 71 [  23.3s  ] 
+INFO:  Idle: 99,  Running: 1,  Completed: 72 [  23.5s  ] 
+INFO:  Idle: 98,  Running: 1,  Completed: 73 [  23.8s  ] 
+INFO:  Idle: 97,  Running: 1,  Completed: 74 [  24.1s  ] 
+INFO:  Idle: 96,  Running: 1,  Completed: 75 [  25.1s  ] 
+INFO:  Idle: 95,  Running: 1,  Completed: 76 [  25.4s  ] 
+INFO:  Idle: 94,  Running: 1,  Completed: 77 [  25.6s  ] 
+INFO:  Idle: 93,  Running: 1,  Completed: 78 [  26s  ] 
+INFO:  Idle: 92,  Running: 1,  Completed: 79 [  26.4s  ] 
+INFO:  Idle: 91,  Running: 1,  Completed: 80 [  26.7s  ] 
+INFO:  Idle: 90,  Running: 1,  Completed: 81 [  27.3s  ] 
+INFO:  Idle: 89,  Running: 1,  Completed: 82 [  27.5s  ] 
+INFO:  Idle: 88,  Running: 1,  Completed: 83 [  27.7s  ] 
+INFO:  Idle: 87,  Running: 1,  Completed: 84 [  28.2s  ] 
+INFO:  Idle: 86,  Running: 1,  Completed: 85 [  28.7s  ] 
+INFO:  Idle: 85,  Running: 1,  Completed: 86 [  29s  ] 
+INFO:  Idle: 84,  Running: 1,  Completed: 87 [  29.2s  ] 
+INFO:  Idle: 83,  Running: 1,  Completed: 88 [  29.4s  ] 
+INFO:  Idle: 82,  Running: 1,  Completed: 89 [  30.8s  ] 
+INFO:  Idle: 81,  Running: 1,  Completed: 90 [  31s  ] 
+INFO:  Idle: 80,  Running: 1,  Completed: 91 [  31.2s  ] 
+INFO:  Idle: 79,  Running: 1,  Completed: 92 [  31.4s  ] 
+INFO:  Idle: 78,  Running: 1,  Completed: 93 [  31.7s  ] 
+INFO:  Idle: 77,  Running: 1,  Completed: 94 [  32.4s  ] 
+INFO:  Idle: 76,  Running: 1,  Completed: 95 [  32.6s  ] 
+INFO:  Idle: 75,  Running: 1,  Completed: 96 [  32.8s  ] 
+INFO:  Idle: 74,  Running: 1,  Completed: 97 [  33.2s  ] 
+INFO:  Idle: 73,  Running: 1,  Completed: 98 [  33.4s  ] 
+INFO:  Idle: 72,  Running: 1,  Completed: 99 [  34.3s  ] 
+INFO:  Idle: 71,  Running: 1,  Completed: 100 [  34.9s  ] 
+INFO:  Idle: 70,  Running: 1,  Completed: 101 [  35s  ] 
+INFO:  Idle: 69,  Running: 1,  Completed: 102 [  35.4s  ] 
+INFO:  Idle: 68,  Running: 1,  Completed: 103 [  35.7s  ] 
+INFO:  Idle: 67,  Running: 1,  Completed: 104 [  35.9s  ] 
+INFO:  Idle: 66,  Running: 1,  Completed: 105 [  36.5s  ] 
+INFO:  Idle: 65,  Running: 1,  Completed: 106 [  36.6s  ] 
+INFO:  Idle: 64,  Running: 1,  Completed: 107 [  36.9s  ] 
+INFO:  Idle: 63,  Running: 1,  Completed: 108 [  37.2s  ] 
+INFO:  Idle: 62,  Running: 1,  Completed: 109 [  37.3s  ] 
+INFO:  Idle: 61,  Running: 1,  Completed: 110 [  37.4s  ] 
+INFO:  Idle: 60,  Running: 1,  Completed: 111 [  37.7s  ] 
+INFO:  Idle: 59,  Running: 1,  Completed: 112 [  38.1s  ] 
+INFO:  Idle: 58,  Running: 1,  Completed: 113 [  38.3s  ] 
+INFO:  Idle: 57,  Running: 1,  Completed: 114 [  38.5s  ] 
+INFO:  Idle: 56,  Running: 1,  Completed: 115 [  39.1s  ] 
+INFO:  Idle: 55,  Running: 1,  Completed: 116 [  39.3s  ] 
+INFO:  Idle: 54,  Running: 1,  Completed: 117 [  39.4s  ] 
+INFO:  Idle: 53,  Running: 1,  Completed: 118 [  39.6s  ] 
+INFO:  Idle: 52,  Running: 1,  Completed: 119 [  40.1s  ] 
+INFO:  Idle: 51,  Running: 1,  Completed: 120 [  40.3s  ] 
+INFO:  Idle: 50,  Running: 1,  Completed: 121 [  40.5s  ] 
+INFO:  Idle: 49,  Running: 1,  Completed: 122 [  40.7s  ] 
+INFO:  Idle: 48,  Running: 1,  Completed: 123 [  41s  ] 
+INFO:  Idle: 47,  Running: 1,  Completed: 124 [  41.1s  ] 
+INFO:  Idle: 46,  Running: 1,  Completed: 125 [  41.5s  ] 
+INFO:  Idle: 45,  Running: 1,  Completed: 126 [  41.9s  ] 
+INFO:  Idle: 44,  Running: 1,  Completed: 127 [  42s  ] 
+INFO:  Idle: 43,  Running: 1,  Completed: 128 [  42.2s  ] 
+INFO:  Idle: 42,  Running: 1,  Completed: 129 [  42.4s  ] 
+INFO:  Idle: 41,  Running: 1,  Completed: 130 [  42.6s  ] 
+INFO:  Idle: 40,  Running: 1,  Completed: 131 [  43s  ] 
+INFO:  Idle: 39,  Running: 1,  Completed: 132 [  43.3s  ] 
+INFO:  Idle: 38,  Running: 1,  Completed: 133 [  43.6s  ] 
+INFO:  Idle: 37,  Running: 1,  Completed: 134 [  43.9s  ] 
+INFO:  Idle: 36,  Running: 1,  Completed: 135 [  44s  ] 
+INFO:  Idle: 35,  Running: 1,  Completed: 136 [  44.3s  ] 
+INFO:  Idle: 34,  Running: 1,  Completed: 137 [  44.5s  ] 
+INFO:  Idle: 33,  Running: 1,  Completed: 138 [  44.7s  ] 
+INFO:  Idle: 32,  Running: 1,  Completed: 139 [  44.9s  ] 
+INFO:  Idle: 31,  Running: 1,  Completed: 140 [  45.3s  ] 
+INFO:  Idle: 30,  Running: 1,  Completed: 141 [  45.4s  ] 
+INFO:  Idle: 29,  Running: 1,  Completed: 142 [  45.8s  ] 
+INFO:  Idle: 28,  Running: 1,  Completed: 143 [  46s  ] 
+INFO:  Idle: 27,  Running: 1,  Completed: 144 [  46.1s  ] 
+INFO:  Idle: 26,  Running: 1,  Completed: 145 [  46.7s  ] 
+INFO:  Idle: 25,  Running: 1,  Completed: 146 [  47.1s  ] 
+INFO:  Idle: 24,  Running: 1,  Completed: 147 [  47.3s  ] 
+INFO:  Idle: 23,  Running: 1,  Completed: 148 [  47.5s  ] 
+INFO:  Idle: 22,  Running: 1,  Completed: 149 [  47.7s  ] 
+INFO:  Idle: 21,  Running: 1,  Completed: 150 [  47.9s  ] 
+INFO:  Idle: 20,  Running: 1,  Completed: 151 [  48.2s  ] 
+INFO:  Idle: 19,  Running: 1,  Completed: 152 [  48.4s  ] 
+INFO:  Idle: 18,  Running: 1,  Completed: 153 [  48.6s  ] 
+INFO:  Idle: 17,  Running: 1,  Completed: 154 [  48.8s  ] 
+INFO:  Idle: 16,  Running: 1,  Completed: 155 [  48.9s  ] 
+INFO:  Idle: 15,  Running: 1,  Completed: 156 [  49.3s  ] 
+INFO:  Idle: 14,  Running: 1,  Completed: 157 [  49.5s  ] 
+INFO:  Idle: 13,  Running: 1,  Completed: 158 [  49.8s  ] 
+INFO:  Idle: 12,  Running: 1,  Completed: 159 [  50.3s  ] 
+INFO:  Idle: 11,  Running: 1,  Completed: 160 [  50.5s  ] 
+INFO:  Idle: 10,  Running: 1,  Completed: 161 [  50.7s  ] 
+INFO:  Idle: 9,  Running: 1,  Completed: 162 [  51s  ] 
+INFO:  Idle: 8,  Running: 1,  Completed: 163 [  51.2s  ] 
+INFO:  Idle: 7,  Running: 1,  Completed: 164 [  51.8s  ] 
+INFO:  Idle: 6,  Running: 1,  Completed: 165 [  52.2s  ] 
+INFO:  Idle: 5,  Running: 1,  Completed: 166 [  52.6s  ] 
+INFO:  Idle: 4,  Running: 1,  Completed: 167 [  52.8s  ] 
+INFO:  Idle: 3,  Running: 1,  Completed: 168 [  53.1s  ] 
+INFO:  Idle: 2,  Running: 1,  Completed: 169 [  54.2s  ] 
+INFO:  Idle: 1,  Running: 1,  Completed: 170 [  54.5s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 171 [  54.7s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 172 [  54.9s  ] 
 INFO:    Doing reweight 
-INFO:  Idle: 0,  Running: 0,  Completed: 5 [ current time: 15h29 ] 
+INFO:  Idle: 151,  Running: 1,  Completed: 20 [ current time: 11h26 ] 
+INFO:  Idle: 150,  Running: 1,  Completed: 21 [  0.036s  ] 
+INFO:  Idle: 149,  Running: 1,  Completed: 22 [  0.1s  ] 
+INFO:  Idle: 148,  Running: 1,  Completed: 23 [  0.14s  ] 
+INFO:  Idle: 147,  Running: 1,  Completed: 24 [  0.21s  ] 
+INFO:  Idle: 146,  Running: 1,  Completed: 25 [  0.24s  ] 
+INFO:  Idle: 145,  Running: 1,  Completed: 26 [  0.31s  ] 
+INFO:  Idle: 144,  Running: 1,  Completed: 27 [  0.38s  ] 
+INFO:  Idle: 143,  Running: 1,  Completed: 28 [  0.41s  ] 
+INFO:  Idle: 142,  Running: 1,  Completed: 29 [  0.48s  ] 
+INFO:  Idle: 141,  Running: 1,  Completed: 30 [  0.51s  ] 
+INFO:  Idle: 140,  Running: 1,  Completed: 31 [  0.58s  ] 
+INFO:  Idle: 139,  Running: 1,  Completed: 32 [  0.62s  ] 
+INFO:  Idle: 138,  Running: 1,  Completed: 33 [  0.69s  ] 
+INFO:  Idle: 137,  Running: 1,  Completed: 34 [  0.75s  ] 
+INFO:  Idle: 136,  Running: 1,  Completed: 35 [  0.79s  ] 
+INFO:  Idle: 135,  Running: 1,  Completed: 36 [  0.82s  ] 
+INFO:  Idle: 134,  Running: 1,  Completed: 37 [  0.89s  ] 
+INFO:  Idle: 133,  Running: 1,  Completed: 38 [  0.96s  ] 
+INFO:  Idle: 132,  Running: 1,  Completed: 39 [  1s  ] 
+INFO:  Idle: 131,  Running: 1,  Completed: 40 [  1.1s  ] 
+INFO:  Idle: 130,  Running: 1,  Completed: 41 [  1.1s  ] 
+INFO:  Idle: 129,  Running: 1,  Completed: 42 [  1.2s  ] 
+INFO:  Idle: 128,  Running: 1,  Completed: 43 [  1.2s  ] 
+INFO:  Idle: 127,  Running: 1,  Completed: 44 [  1.3s  ] 
+INFO:  Idle: 126,  Running: 1,  Completed: 45 [  1.3s  ] 
+INFO:  Idle: 125,  Running: 1,  Completed: 46 [  1.4s  ] 
+INFO:  Idle: 124,  Running: 1,  Completed: 47 [  1.4s  ] 
+INFO:  Idle: 123,  Running: 1,  Completed: 48 [  1.5s  ] 
+INFO:  Idle: 122,  Running: 1,  Completed: 49 [  1.5s  ] 
+INFO:  Idle: 121,  Running: 1,  Completed: 50 [  1.6s  ] 
+INFO:  Idle: 120,  Running: 1,  Completed: 51 [  1.6s  ] 
+INFO:  Idle: 119,  Running: 1,  Completed: 52 [  1.7s  ] 
+INFO:  Idle: 118,  Running: 1,  Completed: 53 [  1.7s  ] 
+INFO:  Idle: 117,  Running: 1,  Completed: 54 [  1.8s  ] 
+INFO:  Idle: 116,  Running: 1,  Completed: 55 [  1.9s  ] 
+INFO:  Idle: 115,  Running: 1,  Completed: 56 [  1.9s  ] 
+INFO:  Idle: 114,  Running: 1,  Completed: 57 [  2s  ] 
+INFO:  Idle: 113,  Running: 1,  Completed: 58 [  2s  ] 
+INFO:  Idle: 112,  Running: 1,  Completed: 59 [  2.1s  ] 
+INFO:  Idle: 111,  Running: 1,  Completed: 60 [  2.1s  ] 
+INFO:  Idle: 110,  Running: 1,  Completed: 61 [  2.2s  ] 
+INFO:  Idle: 109,  Running: 1,  Completed: 62 [  2.2s  ] 
+INFO:  Idle: 108,  Running: 1,  Completed: 63 [  2.3s  ] 
+INFO:  Idle: 107,  Running: 1,  Completed: 64 [  2.3s  ] 
+INFO:  Idle: 106,  Running: 1,  Completed: 65 [  2.4s  ] 
+INFO:  Idle: 105,  Running: 1,  Completed: 66 [  2.4s  ] 
+INFO:  Idle: 104,  Running: 1,  Completed: 67 [  2.5s  ] 
+INFO:  Idle: 103,  Running: 1,  Completed: 68 [  2.5s  ] 
+INFO:  Idle: 102,  Running: 1,  Completed: 69 [  2.6s  ] 
+INFO:  Idle: 101,  Running: 1,  Completed: 70 [  2.6s  ] 
+INFO:  Idle: 100,  Running: 1,  Completed: 71 [  2.7s  ] 
+INFO:  Idle: 99,  Running: 1,  Completed: 72 [  3.8s  ] 
+INFO:  Idle: 98,  Running: 1,  Completed: 73 [  3.9s  ] 
+INFO:  Idle: 97,  Running: 1,  Completed: 74 [  4s  ] 
+INFO:  Idle: 96,  Running: 1,  Completed: 75 [  4.1s  ] 
+INFO:  Idle: 95,  Running: 1,  Completed: 76 [  4.1s  ] 
+INFO:  Idle: 94,  Running: 1,  Completed: 77 [  4.2s  ] 
+INFO:  Idle: 93,  Running: 1,  Completed: 78 [  4.3s  ] 
+INFO:  Idle: 92,  Running: 1,  Completed: 79 [  4.3s  ] 
+INFO:  Idle: 91,  Running: 1,  Completed: 80 [  4.4s  ] 
+INFO:  Idle: 90,  Running: 1,  Completed: 81 [  4.4s  ] 
+INFO:  Idle: 89,  Running: 1,  Completed: 82 [  4.4s  ] 
+INFO:  Idle: 88,  Running: 1,  Completed: 83 [  4.5s  ] 
+INFO:  Idle: 87,  Running: 1,  Completed: 84 [  4.5s  ] 
+INFO:  Idle: 86,  Running: 1,  Completed: 85 [  4.6s  ] 
+INFO:  Idle: 85,  Running: 1,  Completed: 86 [  4.6s  ] 
+INFO:  Idle: 84,  Running: 1,  Completed: 87 [  4.7s  ] 
+INFO:  Idle: 83,  Running: 1,  Completed: 88 [  4.8s  ] 
+INFO:  Idle: 82,  Running: 1,  Completed: 89 [  4.8s  ] 
+INFO:  Idle: 81,  Running: 1,  Completed: 90 [  4.9s  ] 
+INFO:  Idle: 80,  Running: 1,  Completed: 91 [  4.9s  ] 
+INFO:  Idle: 79,  Running: 1,  Completed: 92 [  5s  ] 
+INFO:  Idle: 78,  Running: 1,  Completed: 93 [  5s  ] 
+INFO:  Idle: 77,  Running: 1,  Completed: 94 [  5.1s  ] 
+INFO:  Idle: 76,  Running: 1,  Completed: 95 [  5.1s  ] 
+INFO:  Idle: 75,  Running: 1,  Completed: 96 [  5.2s  ] 
+INFO:  Idle: 74,  Running: 1,  Completed: 97 [  5.2s  ] 
+INFO:  Idle: 73,  Running: 1,  Completed: 98 [  5.3s  ] 
+INFO:  Idle: 72,  Running: 1,  Completed: 99 [  5.3s  ] 
+INFO:  Idle: 71,  Running: 1,  Completed: 100 [  5.4s  ] 
+INFO:  Idle: 70,  Running: 1,  Completed: 101 [  5.4s  ] 
+INFO:  Idle: 69,  Running: 1,  Completed: 102 [  5.5s  ] 
+INFO:  Idle: 68,  Running: 1,  Completed: 103 [  5.5s  ] 
+INFO:  Idle: 67,  Running: 1,  Completed: 104 [  5.6s  ] 
+INFO:  Idle: 66,  Running: 1,  Completed: 105 [  5.6s  ] 
+INFO:  Idle: 65,  Running: 1,  Completed: 106 [  5.7s  ] 
+INFO:  Idle: 64,  Running: 1,  Completed: 107 [  5.7s  ] 
+INFO:  Idle: 63,  Running: 1,  Completed: 108 [  5.8s  ] 
+INFO:  Idle: 62,  Running: 1,  Completed: 109 [  5.8s  ] 
+INFO:  Idle: 61,  Running: 1,  Completed: 110 [  5.9s  ] 
+INFO:  Idle: 60,  Running: 1,  Completed: 111 [  5.9s  ] 
+INFO:  Idle: 59,  Running: 1,  Completed: 112 [  6s  ] 
+INFO:  Idle: 58,  Running: 1,  Completed: 113 [  6.1s  ] 
+INFO:  Idle: 57,  Running: 1,  Completed: 114 [  6.1s  ] 
+INFO:  Idle: 56,  Running: 1,  Completed: 115 [  6.2s  ] 
+INFO:  Idle: 55,  Running: 1,  Completed: 116 [  6.2s  ] 
+INFO:  Idle: 54,  Running: 1,  Completed: 117 [  6.3s  ] 
+INFO:  Idle: 53,  Running: 1,  Completed: 118 [  6.3s  ] 
+INFO:  Idle: 52,  Running: 1,  Completed: 119 [  6.4s  ] 
+INFO:  Idle: 51,  Running: 1,  Completed: 120 [  6.4s  ] 
+INFO:  Idle: 50,  Running: 1,  Completed: 121 [  6.5s  ] 
+INFO:  Idle: 49,  Running: 1,  Completed: 122 [  6.5s  ] 
+INFO:  Idle: 48,  Running: 1,  Completed: 123 [  6.6s  ] 
+INFO:  Idle: 47,  Running: 1,  Completed: 124 [  6.6s  ] 
+INFO:  Idle: 46,  Running: 1,  Completed: 125 [  6.7s  ] 
+INFO:  Idle: 45,  Running: 1,  Completed: 126 [  6.7s  ] 
+INFO:  Idle: 44,  Running: 1,  Completed: 127 [  6.8s  ] 
+INFO:  Idle: 43,  Running: 1,  Completed: 128 [  6.8s  ] 
+INFO:  Idle: 42,  Running: 1,  Completed: 129 [  6.9s  ] 
+INFO:  Idle: 41,  Running: 1,  Completed: 130 [  7s  ] 
+INFO:  Idle: 40,  Running: 1,  Completed: 131 [  7s  ] 
+INFO:  Idle: 39,  Running: 1,  Completed: 132 [  7.1s  ] 
+INFO:  Idle: 38,  Running: 1,  Completed: 133 [  7.1s  ] 
+INFO:  Idle: 37,  Running: 1,  Completed: 134 [  7.2s  ] 
+INFO:  Idle: 36,  Running: 1,  Completed: 135 [  7.2s  ] 
+INFO:  Idle: 35,  Running: 1,  Completed: 136 [  7.3s  ] 
+INFO:  Idle: 34,  Running: 1,  Completed: 137 [  7.4s  ] 
+INFO:  Idle: 33,  Running: 1,  Completed: 138 [  7.4s  ] 
+INFO:  Idle: 32,  Running: 1,  Completed: 139 [  7.4s  ] 
+INFO:  Idle: 31,  Running: 1,  Completed: 140 [  7.5s  ] 
+INFO:  Idle: 30,  Running: 1,  Completed: 141 [  7.5s  ] 
+INFO:  Idle: 29,  Running: 1,  Completed: 142 [  7.6s  ] 
+INFO:  Idle: 28,  Running: 1,  Completed: 143 [  7.6s  ] 
+INFO:  Idle: 27,  Running: 1,  Completed: 144 [  7.7s  ] 
+INFO:  Idle: 26,  Running: 1,  Completed: 145 [  7.7s  ] 
+INFO:  Idle: 25,  Running: 1,  Completed: 146 [  7.8s  ] 
+INFO:  Idle: 24,  Running: 1,  Completed: 147 [  7.8s  ] 
+INFO:  Idle: 23,  Running: 1,  Completed: 148 [  7.9s  ] 
+INFO:  Idle: 22,  Running: 1,  Completed: 149 [  7.9s  ] 
+INFO:  Idle: 21,  Running: 1,  Completed: 150 [  8s  ] 
+INFO:  Idle: 20,  Running: 1,  Completed: 151 [  8s  ] 
+INFO:  Idle: 19,  Running: 1,  Completed: 152 [  8.1s  ] 
+INFO:  Idle: 18,  Running: 1,  Completed: 153 [  8.1s  ] 
+INFO:  Idle: 17,  Running: 1,  Completed: 154 [  8.2s  ] 
+INFO:  Idle: 16,  Running: 1,  Completed: 155 [  8.2s  ] 
+INFO:  Idle: 15,  Running: 1,  Completed: 156 [  8.3s  ] 
+INFO:  Idle: 14,  Running: 1,  Completed: 157 [  8.3s  ] 
+INFO:  Idle: 13,  Running: 1,  Completed: 158 [  8.4s  ] 
+INFO:  Idle: 12,  Running: 1,  Completed: 159 [  8.5s  ] 
+INFO:  Idle: 11,  Running: 1,  Completed: 160 [  8.5s  ] 
+INFO:  Idle: 10,  Running: 1,  Completed: 161 [  8.6s  ] 
+INFO:  Idle: 9,  Running: 1,  Completed: 162 [  8.6s  ] 
+INFO:  Idle: 8,  Running: 1,  Completed: 163 [  8.7s  ] 
+INFO:  Idle: 7,  Running: 1,  Completed: 164 [  8.7s  ] 
+INFO:  Idle: 6,  Running: 1,  Completed: 165 [  8.8s  ] 
+INFO:  Idle: 5,  Running: 1,  Completed: 166 [  8.8s  ] 
+INFO:  Idle: 4,  Running: 1,  Completed: 167 [  8.9s  ] 
+INFO:  Idle: 3,  Running: 1,  Completed: 168 [  8.9s  ] 
+INFO:  Idle: 2,  Running: 1,  Completed: 169 [  9s  ] 
+INFO:  Idle: 1,  Running: 1,  Completed: 170 [  9s  ] 
+INFO:  Idle: 0,  Running: 1,  Completed: 171 [  9.1s  ] 
+INFO:  Idle: 0,  Running: 0,  Completed: 172 [  9.1s  ] 
 INFO: Collecting events 
 INFO: 
    --------------------------------------------------------------
       Summary:
       Process p p > lep nu l+ l- a [QCD] @0
       Run at p-p collider (6500.0 + 6500.0 GeV)
-      Number of events generated: 5
-      Total cross section: 1.852e-04 +- 1.3e-06 pb
+      Number of events generated: 250
+      Total cross section: 5.851e-03 +- 8.6e-06 pb
    --------------------------------------------------------------
  
 INFO: The /x5/cms/jwkim/gitdir/WVG/Sample_Generation/GenSim/lheevent/process/Events/cmsgrid/events.lhe.gz file has been generated.
@@ -249,23 +569,23 @@ INFO: #Will Compute 983 weights per event.
 INFO: # currently at event 0 [elapsed time: 0.18 s] 
 INFO: #***************************************************************************
 #
-# original cross-section: 0.013868287
-#     scale variation: +3.27% -2.92%
-# PDF variation: +2.26% -2.26%
+# original cross-section: 0.011760307376
+#     scale variation: +5.86% -5.55%
+# PDF variation: +1.18% -1.18%
 #
-#PDF NNPDF31_nnlo_as_0118_nf_4: 0.0151082 +3.33% -3.33%
-#PDF MMHT2014nlo68cl_nf4: 0.0141848 +4.04% -3.07%
-#PDF MMHT2014nnlo68cl_nf4: 0.0142313 +3.09% -3.89%
-#PDF MSTW2008nlo68cl_nf4: 0.014045 +2.5% -2.17%
-#PDF NNPDF30_nlo_as_0118_nf_4: 0.0138685 +2.25% -2.25%
-#PDF MMHT2014nlo68clas118_nf4: 0.0141025 +3.63% -3.17%
-#PDF MSTW2008nnlo68cl_nf4: 0.0140207 +2.12% -1.87%
-#PDF MSTW2008lo68cl_nf4: 0.0134247 +1.69% -1.89%
-#PDF NNPDF31_nnlo_hessian_pdfas: 0.0148237 +3.1% -3.1%
-#PDF PDF4LHC15_nlo_nf4_30: 0.0139552 +3.16% -3.16%
-#PDF NNPDF31_nlo_as_0118_nf_4: 0.0151127 +2.87% -2.87%
-#PDF NNPDF31_nnlo_as_0118_nf_4_mc_hessian: 0.0146682 +3.36% -3.36%
-# PDF 292400 : 0.013997659388
+#PDF NNPDF31_nnlo_as_0118_nf_4: 0.0125421 +0.868% -0.868%
+#PDF MMHT2014nlo68cl_nf4: 0.012278 +1.33% -1.18%
+#PDF MMHT2014nnlo68cl_nf4: 0.0120792 +1.19% -1.34%
+#PDF MSTW2008nlo68cl_nf4: 0.0120052 +1.31% -1.11%
+#PDF NNPDF30_nlo_as_0118_nf_4: 0.0117603 +1.09% -1.09%
+#PDF MMHT2014nlo68clas118_nf4: 0.012113 +1.16% -1.22%
+#PDF MSTW2008nnlo68cl_nf4: 0.0119574 +1.05% -0.911%
+#PDF MSTW2008lo68cl_nf4: 0.0114582 +0.882% -1.33%
+#PDF NNPDF31_nnlo_hessian_pdfas: 0.0121534 +1.42% -1.42%
+#PDF PDF4LHC15_nlo_nf4_30: 0.0117905 +1.14% -1.14%
+#PDF NNPDF31_nlo_as_0118_nf_4: 0.0124056 +0.801% -0.801%
+#PDF NNPDF31_nnlo_as_0118_nf_4_mc_hessian: 0.0121407 +0.916% -0.916%
+# PDF 292400 : 0.0118912993784
 #***************************************************************************
  
 INFO: End of systematics computation 
@@ -277,17 +597,17 @@ Number of weights that are NaN:
 0
 All checks passed 
 
-total 640
-drwxr-xr-x 16 jwkim jwkim   4096 Sep  4 14:51 CMSSW_9_3_16
-drwxrwxr-x  2 jwkim jwkim     81 Sep  4 05:11 InputCards
--rw-rw-r--  1 jwkim jwkim 336716 Sep  4 14:52 cmsgrid_final.lhe
--rw-rw-r--  1 jwkim jwkim 293972 Sep  4 05:11 gridpack_generation.log
-drwxr-xr-x 16 jwkim jwkim   4096 Aug 31 16:40 mgbasedir
-drwxr-xr-x 12 jwkim jwkim   4096 Sep  4 14:52 process
--rwxrwxr-x  1 jwkim jwkim   5915 Sep  4 05:11 runcmsgrid.sh
-04-Sep-2020 15:30:05 KST  Initiating request to open LHE file cmsgrid_final.lhe
-04-Sep-2020 15:30:05 KST  Successfully opened LHE file cmsgrid_final.lhe
-%MSG-w LogicError:  Pythia8HadronizerFilter:generator@beginRun  04-Sep-2020 15:30:05 KST Run: 1
+total 9968
+drwxr-xr-x 16 jwkim jwkim    4096 Sep  7 10:47 CMSSW_9_3_16
+drwxrwxr-x  2 jwkim jwkim      81 Sep  5 04:12 InputCards
+-rw-rw-r--  1 jwkim jwkim 9886171 Sep  7 10:50 cmsgrid_final.lhe
+-rw-rw-r--  1 jwkim jwkim  296899 Sep  5 04:12 gridpack_generation.log
+drwxr-xr-x 16 jwkim jwkim    4096 Sep  1 14:30 mgbasedir
+drwxr-xr-x 12 jwkim jwkim    4096 Sep  7 10:50 process
+-rwxrwxr-x  1 jwkim jwkim    5915 Sep  5 04:12 runcmsgrid.sh
+07-Sep-2020 11:28:05 KST  Initiating request to open LHE file cmsgrid_final.lhe
+07-Sep-2020 11:28:05 KST  Successfully opened LHE file cmsgrid_final.lhe
+%MSG-w LogicError:  Pythia8HadronizerFilter:generator@beginRun  07-Sep-2020 11:28:06 KST Run: 1
 ::getByLabel: An attempt was made to read a Run product before endRun() was called.
 The product is of type 'LHERunInfoProduct'.
 The specified ModuleLabel was 'externalLHEProducer'.
@@ -310,7 +630,7 @@ Set Driver verbosity to -2
  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.226      |  | 
  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 26 Apr 2017  |  | 
  |  |   P       Y      T    H   H   I   A   A                                      |  | 
- |  |   P       Y      T    H   H  III  A   A    Now is 04 Sep 2020 at 15:30:56    |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 07 Sep 2020 at 11:28:51    |  | 
  |  |                                                                              |  | 
  |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
@@ -376,7 +696,7 @@ Set Driver verbosity to -2
  |  |   P  P   Y Y     T    H   H   I    A A     This is PYTHIA version 8.226      |  | 
  |  |   PPP     Y      T    HHHHH   I   AAAAA    Last date of change: 26 Apr 2017  |  | 
  |  |   P       Y      T    H   H   I   A   A                                      |  | 
- |  |   P       Y      T    H   H  III  A   A    Now is 04 Sep 2020 at 15:30:56    |  | 
+ |  |   P       Y      T    H   H  III  A   A    Now is 07 Sep 2020 at 11:28:51    |  | 
  |  |                                                                              |  | 
  |  |   Torbjorn Sjostrand;  Department of Astronomy and Theoretical Physics,      |  | 
  |  |      Lund University, Solvegatan 14A, SE-223 62 Lund, Sweden;                |  | 
@@ -475,7 +795,7 @@ Set Driver verbosity to -2
  |                                                                  | 
  |                   sigmaNonDiffractive =    56.79 mb              | 
  |                                                                  | 
- |    pT0 =  2.81 gives sigmaInteraction =   268.20 mb: accepted    | 
+ |    pT0 =  2.81 gives sigmaInteraction =   269.35 mb: accepted    | 
  |                                                                  | 
  *-------  End PYTHIA Multiparton Interactions Initialization  -----* 
 
@@ -1622,13 +1942,258 @@ Set Driver verbosity to -2
 
  --------  End PYTHIA Particle Data Table  -----------------------------------------------------------------------------------------
 
-Begin processing the 1st record. Run 1, Event 1, LumiSection 1 at 04-Sep-2020 15:30:57.987 KST
+Begin processing the 1st record. Run 1, Event 1, LumiSection 1 at 07-Sep-2020 11:28:53.382 KST
  PYTHIA Abort from Pythia::next: reached end of Les Houches Events File  
-Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 at 04-Sep-2020 15:30:58.024 KST
-Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 at 04-Sep-2020 15:30:58.193 KST
-Begin processing the 4th record. Run 1, Event 4, LumiSection 1 at 04-Sep-2020 15:30:58.218 KST
-Begin processing the 5th record. Run 1, Event 5, LumiSection 1 at 04-Sep-2020 15:30:58.231 KST
-04-Sep-2020 15:30:58 KST  Closed LHE file cmsgrid_final.lhe
+Begin processing the 2nd record. Run 1, Event 2, LumiSection 1 at 07-Sep-2020 11:28:53.391 KST
+Begin processing the 3rd record. Run 1, Event 3, LumiSection 1 at 07-Sep-2020 11:28:53.402 KST
+Begin processing the 4th record. Run 1, Event 4, LumiSection 1 at 07-Sep-2020 11:28:53.423 KST
+Begin processing the 5th record. Run 1, Event 5, LumiSection 1 at 07-Sep-2020 11:28:53.483 KST
+Begin processing the 6th record. Run 1, Event 6, LumiSection 1 at 07-Sep-2020 11:28:53.579 KST
+Begin processing the 7th record. Run 1, Event 7, LumiSection 1 at 07-Sep-2020 11:28:53.595 KST
+Begin processing the 8th record. Run 1, Event 8, LumiSection 1 at 07-Sep-2020 11:28:53.621 KST
+Begin processing the 9th record. Run 1, Event 9, LumiSection 1 at 07-Sep-2020 11:28:53.627 KST
+Begin processing the 10th record. Run 1, Event 10, LumiSection 1 at 07-Sep-2020 11:28:53.660 KST
+Begin processing the 11th record. Run 1, Event 11, LumiSection 1 at 07-Sep-2020 11:28:53.725 KST
+Begin processing the 12th record. Run 1, Event 12, LumiSection 1 at 07-Sep-2020 11:28:53.883 KST
+Begin processing the 13th record. Run 1, Event 13, LumiSection 1 at 07-Sep-2020 11:28:53.897 KST
+Begin processing the 14th record. Run 1, Event 14, LumiSection 1 at 07-Sep-2020 11:28:53.927 KST
+Begin processing the 15th record. Run 1, Event 15, LumiSection 1 at 07-Sep-2020 11:28:53.937 KST
+Begin processing the 16th record. Run 1, Event 16, LumiSection 1 at 07-Sep-2020 11:28:54.004 KST
+Begin processing the 17th record. Run 1, Event 17, LumiSection 1 at 07-Sep-2020 11:28:54.032 KST
+Begin processing the 18th record. Run 1, Event 18, LumiSection 1 at 07-Sep-2020 11:28:54.128 KST
+Begin processing the 19th record. Run 1, Event 19, LumiSection 1 at 07-Sep-2020 11:28:54.179 KST
+Begin processing the 20th record. Run 1, Event 20, LumiSection 1 at 07-Sep-2020 11:28:54.219 KST
+Begin processing the 21st record. Run 1, Event 21, LumiSection 1 at 07-Sep-2020 11:28:54.227 KST
+Begin processing the 22nd record. Run 1, Event 22, LumiSection 1 at 07-Sep-2020 11:28:54.261 KST
+Begin processing the 23rd record. Run 1, Event 23, LumiSection 1 at 07-Sep-2020 11:28:54.269 KST
+Begin processing the 24th record. Run 1, Event 24, LumiSection 1 at 07-Sep-2020 11:28:54.338 KST
+Begin processing the 25th record. Run 1, Event 25, LumiSection 1 at 07-Sep-2020 11:28:54.405 KST
+Begin processing the 26th record. Run 1, Event 26, LumiSection 1 at 07-Sep-2020 11:28:54.425 KST
+Begin processing the 27th record. Run 1, Event 27, LumiSection 1 at 07-Sep-2020 11:28:54.433 KST
+Begin processing the 28th record. Run 1, Event 28, LumiSection 1 at 07-Sep-2020 11:28:54.445 KST
+Begin processing the 29th record. Run 1, Event 29, LumiSection 1 at 07-Sep-2020 11:28:54.599 KST
+Begin processing the 30th record. Run 1, Event 30, LumiSection 1 at 07-Sep-2020 11:28:54.604 KST
+Begin processing the 31st record. Run 1, Event 31, LumiSection 1 at 07-Sep-2020 11:28:54.623 KST
+Begin processing the 32nd record. Run 1, Event 32, LumiSection 1 at 07-Sep-2020 11:28:54.630 KST
+Begin processing the 33rd record. Run 1, Event 33, LumiSection 1 at 07-Sep-2020 11:28:54.703 KST
+Begin processing the 34th record. Run 1, Event 34, LumiSection 1 at 07-Sep-2020 11:28:54.713 KST
+Begin processing the 35th record. Run 1, Event 35, LumiSection 1 at 07-Sep-2020 11:28:54.809 KST
+Begin processing the 36th record. Run 1, Event 36, LumiSection 1 at 07-Sep-2020 11:28:54.825 KST
+Begin processing the 37th record. Run 1, Event 37, LumiSection 1 at 07-Sep-2020 11:28:54.865 KST
+Begin processing the 38th record. Run 1, Event 38, LumiSection 1 at 07-Sep-2020 11:28:54.877 KST
+Begin processing the 39th record. Run 1, Event 39, LumiSection 1 at 07-Sep-2020 11:28:54.953 KST
+Begin processing the 40th record. Run 1, Event 40, LumiSection 1 at 07-Sep-2020 11:28:55.053 KST
+Begin processing the 41st record. Run 1, Event 41, LumiSection 1 at 07-Sep-2020 11:28:55.082 KST
+Begin processing the 42nd record. Run 1, Event 42, LumiSection 1 at 07-Sep-2020 11:28:55.181 KST
+Begin processing the 43rd record. Run 1, Event 43, LumiSection 1 at 07-Sep-2020 11:28:55.211 KST
+Begin processing the 44th record. Run 1, Event 44, LumiSection 1 at 07-Sep-2020 11:28:55.258 KST
+Begin processing the 45th record. Run 1, Event 45, LumiSection 1 at 07-Sep-2020 11:28:55.265 KST
+Begin processing the 46th record. Run 1, Event 46, LumiSection 1 at 07-Sep-2020 11:28:55.293 KST
+Begin processing the 47th record. Run 1, Event 47, LumiSection 1 at 07-Sep-2020 11:28:55.338 KST
+Begin processing the 48th record. Run 1, Event 48, LumiSection 1 at 07-Sep-2020 11:28:55.378 KST
+Begin processing the 49th record. Run 1, Event 49, LumiSection 1 at 07-Sep-2020 11:28:55.428 KST
+Begin processing the 50th record. Run 1, Event 50, LumiSection 1 at 07-Sep-2020 11:28:55.462 KST
+Begin processing the 51st record. Run 1, Event 51, LumiSection 1 at 07-Sep-2020 11:28:55.492 KST
+Begin processing the 52nd record. Run 1, Event 52, LumiSection 1 at 07-Sep-2020 11:28:55.536 KST
+Begin processing the 53rd record. Run 1, Event 53, LumiSection 1 at 07-Sep-2020 11:28:55.602 KST
+Begin processing the 54th record. Run 1, Event 54, LumiSection 1 at 07-Sep-2020 11:28:55.645 KST
+Begin processing the 55th record. Run 1, Event 55, LumiSection 1 at 07-Sep-2020 11:28:55.706 KST
+Begin processing the 56th record. Run 1, Event 56, LumiSection 1 at 07-Sep-2020 11:28:55.744 KST
+Begin processing the 57th record. Run 1, Event 57, LumiSection 1 at 07-Sep-2020 11:28:55.767 KST
+Begin processing the 58th record. Run 1, Event 58, LumiSection 1 at 07-Sep-2020 11:28:55.779 KST
+Begin processing the 59th record. Run 1, Event 59, LumiSection 1 at 07-Sep-2020 11:28:55.784 KST
+Begin processing the 60th record. Run 1, Event 60, LumiSection 1 at 07-Sep-2020 11:28:55.892 KST
+Begin processing the 61st record. Run 1, Event 61, LumiSection 1 at 07-Sep-2020 11:28:56.003 KST
+Begin processing the 62nd record. Run 1, Event 62, LumiSection 1 at 07-Sep-2020 11:28:56.016 KST
+Begin processing the 63rd record. Run 1, Event 63, LumiSection 1 at 07-Sep-2020 11:28:56.032 KST
+Begin processing the 64th record. Run 1, Event 64, LumiSection 1 at 07-Sep-2020 11:28:56.052 KST
+Begin processing the 65th record. Run 1, Event 65, LumiSection 1 at 07-Sep-2020 11:28:56.059 KST
+Begin processing the 66th record. Run 1, Event 66, LumiSection 1 at 07-Sep-2020 11:28:56.068 KST
+Begin processing the 67th record. Run 1, Event 67, LumiSection 1 at 07-Sep-2020 11:28:56.087 KST
+Begin processing the 68th record. Run 1, Event 68, LumiSection 1 at 07-Sep-2020 11:28:56.093 KST
+Begin processing the 69th record. Run 1, Event 69, LumiSection 1 at 07-Sep-2020 11:28:56.133 KST
+Begin processing the 70th record. Run 1, Event 70, LumiSection 1 at 07-Sep-2020 11:28:56.193 KST
+Begin processing the 71st record. Run 1, Event 71, LumiSection 1 at 07-Sep-2020 11:28:56.252 KST
+Begin processing the 72nd record. Run 1, Event 72, LumiSection 1 at 07-Sep-2020 11:28:56.272 KST
+Begin processing the 73rd record. Run 1, Event 73, LumiSection 1 at 07-Sep-2020 11:28:56.285 KST
+Begin processing the 74th record. Run 1, Event 74, LumiSection 1 at 07-Sep-2020 11:28:56.292 KST
+Begin processing the 75th record. Run 1, Event 75, LumiSection 1 at 07-Sep-2020 11:28:56.330 KST
+Begin processing the 76th record. Run 1, Event 76, LumiSection 1 at 07-Sep-2020 11:28:56.346 KST
+Begin processing the 77th record. Run 1, Event 77, LumiSection 1 at 07-Sep-2020 11:28:56.391 KST
+Begin processing the 78th record. Run 1, Event 78, LumiSection 1 at 07-Sep-2020 11:28:56.411 KST
+Begin processing the 79th record. Run 1, Event 79, LumiSection 1 at 07-Sep-2020 11:28:56.432 KST
+Begin processing the 80th record. Run 1, Event 80, LumiSection 1 at 07-Sep-2020 11:28:56.444 KST
+Begin processing the 81st record. Run 1, Event 81, LumiSection 1 at 07-Sep-2020 11:28:56.462 KST
+Begin processing the 82nd record. Run 1, Event 82, LumiSection 1 at 07-Sep-2020 11:28:56.487 KST
+Begin processing the 83rd record. Run 1, Event 83, LumiSection 1 at 07-Sep-2020 11:28:56.562 KST
+Begin processing the 84th record. Run 1, Event 84, LumiSection 1 at 07-Sep-2020 11:28:56.608 KST
+Begin processing the 85th record. Run 1, Event 85, LumiSection 1 at 07-Sep-2020 11:28:56.637 KST
+Begin processing the 86th record. Run 1, Event 86, LumiSection 1 at 07-Sep-2020 11:28:56.691 KST
+Begin processing the 87th record. Run 1, Event 87, LumiSection 1 at 07-Sep-2020 11:28:56.988 KST
+Begin processing the 88th record. Run 1, Event 88, LumiSection 1 at 07-Sep-2020 11:28:56.995 KST
+Begin processing the 89th record. Run 1, Event 89, LumiSection 1 at 07-Sep-2020 11:28:57.011 KST
+Begin processing the 90th record. Run 1, Event 90, LumiSection 1 at 07-Sep-2020 11:28:57.090 KST
+Begin processing the 91st record. Run 1, Event 91, LumiSection 1 at 07-Sep-2020 11:28:57.342 KST
+Begin processing the 92nd record. Run 1, Event 92, LumiSection 1 at 07-Sep-2020 11:28:57.352 KST
+Begin processing the 93rd record. Run 1, Event 93, LumiSection 1 at 07-Sep-2020 11:28:57.366 KST
+Begin processing the 94th record. Run 1, Event 94, LumiSection 1 at 07-Sep-2020 11:28:57.379 KST
+Begin processing the 95th record. Run 1, Event 95, LumiSection 1 at 07-Sep-2020 11:28:57.581 KST
+Begin processing the 96th record. Run 1, Event 96, LumiSection 1 at 07-Sep-2020 11:28:57.623 KST
+Begin processing the 97th record. Run 1, Event 97, LumiSection 1 at 07-Sep-2020 11:28:57.655 KST
+Begin processing the 98th record. Run 1, Event 98, LumiSection 1 at 07-Sep-2020 11:28:57.660 KST
+Begin processing the 99th record. Run 1, Event 99, LumiSection 1 at 07-Sep-2020 11:28:57.668 KST
+Begin processing the 100th record. Run 1, Event 100, LumiSection 1 at 07-Sep-2020 11:28:57.681 KST
+Begin processing the 101st record. Run 1, Event 101, LumiSection 1 at 07-Sep-2020 11:28:57.746 KST
+Begin processing the 102nd record. Run 1, Event 102, LumiSection 1 at 07-Sep-2020 11:28:57.765 KST
+Begin processing the 103rd record. Run 1, Event 103, LumiSection 1 at 07-Sep-2020 11:28:57.785 KST
+Begin processing the 104th record. Run 1, Event 104, LumiSection 1 at 07-Sep-2020 11:28:57.854 KST
+Begin processing the 105th record. Run 1, Event 105, LumiSection 1 at 07-Sep-2020 11:28:57.884 KST
+Begin processing the 106th record. Run 1, Event 106, LumiSection 1 at 07-Sep-2020 11:28:57.976 KST
+Begin processing the 107th record. Run 1, Event 107, LumiSection 1 at 07-Sep-2020 11:28:58.257 KST
+Begin processing the 108th record. Run 1, Event 108, LumiSection 1 at 07-Sep-2020 11:28:58.266 KST
+Begin processing the 109th record. Run 1, Event 109, LumiSection 1 at 07-Sep-2020 11:28:58.281 KST
+Begin processing the 110th record. Run 1, Event 110, LumiSection 1 at 07-Sep-2020 11:28:58.308 KST
+Begin processing the 111th record. Run 1, Event 111, LumiSection 1 at 07-Sep-2020 11:28:58.320 KST
+Begin processing the 112th record. Run 1, Event 112, LumiSection 1 at 07-Sep-2020 11:28:58.334 KST
+Begin processing the 113th record. Run 1, Event 113, LumiSection 1 at 07-Sep-2020 11:28:58.378 KST
+Begin processing the 114th record. Run 1, Event 114, LumiSection 1 at 07-Sep-2020 11:28:58.395 KST
+Begin processing the 115th record. Run 1, Event 115, LumiSection 1 at 07-Sep-2020 11:28:58.406 KST
+Begin processing the 116th record. Run 1, Event 116, LumiSection 1 at 07-Sep-2020 11:28:58.428 KST
+Begin processing the 117th record. Run 1, Event 117, LumiSection 1 at 07-Sep-2020 11:28:58.484 KST
+Begin processing the 118th record. Run 1, Event 118, LumiSection 1 at 07-Sep-2020 11:28:58.517 KST
+Begin processing the 119th record. Run 1, Event 119, LumiSection 1 at 07-Sep-2020 11:28:58.524 KST
+Begin processing the 120th record. Run 1, Event 120, LumiSection 1 at 07-Sep-2020 11:28:58.534 KST
+Begin processing the 121st record. Run 1, Event 121, LumiSection 1 at 07-Sep-2020 11:28:58.679 KST
+Begin processing the 122nd record. Run 1, Event 122, LumiSection 1 at 07-Sep-2020 11:28:58.732 KST
+Begin processing the 123rd record. Run 1, Event 123, LumiSection 1 at 07-Sep-2020 11:28:58.762 KST
+Begin processing the 124th record. Run 1, Event 124, LumiSection 1 at 07-Sep-2020 11:28:58.814 KST
+Begin processing the 125th record. Run 1, Event 125, LumiSection 1 at 07-Sep-2020 11:28:58.822 KST
+Begin processing the 126th record. Run 1, Event 126, LumiSection 1 at 07-Sep-2020 11:28:58.867 KST
+Begin processing the 127th record. Run 1, Event 127, LumiSection 1 at 07-Sep-2020 11:28:58.879 KST
+Begin processing the 128th record. Run 1, Event 128, LumiSection 1 at 07-Sep-2020 11:28:58.899 KST
+Begin processing the 129th record. Run 1, Event 129, LumiSection 1 at 07-Sep-2020 11:28:58.906 KST
+Begin processing the 130th record. Run 1, Event 130, LumiSection 1 at 07-Sep-2020 11:28:58.938 KST
+Begin processing the 131st record. Run 1, Event 131, LumiSection 1 at 07-Sep-2020 11:28:58.943 KST
+Begin processing the 132nd record. Run 1, Event 132, LumiSection 1 at 07-Sep-2020 11:28:58.962 KST
+Begin processing the 133rd record. Run 1, Event 133, LumiSection 1 at 07-Sep-2020 11:28:59.009 KST
+Begin processing the 134th record. Run 1, Event 134, LumiSection 1 at 07-Sep-2020 11:28:59.032 KST
+Begin processing the 135th record. Run 1, Event 135, LumiSection 1 at 07-Sep-2020 11:28:59.073 KST
+Begin processing the 136th record. Run 1, Event 136, LumiSection 1 at 07-Sep-2020 11:28:59.106 KST
+Begin processing the 137th record. Run 1, Event 137, LumiSection 1 at 07-Sep-2020 11:28:59.193 KST
+Begin processing the 138th record. Run 1, Event 138, LumiSection 1 at 07-Sep-2020 11:28:59.232 KST
+Begin processing the 139th record. Run 1, Event 139, LumiSection 1 at 07-Sep-2020 11:28:59.282 KST
+Begin processing the 140th record. Run 1, Event 140, LumiSection 1 at 07-Sep-2020 11:28:59.305 KST
+Begin processing the 141st record. Run 1, Event 141, LumiSection 1 at 07-Sep-2020 11:28:59.322 KST
+Begin processing the 142nd record. Run 1, Event 142, LumiSection 1 at 07-Sep-2020 11:28:59.340 KST
+Begin processing the 143rd record. Run 1, Event 143, LumiSection 1 at 07-Sep-2020 11:28:59.346 KST
+Begin processing the 144th record. Run 1, Event 144, LumiSection 1 at 07-Sep-2020 11:28:59.382 KST
+Begin processing the 145th record. Run 1, Event 145, LumiSection 1 at 07-Sep-2020 11:28:59.405 KST
+Begin processing the 146th record. Run 1, Event 146, LumiSection 1 at 07-Sep-2020 11:28:59.413 KST
+Begin processing the 147th record. Run 1, Event 147, LumiSection 1 at 07-Sep-2020 11:28:59.431 KST
+Begin processing the 148th record. Run 1, Event 148, LumiSection 1 at 07-Sep-2020 11:28:59.485 KST
+Begin processing the 149th record. Run 1, Event 149, LumiSection 1 at 07-Sep-2020 11:28:59.583 KST
+Begin processing the 150th record. Run 1, Event 150, LumiSection 1 at 07-Sep-2020 11:28:59.608 KST
+Begin processing the 151st record. Run 1, Event 151, LumiSection 1 at 07-Sep-2020 11:28:59.663 KST
+Begin processing the 152nd record. Run 1, Event 152, LumiSection 1 at 07-Sep-2020 11:28:59.748 KST
+Begin processing the 153rd record. Run 1, Event 153, LumiSection 1 at 07-Sep-2020 11:28:59.757 KST
+Begin processing the 154th record. Run 1, Event 154, LumiSection 1 at 07-Sep-2020 11:28:59.764 KST
+Begin processing the 155th record. Run 1, Event 155, LumiSection 1 at 07-Sep-2020 11:28:59.794 KST
+Begin processing the 156th record. Run 1, Event 156, LumiSection 1 at 07-Sep-2020 11:28:59.868 KST
+Begin processing the 157th record. Run 1, Event 157, LumiSection 1 at 07-Sep-2020 11:28:59.886 KST
+Begin processing the 158th record. Run 1, Event 158, LumiSection 1 at 07-Sep-2020 11:29:00.036 KST
+Begin processing the 159th record. Run 1, Event 159, LumiSection 1 at 07-Sep-2020 11:29:00.041 KST
+Begin processing the 160th record. Run 1, Event 160, LumiSection 1 at 07-Sep-2020 11:29:00.047 KST
+Begin processing the 161st record. Run 1, Event 161, LumiSection 1 at 07-Sep-2020 11:29:00.067 KST
+Begin processing the 162nd record. Run 1, Event 162, LumiSection 1 at 07-Sep-2020 11:29:00.120 KST
+Begin processing the 163rd record. Run 1, Event 163, LumiSection 1 at 07-Sep-2020 11:29:00.198 KST
+Begin processing the 164th record. Run 1, Event 164, LumiSection 1 at 07-Sep-2020 11:29:00.223 KST
+Begin processing the 165th record. Run 1, Event 165, LumiSection 1 at 07-Sep-2020 11:29:00.279 KST
+Begin processing the 166th record. Run 1, Event 166, LumiSection 1 at 07-Sep-2020 11:29:00.303 KST
+Begin processing the 167th record. Run 1, Event 167, LumiSection 1 at 07-Sep-2020 11:29:00.325 KST
+Begin processing the 168th record. Run 1, Event 168, LumiSection 1 at 07-Sep-2020 11:29:00.376 KST
+Begin processing the 169th record. Run 1, Event 169, LumiSection 1 at 07-Sep-2020 11:29:00.782 KST
+Begin processing the 170th record. Run 1, Event 170, LumiSection 1 at 07-Sep-2020 11:29:00.787 KST
+Begin processing the 171st record. Run 1, Event 171, LumiSection 1 at 07-Sep-2020 11:29:00.800 KST
+Begin processing the 172nd record. Run 1, Event 172, LumiSection 1 at 07-Sep-2020 11:29:00.857 KST
+Begin processing the 173rd record. Run 1, Event 173, LumiSection 1 at 07-Sep-2020 11:29:00.899 KST
+Begin processing the 174th record. Run 1, Event 174, LumiSection 1 at 07-Sep-2020 11:29:00.915 KST
+Begin processing the 175th record. Run 1, Event 175, LumiSection 1 at 07-Sep-2020 11:29:00.921 KST
+Begin processing the 176th record. Run 1, Event 176, LumiSection 1 at 07-Sep-2020 11:29:00.940 KST
+Begin processing the 177th record. Run 1, Event 177, LumiSection 1 at 07-Sep-2020 11:29:01.093 KST
+Begin processing the 178th record. Run 1, Event 178, LumiSection 1 at 07-Sep-2020 11:29:01.129 KST
+Begin processing the 179th record. Run 1, Event 179, LumiSection 1 at 07-Sep-2020 11:29:01.173 KST
+Begin processing the 180th record. Run 1, Event 180, LumiSection 1 at 07-Sep-2020 11:29:01.180 KST
+Begin processing the 181st record. Run 1, Event 181, LumiSection 1 at 07-Sep-2020 11:29:01.226 KST
+Begin processing the 182nd record. Run 1, Event 182, LumiSection 1 at 07-Sep-2020 11:29:01.339 KST
+Begin processing the 183rd record. Run 1, Event 183, LumiSection 1 at 07-Sep-2020 11:29:01.344 KST
+Begin processing the 184th record. Run 1, Event 184, LumiSection 1 at 07-Sep-2020 11:29:01.412 KST
+Begin processing the 185th record. Run 1, Event 185, LumiSection 1 at 07-Sep-2020 11:29:01.420 KST
+Begin processing the 186th record. Run 1, Event 186, LumiSection 1 at 07-Sep-2020 11:29:01.430 KST
+Begin processing the 187th record. Run 1, Event 187, LumiSection 1 at 07-Sep-2020 11:29:01.527 KST
+Begin processing the 188th record. Run 1, Event 188, LumiSection 1 at 07-Sep-2020 11:29:01.552 KST
+Begin processing the 189th record. Run 1, Event 189, LumiSection 1 at 07-Sep-2020 11:29:01.584 KST
+Begin processing the 190th record. Run 1, Event 190, LumiSection 1 at 07-Sep-2020 11:29:01.601 KST
+Begin processing the 191st record. Run 1, Event 191, LumiSection 1 at 07-Sep-2020 11:29:01.611 KST
+Begin processing the 192nd record. Run 1, Event 192, LumiSection 1 at 07-Sep-2020 11:29:01.752 KST
+Begin processing the 193rd record. Run 1, Event 193, LumiSection 1 at 07-Sep-2020 11:29:01.850 KST
+Begin processing the 194th record. Run 1, Event 194, LumiSection 1 at 07-Sep-2020 11:29:01.867 KST
+Begin processing the 195th record. Run 1, Event 195, LumiSection 1 at 07-Sep-2020 11:29:01.882 KST
+Begin processing the 196th record. Run 1, Event 196, LumiSection 1 at 07-Sep-2020 11:29:01.891 KST
+Begin processing the 197th record. Run 1, Event 197, LumiSection 1 at 07-Sep-2020 11:29:01.900 KST
+Begin processing the 198th record. Run 1, Event 198, LumiSection 1 at 07-Sep-2020 11:29:01.927 KST
+Begin processing the 199th record. Run 1, Event 199, LumiSection 1 at 07-Sep-2020 11:29:01.960 KST
+Begin processing the 200th record. Run 1, Event 200, LumiSection 1 at 07-Sep-2020 11:29:01.968 KST
+Begin processing the 201st record. Run 1, Event 201, LumiSection 1 at 07-Sep-2020 11:29:01.986 KST
+Begin processing the 202nd record. Run 1, Event 202, LumiSection 1 at 07-Sep-2020 11:29:02.042 KST
+Begin processing the 203rd record. Run 1, Event 203, LumiSection 1 at 07-Sep-2020 11:29:02.060 KST
+Begin processing the 204th record. Run 1, Event 204, LumiSection 1 at 07-Sep-2020 11:29:02.094 KST
+Begin processing the 205th record. Run 1, Event 205, LumiSection 1 at 07-Sep-2020 11:29:02.149 KST
+Begin processing the 206th record. Run 1, Event 206, LumiSection 1 at 07-Sep-2020 11:29:02.165 KST
+Begin processing the 207th record. Run 1, Event 207, LumiSection 1 at 07-Sep-2020 11:29:02.172 KST
+Begin processing the 208th record. Run 1, Event 208, LumiSection 1 at 07-Sep-2020 11:29:02.265 KST
+Begin processing the 209th record. Run 1, Event 209, LumiSection 1 at 07-Sep-2020 11:29:02.283 KST
+Begin processing the 210th record. Run 1, Event 210, LumiSection 1 at 07-Sep-2020 11:29:02.310 KST
+Begin processing the 211th record. Run 1, Event 211, LumiSection 1 at 07-Sep-2020 11:29:02.348 KST
+Begin processing the 212th record. Run 1, Event 212, LumiSection 1 at 07-Sep-2020 11:29:02.356 KST
+Begin processing the 213th record. Run 1, Event 213, LumiSection 1 at 07-Sep-2020 11:29:02.379 KST
+Begin processing the 214th record. Run 1, Event 214, LumiSection 1 at 07-Sep-2020 11:29:02.401 KST
+Begin processing the 215th record. Run 1, Event 215, LumiSection 1 at 07-Sep-2020 11:29:02.417 KST
+Begin processing the 216th record. Run 1, Event 216, LumiSection 1 at 07-Sep-2020 11:29:02.472 KST
+Begin processing the 217th record. Run 1, Event 217, LumiSection 1 at 07-Sep-2020 11:29:02.484 KST
+Begin processing the 218th record. Run 1, Event 218, LumiSection 1 at 07-Sep-2020 11:29:02.489 KST
+Begin processing the 219th record. Run 1, Event 219, LumiSection 1 at 07-Sep-2020 11:29:02.497 KST
+Begin processing the 220th record. Run 1, Event 220, LumiSection 1 at 07-Sep-2020 11:29:02.506 KST
+Begin processing the 221st record. Run 1, Event 221, LumiSection 1 at 07-Sep-2020 11:29:02.586 KST
+Begin processing the 222nd record. Run 1, Event 222, LumiSection 1 at 07-Sep-2020 11:29:02.610 KST
+Begin processing the 223rd record. Run 1, Event 223, LumiSection 1 at 07-Sep-2020 11:29:02.623 KST
+Begin processing the 224th record. Run 1, Event 224, LumiSection 1 at 07-Sep-2020 11:29:02.628 KST
+Begin processing the 225th record. Run 1, Event 225, LumiSection 1 at 07-Sep-2020 11:29:02.646 KST
+Begin processing the 226th record. Run 1, Event 226, LumiSection 1 at 07-Sep-2020 11:29:02.735 KST
+Begin processing the 227th record. Run 1, Event 227, LumiSection 1 at 07-Sep-2020 11:29:02.759 KST
+Begin processing the 228th record. Run 1, Event 228, LumiSection 1 at 07-Sep-2020 11:29:02.778 KST
+Begin processing the 229th record. Run 1, Event 229, LumiSection 1 at 07-Sep-2020 11:29:02.795 KST
+Begin processing the 230th record. Run 1, Event 230, LumiSection 1 at 07-Sep-2020 11:29:02.803 KST
+Begin processing the 231st record. Run 1, Event 231, LumiSection 1 at 07-Sep-2020 11:29:02.820 KST
+Begin processing the 232nd record. Run 1, Event 232, LumiSection 1 at 07-Sep-2020 11:29:02.905 KST
+Begin processing the 233rd record. Run 1, Event 233, LumiSection 1 at 07-Sep-2020 11:29:02.982 KST
+Begin processing the 234th record. Run 1, Event 234, LumiSection 1 at 07-Sep-2020 11:29:03.095 KST
+Begin processing the 235th record. Run 1, Event 235, LumiSection 1 at 07-Sep-2020 11:29:03.137 KST
+Begin processing the 236th record. Run 1, Event 236, LumiSection 1 at 07-Sep-2020 11:29:03.186 KST
+Begin processing the 237th record. Run 1, Event 237, LumiSection 1 at 07-Sep-2020 11:29:03.221 KST
+Begin processing the 238th record. Run 1, Event 238, LumiSection 1 at 07-Sep-2020 11:29:03.236 KST
+Begin processing the 239th record. Run 1, Event 239, LumiSection 1 at 07-Sep-2020 11:29:03.289 KST
+Begin processing the 240th record. Run 1, Event 240, LumiSection 1 at 07-Sep-2020 11:29:03.305 KST
+Begin processing the 241st record. Run 1, Event 241, LumiSection 1 at 07-Sep-2020 11:29:03.362 KST
+Begin processing the 242nd record. Run 1, Event 242, LumiSection 1 at 07-Sep-2020 11:29:03.375 KST
+Begin processing the 243rd record. Run 1, Event 243, LumiSection 1 at 07-Sep-2020 11:29:03.431 KST
+Begin processing the 244th record. Run 1, Event 244, LumiSection 1 at 07-Sep-2020 11:29:03.444 KST
+Begin processing the 245th record. Run 1, Event 245, LumiSection 1 at 07-Sep-2020 11:29:03.469 KST
+Begin processing the 246th record. Run 1, Event 246, LumiSection 1 at 07-Sep-2020 11:29:03.485 KST
+Begin processing the 247th record. Run 1, Event 247, LumiSection 1 at 07-Sep-2020 11:29:03.506 KST
+Begin processing the 248th record. Run 1, Event 248, LumiSection 1 at 07-Sep-2020 11:29:03.517 KST
+Begin processing the 249th record. Run 1, Event 249, LumiSection 1 at 07-Sep-2020 11:29:03.534 KST
+Begin processing the 250th record. Run 1, Event 250, LumiSection 1 at 07-Sep-2020 11:29:03.557 KST
+07-Sep-2020 11:29:03 KST  Closed LHE file cmsgrid_final.lhe
 
  *-------  PYTHIA Event and Cross Section Statistics  -------------------------------------------------------------*
  |                                                                                                                 |
@@ -1637,10 +2202,10 @@ Begin processing the 5th record. Run 1, Event 5, LumiSection 1 at 04-Sep-2020 15
  |                                                    |                                   |                        |
  |-----------------------------------------------------------------------------------------------------------------|
  |                                                    |                                   |                        |
- | Les Houches User Process(es)                  9999 |           5          5          0 |   0.000e+00  0.000e+00 |
- |    ... whereof user classification code          0 |           5          5          0 |                        | 
+ | Les Houches User Process(es)                  9999 |         250        250          0 |   0.000e+00  0.000e+00 |
+ |    ... whereof user classification code          0 |         250        250          0 |                        | 
  |                                                    |                                   |                        |
- | sum                                                |           5          5          0 |   0.000e+00  0.000e+00 |
+ | sum                                                |         250        250          0 |   0.000e+00  0.000e+00 |
  |                                                                                                                 |
  *-------  End PYTHIA Event and Cross Section Statistics ----------------------------------------------------------*
 
@@ -1648,7 +2213,7 @@ Begin processing the 5th record. Run 1, Event 5, LumiSection 1 at 04-Sep-2020 15
  |                                                                                                                 | 
  |  times   message                                                                                                | 
  |                                                                                                                 | 
- |      5   Abort from Pythia::next: reached end of Les Houches Events File                                        | 
+ |    250   Abort from Pythia::next: reached end of Les Houches Events File                                        | 
  |      1   Info from SLHAinterface::initSLHA: No MODSEL found, keeping internal SUSY switched off                 | 
  |      2   Warning in SLHAinterface::initSLHA: ignoring DECAY tables                                              | 
  |      2   Warning in SLHAinterface::initSLHA: ignoring MASS entries                                              | 
@@ -1670,25 +2235,25 @@ GenXsecAnalyzer:
 Overall cross-section summary 
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Process		xsec_before [pb]		passed	nposw	nnegw	tried	nposw	nnegw 	xsec_match [pb]			accepted [%]	 event_eff [%]
-0		1.188e-02 +/- 1.119e-05		0	0	0	5	5	0	0.000e+00 +/- 0.000e+00		0.0 +/- 0.0	0.0 +/- 0.0
+0		1.188e-02 +/- 1.119e-05		0	0	0	250	231	19	0.000e+00 +/- 0.000e+00		0.0 +/- 0.0	0.0 +/- 0.0
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
-Total		1.188e-02 +/- 1.119e-05		0	0	0	5	5	0	0.000e+00 +/- 0.000e+00		0.0 +/- -100.0	0.0 +/- 0.0
+Total		1.188e-02 +/- 1.119e-05		0	0	0	250	231	19	0.000e+00 +/- 0.000e+00		0.0 +/- -100.0	0.0 +/- 0.0
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 Before matching: total cross section = 1.188e-02 +- 1.119e-05 pb
 After matching: total cross section = 0.000e+00 +- 0.000e+00 pb
 After filter: final cross section = 0.000e+00 +- 0.000e+00 pb
-TimeReport> Time report complete in 170.316 seconds
+TimeReport> Time report complete in 539.354 seconds
  Time Summary: 
- - Min event:   0.00538898
- - Max event:   0.169439
- - Avg event:   34.0633
- - Total job:   170.316
+ - Min event:   0.00467706
+ - Max event:   0.40569
+ - Avg event:   2.15741
+ - Total job:   539.354
  CPU Summary: 
- - Min event:   0.006
- - Max event:   0.168974
- - Avg event:   0.0497926
- - Total job:   42.1376
- - Total event: 0.248963
+ - Min event:   0.004999
+ - Max event:   0.405938
+ - Avg event:   0.0406258
+ - Total job:   58.3691
+ - Total event: 10.1565
 
 
 =============================================
