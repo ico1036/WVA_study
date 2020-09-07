@@ -1,6 +1,8 @@
 ## p p > l nl a z
-/x5/cms/jwkim/WZA_gridpack_stor/WZAToLNuLLA_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+/x5/cms/jwkim/WZA_gridpack_store/WZAToLNuLLA_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
 
-## p p > l nl a l+ l-
-/x5/cms/jwkim/WZA_gridpack_stor/WZA_inclusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+## p p > l nl a l+ l- ( 5 evts )
+/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_5evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
 
+## p p > l nl a l+ l- ( 250 evts )
+/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
