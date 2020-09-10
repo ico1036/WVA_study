@@ -5,7 +5,7 @@
  
 ### Status  
 
- - Input gridpack: lnlall 250evts gridpack but an error ouccur  
+ - Input gridpack: lnlall 250evts,  but an error ouccur  
  - [Error log file link](https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/GenSim/lnlall_output/step1.log)
  
  
