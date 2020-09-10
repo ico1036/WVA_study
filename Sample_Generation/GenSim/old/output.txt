@@ -1,6 +1,0 @@
-/x5/cms/jwkim/WZA_gridpack_store/output_tmp/llanll_250evts/out.lhe
-/x5/cms/jwkim/WZA_gridpack_store/output_tmp/llanll_250evts/out.root
-/x5/cms/jwkim/WZA_gridpack_store/output_tmp/llanll_250evts/step1.log
-
-
-
