@@ -5,5 +5,7 @@
  
 ### Status  
 
- - lnlall 250evts gridpack 을 input 으로 진행결과 에러 발생  
+ - lnlall 250evts gridpack 을 input 으로 진행결과 에러 발생
+ - [Error log file link](https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/GenSim/lnlall_output/step1.log)
+ 
  
