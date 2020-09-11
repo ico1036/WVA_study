@@ -3,7 +3,8 @@
 ### Setup and cmsRun
  - [setup.sh](https://github.com/ico1036/WVA_study/tree/master/Sample_Generation/GenSim/out_GenXsec): Code & Env setup  
  - [SUS-RunIIFall18wmLHEGS-00028_1_cfg.py](https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/GenSim/SUS-RunIIFall18wmLHEGS-00028_1_cfg.py) ( step 1 config file )
-   
+ - step1 output logfiles: out_pp2lnlall_250evts_step1,out_pp2lnlall_5evts_step1,out_pp2lnlaz_step1  
+
 ---
 ### Cross-section
  - [ana.py](https://github.com/ico1036/WVA_study/blob/master/Sample_Generation/GenSim/ana.py) : source code for "GenXsecAnalyzer"
