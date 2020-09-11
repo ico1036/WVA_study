@@ -1,0 +1,52 @@
+########################### pp2lnlall 5evt ##############################
+11-Sep-2020 15:08:55 KST  Initiating request to open file file:out_pp2lnlall_5evts_step1/SUS-RunIIFall18wmLHEGS-00028.root
+11-Sep-2020 15:08:56 KST  Successfully opened file file:out_pp2lnlall_5evts_step1/SUS-RunIIFall18wmLHEGS-00028.root
+Begin processing the 1st record. Run 1, Event 4, LumiSection 1 on stream 0 at 11-Sep-2020 15:09:05.841 KST
+      0.011882      0.000011      0.013868             0
+ 
+11-Sep-2020 15:09:06 KST  Closed file file:out_pp2lnlall_5evts_step1/SUS-RunIIFall18wmLHEGS-00028.root
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Overall cross-section summary 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Process		xsec_before [pb]		passed	nposw	nnegw	tried	nposw	nnegw	xsec_match [pb]			accepted [%] event_eff [%]
+0		1.188e-02 +/- 1.119e-05		1047	978	69	1047	978	69	1.188e-02 +/- 1.119e-05		100.0 +/- 0.0	100.0 +/- 0.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Total		1.188e-02 +/- 1.119e-05		1047	978	69	1047	978	69	1.188e-02 +/- 1.119e-05		100.0 +/- 0.0	100.0 +/- 0.0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Before matching: total cross section = 1.188e-02 +- 1.119e-05 pb
+After matching: total cross section = 1.188e-02 +- 1.119e-05 pb
+Matching efficiency = 1.0 +/- 0.0   [TO BE USED IN MCM]
+Filter efficiency (taking into account weights)= (12.598) / (12.598) = 1.000e+00 +- 0.000e+00
+Filter efficiency (event-level)= (1047) / (1047) = 1.000e+00 +- 0.000e+00    [TO BE USED IN MCM]
+
+After filter: final cross section = 1.188e-02 +- 1.119e-05 pb
+After filter: final fraction of events with negative weights = 6.590e-02 +- 5.053e-04
+After filter: final equivalent lumi for 1M events (1/fb) = 6.344e+04 +- 1.011e+07
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 GenXSecAnalyzer      -w GenXSecAnalyzer:                      15       15
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 GenXSecAnalyzer      PostGlobalEndRun PostGlobalEndRun PostGlobalEndRun
+    2 fileAction           PostGlobalEndRun                  
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                15                  15
+System                  3                   3
+
+dropped waiting message count 0
+
