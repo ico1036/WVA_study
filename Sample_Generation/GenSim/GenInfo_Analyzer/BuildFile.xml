@@ -1,0 +1,24 @@
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<flags EDM_PLUGIN="1"/>
+
+<use name="FWCore/Framework"/>
+<use name="FWCore/PluginManager"/>
+<use name="FWCore/ParameterSet"/>
+<use name="DataFormats/PatCandidates"/>
+<use name="CommonTools/UtilAlgos"/>
+<use name="FWCore/ServiceRegistry"/>
+<use name="PhysicsTools/UtilAlgos"/>
+<use name="RecoEcal/EgammaCoreTools"/>
+<use name="DataFormats/ParticleFlowCandidate"/>
+<use name="RecoParticleFlow/PFProducer"/>
+<use name="DataFormats/ParticleFlowReco"/>
+
+<use   name="CondFormats/DataRecord"/>
+<use   name="DataFormats/EcalRecHit"/>
+<use   name="CommonTools/UtilAlgos"/>
+<use   name="root"/>
+<use name="rootcore"/>
+
+
