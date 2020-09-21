@@ -22,7 +22,7 @@
 #include "FWCore/ServiceRegistry/interface/Service.h"
 #include "CommonTools/UtilAlgos/interface/TFileService.h"
 #include "vector"
-
+#include "TTree.h"
 
 using namespace reco;
 
@@ -43,38 +43,58 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 		edm::EDGetTokenT<reco::GenParticleCollection> genToken_;//--used to access GenParticleCollectio
 
 		int Znum;
+		int Zd1;
+		int Zd2;
+		int Wnum;
+		int Wd1;
+		int Wd2;
 		int ZDau_num;
 
 		TTree* outTree;
 	
 		std::vector<double> v_Zlep1_pt,v_Zlep1_eta,v_Zlep1_phi;
 		std::vector<double> v_Zlep2_pt,v_Zlep2_eta,v_Zlep2_phi;
+		std::vector<double> v_Wlep_pt,v_Wlep_eta,v_Wlep_phi;
+		std::vector<double> v_Wnu_pt,v_Wnu_et,v_Wnu_phi;
 		
 		double zlep1_pt,zlep1_eta,zlep1_phi;
 		double zlep2_pt,zlep2_eta,zlep2_phi;
+		double wlep_pt,wlep_eta,wlep_phi;
+		double wnu_pt,wnu_et,wnu_phi;
 	
-
 
 };
 
 
 GenInfo::GenInfo(const edm::ParameterSet& iConfig)
-	edm::Service<TFileService> fs;
-	outTree = fs->make<TTree> ("outTree","outTree")
 {
+	edm::Service<TFileService> fs;
+	outTree = fs->make<TTree> ("outTree","outTree");
 
 	//now do what ever initialization is needed
 	genToken_ = consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("GenParticles")); //-- GenParticle
 	
 	Znum=0;
+	Zd1=0;
+	Zd2=0;	
+	Wnum=0;
+	Wd1=0;
+	Wd2=0;
 	ZDau_num=0;
 
-	outTree->Branch("zlep1_pt" ,zlep1_pt&);
-	outTree->Branch("zlep1_eta",zlep1_eta&);
-	outTree->Branch("zlep1_phi",zlep1_phi&);
-	outTree->Branch("zlep2_pt" ,zlep2_pt&);
-	outTree->Branch("zlep2_eta",zlep2_eta&);
-	outTree->Branch("zlep2_phi",zlep2_phi&);
+	outTree->Branch("zlep1_pt" ,&zlep1_pt);
+	outTree->Branch("zlep1_eta",&zlep1_eta);
+	outTree->Branch("zlep1_phi",&zlep1_phi);
+	outTree->Branch("zlep2_pt" ,&zlep2_pt);
+	outTree->Branch("zlep2_eta",&zlep2_eta);
+	outTree->Branch("zlep2_phi",&zlep2_phi);
+
+	outTree->Branch("wlep_pt" ,&wlep_pt);
+	outTree->Branch("wlep_eta",&wlep_eta);
+	outTree->Branch("wlep_phi",&wlep_phi);
+	outTree->Branch("wnu_pt" ,&wnu_pt);
+	outTree->Branch("wnu_et",&wnu_et);
+	outTree->Branch("wnu_phi",&wnu_phi);
 	
 
 }
@@ -104,6 +124,13 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	iEvent.getByLabel("genParticles", genParticles);
 	
 
+	
+
+
+
+
+
+
 //		cout << "PID" << " , " <<"Status" << " , " << "N of Daughter" << " , " << "pt" << " , " << "eta" << " , " << "phi" << " , " << "charge" << endl;
 	 
 	for(size_t i = 0; i < genParticles->size(); ++ i) { // -- START PARTICLE LOOP
@@ -118,7 +145,7 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	
 
 		// -- Find Prompt Z boson 
-		if ( id == 23 && n==2 ){
+		if ( id == 23 && n==2 && st == 62 ){
 
 			Znum++;
 			
@@ -132,14 +159,19 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 				double daueta = d->eta();
 				double dauphi = d->phi();
 
+
+				//if ( dauId == 22 ) break;
+
 				// --lep-
 				if ( daucharge == -1 ){
+					Zd1++;
 					v_Zlep1_pt.push_back(daupt);
 					v_Zlep1_eta.push_back(daueta);
 					v_Zlep1_phi.push_back(dauphi);
 							
 				// --lep+
 				}else{
+					Zd2++;
 					v_Zlep2_pt.push_back(daupt);
 					v_Zlep2_eta.push_back(daueta);
 					v_Zlep2_phi.push_back(dauphi);
@@ -150,12 +182,63 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	 
 		}
 
+
+		if ( id == -24 && n == 2 && st == 62){
+
+		// -- Find Prompt W- boson 
+			Wnum++;
+			
+
+		//	std::vector<double> v_Wlep_pt,v_Wnu_pt,v_Wlep_;
+
+			// --Loop of Daughter processes
+		
+			for(size_t j = 0; j < n; ++ j) { 
+				const Candidate * d = p.daughter( j );
+				int dauId = d->pdgId();
+				int daucharge = d->charge();
+				double daupt  = d->pt() ;
+				double daueta = d->eta();
+				double dauet  = d->et();
+				double dauphi = d->phi();
+
+			//	if ( dauId != 22 ) break;
+
+				cout << dauId << endl;
+				// --lep
+				if ( daucharge == -1 ){
+					v_Wlep_pt.push_back(daupt);
+					v_Wlep_eta.push_back(daueta);
+					v_Wlep_phi.push_back(dauphi);
+					Wd1++;
+				
+				// --nu
+				}else{
+					v_Wnu_pt.push_back(daupt);
+					v_Wnu_et.push_back(dauet);
+					v_Wnu_phi.push_back(dauphi);
+					Wd2++;
+					//cout << "C: " << daucharge << endl;
+
+				}
+
+			}
+	 
+		}
+
+
+
+
+
 	}// -- END Particle LOOP
 
 	outTree->Fill();
 
-
+	cout << " ###################### " << endl;
 	cout << "Number of Prompt Z boson: " << " " <<Znum << " " << v_Zlep1_pt.size() << " " << v_Zlep2_pt.size() << endl;
+	cout << "Number of Daughter of  Z boson: " << " " << Zd1 << " " << Zd2 << endl;
+	cout << "Number of Prompt W boson: " << " " <<Wnum << " " << v_Wlep_pt.size() << " " << v_Wnu_pt.size() << endl;
+	cout << "Number of Daughter of  W boson: " << " " <<Wd1 << " " << Wd2 << endl;
 
 #ifdef THIS_IS_AN_EVENT_EXAMPLE
 	Handle<ExampleData> pIn;
@@ -179,9 +262,9 @@ GenInfo::beginJob()
 void 
 GenInfo::endJob() 
 {
+outTree->Write();
 }
 
-outTree->Write();
 
 // ------------ method fills 'descriptions' with the allowed parameters for the module------------
 void

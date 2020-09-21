@@ -1,10 +1,13 @@
 import FWCore.ParameterSet.Config as cms
 
+
+maxevent=-1
+
 process = cms.Process("GenInfo")
 
 process.load("FWCore.MessageService.MessageLogger_cfi")
 
-process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(-1) )
+process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(maxevent) )
 process.MessageLogger.cerr.FwkReport.reportEvery =50  ## --How often you're updated on the progress
 
 
@@ -31,7 +34,7 @@ process.printTree = cms.EDAnalyzer("ParticleTreeDrawer",
 
 process.load("SimGeneral.HepPDTESSource.pythiapdt_cfi")
 process.printTree = cms.EDAnalyzer("ParticleListDrawer",
-  maxEventsToPrint = cms.untracked.int32(1),
+  maxEventsToPrint = cms.untracked.int32(maxevent),
   printVertex = cms.untracked.bool(False),
   printOnlyHardInteraction = cms.untracked.bool(False), # Print only status=3 particles. This will not work for Pythia8, which does not have any such particles.
   src = cms.InputTag("genParticles")
@@ -40,11 +43,9 @@ process.printTree = cms.EDAnalyzer("ParticleListDrawer",
 
 
 
-## --> on Developing
-process.TFileService = cms.Service("TFileService".
+process.TFileService = cms.Service("TFileService",
 	fileName = cms.string("test_gen_tree.root")
 )
-## < --
 
 process.GenInfo = cms.EDAnalyzer('GenInfo',
 
