@@ -558,6 +558,7 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 		// -- Find Prompt Photon
 		if ( id == 22 && st == 23){
 			
+			Pho++;
 			// --Loop of Daughter processes
 			for(size_t j = 0; j < n; ++ j) { 
 				const Candidate * d = p.daughter( j );
@@ -684,7 +685,6 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 
 		// Photon
 		if( v_Pho_pt.size() > 0 ){
-			Pho++;
 			pho_pt  = v_Pho_pt[0];
 			pho_eta = v_Pho_eta[0];
 			pho_phi = v_Pho_phi[0];
@@ -693,30 +693,29 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 		
 if ( v_Ze1_pt.size() !=0 || v_Ze2_pt.size() !=0 || v_Zmu1_pt.size() !=0 || v_Zmu2_pt.size() !=0 || v_Zta1_pt.size() !=0 || v_Zta2_pt.size() !=0 || v_Wme_pt.size() !=0 || v_Wmenu_pt.size() !=0 || v_Wmmu_pt.size() !=0 || v_Wmmunu_pt.size() !=0 || v_Wmta_pt.size() !=0 || v_Wmtanu_pt.size() !=0 || v_Wpe_pt.size() !=0 || v_Wpenu_pt.size() !=0 || v_Wpmu_pt.size() !=0 || v_Wpmunu_pt.size() !=0 || v_Wpta_pt.size() !=0 || v_Wptanu_pt.size() !=0 || v_Pho_pt.size() > 0 ){
 	outTree->Fill();
-cnt++;
-
+cnt++; 
 }
 
 	cout << " ############ Z Boson summary ########" << endl;
-/	cout << "Number of Daughter(e) of  Z boson  " << " " << Ze1 << " " << Ze2 << endl;
-/	cout << "Number of Daughter(mu) of  Z boson  " << " " << Zmu1 << " " << Zmu2 << endl;
-/	cout << "Number of Daughter(ta) of  Z boson  " << " " << Zta1 << " " << Zta2 << endl;
-/	cout << "Number of Daughter sum of Z boson " << " " << Ze1+Zmu1+Zta1 << " " << Ze2+Zmu2+Zta2 << endl;
-/	cout << " ############ W Boson summary ########" << endl;
-/	cout << " ############ W- " << endl;
-/	cout << "Number of Daughter(e enu) of  W- boson  " << " " << Wme << " " << Wmenu << endl;
-/	cout << "Number of Daughter(mu munu) of  W- boson  " << " " << Wmmu << " " << Wmmunu << endl;
-/	cout << "Number of Daughter(ta tanu) of  W- boson  " << " " << Wmta << " " << Wmtanu << endl;
-/	cout << "Number of Daughter sum of  W- boson  " << " " << Wme+Wmmu+Wmta << " " << Wmenu+Wmmunu+Wmtanu << endl;
-/	cout << " ############ W+ " << endl;
-/	cout << "Number of Daughter(e enu) of  W+ boson  " << " " << Wpe << " " << Wpenu << endl;
-/	cout << "Number of Daughter(mu munu) of  W+ boson  " << " " << Wpmu << " " << Wpmunu << endl;
-/	cout << "Number of Daughter(ta tanu) of  W+ boson  " << " " << Wpta << " " << Wptanu << endl;
-/	cout << "Number of Daughter sum of  W+ boson  " << " " << Wpe+Wpmu+Wpta << " " << Wpenu+Wpmunu+Wptanu << endl;
-/	cout << "Number of Daughter sum of  W boson  " << " " << Wpe+Wpmu+Wpta+Wme+Wmmu+Wmta << " " << Wpenu+Wpmunu+Wptanu+Wmenu+Wmmunu+Wmtanu << endl;
-/	
-/	cout << "Number of Photon  " << " " <<  Pho << endl;
-/	cout << "EVT count: " << " " << cnt << endl;
+	cout << "Number of Daughter(e) of  Z boson  " << " " << Ze1 << " " << Ze2 << endl;
+	cout << "Number of Daughter(mu) of  Z boson  " << " " << Zmu1 << " " << Zmu2 << endl;
+	cout << "Number of Daughter(ta) of  Z boson  " << " " << Zta1 << " " << Zta2 << endl;
+	cout << "Number of Daughter sum of Z boson " << " " << Ze1+Zmu1+Zta1 << " " << Ze2+Zmu2+Zta2 << endl;
+	cout << " ############ W Boson summary ########" << endl;
+	cout << " ############ W- " << endl;
+	cout << "Number of Daughter(e enu) of  W- boson  " << " " << Wme << " " << Wmenu << endl;
+	cout << "Number of Daughter(mu munu) of  W- boson  " << " " << Wmmu << " " << Wmmunu << endl;
+	cout << "Number of Daughter(ta tanu) of  W- boson  " << " " << Wmta << " " << Wmtanu << endl;
+	cout << "Number of Daughter sum of  W- boson  " << " " << Wme+Wmmu+Wmta << " " << Wmenu+Wmmunu+Wmtanu << endl;
+	cout << " ############ W+ " << endl;
+	cout << "Number of Daughter(e enu) of  W+ boson  " << " " << Wpe << " " << Wpenu << endl;
+	cout << "Number of Daughter(mu munu) of  W+ boson  " << " " << Wpmu << " " << Wpmunu << endl;
+	cout << "Number of Daughter(ta tanu) of  W+ boson  " << " " << Wpta << " " << Wptanu << endl;
+	cout << "Number of Daughter sum of  W+ boson  " << " " << Wpe+Wpmu+Wpta << " " << Wpenu+Wpmunu+Wptanu << endl;
+	cout << "Number of Daughter sum of  W boson  " << " " << Wpe+Wpmu+Wpta+Wme+Wmmu+Wmta << " " << Wpenu+Wpmunu+Wptanu+Wmenu+Wmmunu+Wmtanu << endl;
+	
+	cout << "Number of Photon  " << " " <<  Pho << endl;
+	cout << "EVT count: " << " " << cnt << endl;
 
 
 
