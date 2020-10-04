@@ -44,6 +44,8 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 
 		// --Counter List
 		int Znum;
+		int Wpnum;
+		int Wmnum;
 		int cnt;
 		int Nelectron;
 		int Npositron;
@@ -53,14 +55,20 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 		int Ntaminus;
 
 		// --Tree definition
-		TTree* outTree;
+		TTree* ZTree;
+		TTree* WpTree;
+		TTree* WmTree;
 	
 		// --Vector List
 		std::vector<double> v_ZMass;
+		std::vector<double> v_WpMass;
+		std::vector<double> v_WmMass;
 				
 
 		// --Variables for making branches
 		double ZMass;
+		double WpMass;
+		double WmMass;
 		
 };
 
@@ -68,7 +76,9 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 GenInfo::GenInfo(const edm::ParameterSet& iConfig)
 {
 	edm::Service<TFileService> fs;
-	outTree = fs->make<TTree> ("outTree","outTree");
+	ZTree = fs->make<TTree> ("ZTree","ZTree");
+	WpTree = fs->make<TTree> ("WpTree","WpTree");
+	WmTree = fs->make<TTree> ("WmTree","WmTree");
 
 	//now do what ever initialization is needed
 	genToken_ = consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("GenParticles")); //-- GenParticle
@@ -83,9 +93,15 @@ GenInfo::GenInfo(const edm::ParameterSet& iConfig)
 	Nmuminus=0;
 	Ntaplus=0;
 	Ntaminus=0;
+	Wpnum=0;
+    Wmnum=0;
+
 
 	// -- Make branches
-	outTree->Branch("ZMass", &ZMass);
+	
+	ZTree->Branch("ZMass", &ZMass);
+	WpTree->Branch("WpMass", &WpMass);
+	WmTree->Branch("WmMass", &WmMass);
 
 }
 
@@ -116,6 +132,8 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	
 	// --Initialize vectors
 	v_ZMass.clear();
+	v_WpMass.clear();
+	v_WmMass.clear();
 	
 	//// -- Particle Loop start 
 	for(size_t i = 0; i < genParticles->size(); ++ i) {
@@ -128,7 +146,6 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 		int charge = p.charge();
 		size_t n = p.numberOfDaughters();
 	
-
 		// -- Find Prompt Z boson 
 		//if ( id == 23 && st == 22 ){
 		if ( id == 23  ){
@@ -137,61 +154,92 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 			
 			Znum++;
 			break;
-		}
+		} 
 
 		//if ( id == 11 && ( st==1 || st==23 || st==51 )  && p.numberOfMothers() == 1 && ( mom->pdgId() == 23 || mom->pdgId() == 22 ) ){
+		//if ( id == 11   && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 ) ){
 		if ( id == 11   && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 ) ){
 			Nelectron++;
 		} 
 
-		if ( id == -11 && p.numberOfMothers() == 1 && ( mom->pdgId() == 22   )){
+		if ( id == -11 && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 ) ){
 			Npositron++;			
 		}
-		if ( id == 13   && p.numberOfMothers() == 1 && ( mom->pdgId() == 22   ) ){
+		if ( id == 13   && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 )){
 			Nmuminus++;
 		} 
 
-		if ( id == -13 && p.numberOfMothers() == 1 && ( mom->pdgId() == 22   )){
+		if ( id == -13 && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 )){
 			Nmuplus++;			
 		}
-		if ( id == 15   && p.numberOfMothers() == 1  && ( mom->pdgId() == 22   )){
+		if ( id == 15   && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 )){
 			Ntaminus++;
 		} 
 
-		if ( id == -15 && p.numberOfMothers() == 1 && ( mom->pdgId() == 22   )){
+		if ( id == -15 && p.numberOfMothers() == 1 && (  mom->pdgId() == 22 ) ){
 			Ntaplus++;			
+		}// End Z Boson
+
+	
+		/*	
+		// -- Find Prompt W+ boson 
+		if ( id == 24  ){
+			
+			v_WpMass.push_back(mass);
+			
+			Wpnum++;
+			//break;
 		}
+		
+		// -- Find Prompt W+ boson 
+		if ( id == -24  ){
+			
+			v_WmMass.push_back(mass);
+			
+			Wmnum++;
+			//break;
+		}
+		*/
 
 
-
-
-	// End Z Boson
 
 	}//// -- END Particle LOOP
 
 
 	// --Fill branches
 
-		//  Z mass
+		//  Step1 ...Z mass
 		if( v_ZMass.size() != 0 ){
 			ZMass  = v_ZMass[0];
+			ZTree->Fill();
+
 		}
+		/*
+		// W mass
+		if( v_WpMass.size() != 0 ){
+			WpMass  = v_WpMass[0];
+		}
+		if( v_WmMass.size() != 0 ){
+			WmMass  = v_WmMass[0];
+		}
+		*/
 
 	// If we have l nl a l+ l- that meet the W Z Photon criteria.. Fill Tree! 		
-	outTree->Fill();
 	cnt++; 
 
 
 // Printout the counters
 
 	cout << " ############ Z Boson summary ########" << endl;
-	cout << "Number of Z boson  " << " " << Znum << endl;
+	cout << "Number of Z boson  " << " " << Znum  << endl;
 	cout << "Number of e-   " << " " << Nelectron << endl;
 	cout << "Number of e+   " << " " << Npositron << endl;
 	cout << "Number of mu-   " << " " << Nmuminus << endl;
 	cout << "Number of mu+   " << " " << Nmuplus << endl;
 	cout << "Number of ta-   " << " " << Ntaminus << endl;
 	cout << "Number of ta+   " << " " << Ntaplus << endl;
+	//cout << "Number of W+ boson  " << " " << Wpnum << endl;
+	//cout << "Number of W- boson  " << " " << Wmnum << endl;
 	cout << "EVT count: " << " " << cnt << endl;
 
 
