@@ -45,6 +45,9 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 		// --Counter List
 		int Znum;
 		int Wpnum;
+		int Wp_ele_num;
+		int Wp_nu_num;
+
 		int Wmnum;
 		int cnt;
 		int Nelectron;
@@ -54,6 +57,8 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 		int Ntaplus;
 		int Ntaminus;
 
+	
+
 		// --Tree definition
 		TTree* ZTree;
 		TTree* WpTree;
@@ -61,14 +66,14 @@ class GenInfo : public edm::one::EDAnalyzer<edm::one::SharedResources>{
 	
 		// --Vector List
 		std::vector<double> v_ZMass;
-		std::vector<double> v_WpMass;
-		std::vector<double> v_WmMass;
+		std::vector<double> v_WpMT;
+		std::vector<double> v_WmMT;
 				
 
 		// --Variables for making branches
 		double ZMass;
-		double WpMass;
-		double WmMass;
+		double WpMT;
+		double WmMT;
 		
 };
 
@@ -94,14 +99,16 @@ GenInfo::GenInfo(const edm::ParameterSet& iConfig)
 	Ntaplus=0;
 	Ntaminus=0;
 	Wpnum=0;
+	Wp_ele_num=0;
+	Wp_nu_num=0;
     Wmnum=0;
 
 
 	// -- Make branches
 	
 	ZTree->Branch("ZMass", &ZMass);
-	WpTree->Branch("WpMass", &WpMass);
-	WmTree->Branch("WmMass", &WmMass);
+	WpTree->Branch("WpMT", &WpMT);
+	WmTree->Branch("WmMT", &WmMT);
 
 }
 
@@ -132,8 +139,8 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	
 	// --Initialize vectors
 	v_ZMass.clear();
-	v_WpMass.clear();
-	v_WmMass.clear();
+	v_WpMT.clear();
+	v_WmMT.clear();
 	
 	//// -- Particle Loop start 
 	for(size_t i = 0; i < genParticles->size(); ++ i) {
@@ -145,6 +152,7 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 		double vx = p.vx(), vy = p.vy(), vz = p.vz();
 		int charge = p.charge();
 		size_t n = p.numberOfDaughters();
+	
 	
 		// -- Find Prompt Z boson 
 		//if ( id == 23 && st == 22 ){
@@ -180,28 +188,31 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 			Ntaplus++;			
 		}// End Z Boson
 
-	
-		/*	
+		
 		// -- Find Prompt W+ boson 
 		if ( id == 24  ){
 			
-			v_WpMass.push_back(mass);
-			
+			v_WpMT.push_back(p.mt());
+						
+
 			Wpnum++;
-			//break;
+			break;
 		}
+
 		
-		// -- Find Prompt W+ boson 
+		
+		// -- Find Prompt W- boson 
 		if ( id == -24  ){
 			
-			v_WmMass.push_back(mass);
-			
+			v_WmMT.push_back(p.mt());
 			Wmnum++;
-			//break;
+
+
+
+			break;
 		}
-		*/
 
-
+	
 
 	}//// -- END Particle LOOP
 
@@ -214,15 +225,15 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 			ZTree->Fill();
 
 		}
-		/*
-		// W mass
-		if( v_WpMass.size() != 0 ){
-			WpMass  = v_WpMass[0];
+		// Step2  W MT
+		if( v_WpMT.size() != 0 ){
+			WpMT  = v_WpMT[0];
+			WpTree->Fill();
 		}
-		if( v_WmMass.size() != 0 ){
-			WmMass  = v_WmMass[0];
+		if( v_WmMT.size() != 0 ){
+			WmMT  = v_WmMT[0];
+			WmTree->Fill();
 		}
-		*/
 
 	// If we have l nl a l+ l- that meet the W Z Photon criteria.. Fill Tree! 		
 	cnt++; 
@@ -230,7 +241,7 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 
 // Printout the counters
 
-	cout << " ############ Z Boson summary ########" << endl;
+//	cout << " ############ Z Boson summary ########" << endl;
 	cout << "Number of Z boson  " << " " << Znum  << endl;
 	cout << "Number of e-   " << " " << Nelectron << endl;
 	cout << "Number of e+   " << " " << Npositron << endl;
@@ -238,8 +249,11 @@ GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) // -- 
 	cout << "Number of mu+   " << " " << Nmuplus << endl;
 	cout << "Number of ta-   " << " " << Ntaminus << endl;
 	cout << "Number of ta+   " << " " << Ntaplus << endl;
-	//cout << "Number of W+ boson  " << " " << Wpnum << endl;
-	//cout << "Number of W- boson  " << " " << Wmnum << endl;
+	cout << " ############ W+ Boson summary ########" << endl;
+	cout << "Number of W+ boson  " << " " << Wpnum << endl;
+//	cout << "Number of e+  " << " " << Wp_ele_num << endl;
+//	cout << "Number of nu  " << " " << Wp_nu_num << endl;
+	cout << "Number of W- boson  " << " " << Wmnum << endl;
 	cout << "EVT count: " << " " << cnt << endl;
 
 
@@ -281,4 +295,5 @@ descriptions.addDefault(desc);
 }
 
 //define this as a plug-in
-DEFINE_FWK_MODULE(GenInfo);
+
+
