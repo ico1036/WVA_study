@@ -1,0 +1,492 @@
+<LesHouchesEvents version="3.0">
+  <header>
+  <MG5ProcCard>
+#************************************************************                                                                                         
+#*                     MadGraph5_aMC@NLO                    *                                                                                         
+#*                                                          *                                                                                         
+#*                *                       *                 *                                                                                         
+#*                  *        * *        *                   *                                                                                         
+#*                    * * * * 5 * * * *                     *                                                                                         
+#*                  *        * *        *                   *                                                                                         
+#*                *                       *                 *                                                                                         
+#*                                                          *                                                                                         
+#*                                                          *                                                                                         
+#*         VERSION 2.6.5                 2018-02-03         *                                                                                         
+#*                                                          *                                                                                         
+#*    The MadGraph5_aMC@NLO Development Team - Find us at   *                                                                                         
+#*    https://server06.fynu.ucl.ac.be/projects/madgraph     *                                                                                         
+#*                                                          *                                                                                         
+#************************************************************                                                                                         
+#*                                                          *                                                                                         
+#*               Command File for MadGraph5_aMC@NLO         *                                                                                         
+#*                                                          *                                                                                         
+#*     run as ./bin/mg5_aMC  filename                       *                                                                                         
+#*                                                          *                                                                                         
+#************************************************************                                                                                         
+set default_unset_couplings 99                                                                                                                        
+set loop_optimized_output True                                                                                                                        
+set group_subprocesses Auto                                                                                                                           
+set ignore_six_quark_processes False                                                                                                                  
+set loop_color_flows False                                                                                                                            
+set gauge unitary                                                                                                                                     
+set complex_mass_scheme False                                                                                                                         
+set max_npoint_for_channel 0                                                                                                                          
+import model loop_sm                                                                                                                                  
+define l+ = e+ mu+                                                                                                                                    
+define l- = e- mu-                                                                                                                                    
+define vl = ve vm vt                                                                                                                                  
+define vl~ = ve~ vm~ vt~                                                                                                                              
+define p = g u c d s u~ c~ d~ s~                                                                                                                      
+define j = g u c d s u~ c~ d~ s~                                                                                                                      
+define l+ = e+ mu+ ta+                                                                                                                                
+define l- = e- mu- ta-                                                                                                                                
+generate p p > w- z a [QCD]                                                                                                                           
+output WmZA_Exlusive_NLO -nojpeg                                                                                                                      
+  </MG5ProcCard>
+  <slha>
+######################################################################                                                                                
+## PARAM_CARD AUTOMATICALY GENERATED BY MG5 FOLLOWING UFO MODEL   ####                                                                                
+######################################################################                                                                                
+##                                                                  ##                                                                                
+##  Width set on Auto will be computed following the information    ##                                                                                
+##        present in the decay.py files of the model.               ##                                                                                
+##        See  arXiv:1402.1178 for more details.                    ##                                                                                
+##                                                                  ##                                                                                
+######################################################################                                                                                
+                                                                                                                                                      
+###################################                                                                                                                   
+## INFORMATION FOR LOOP                                                                                                                               
+###################################                                                                                                                   
+Block loop                                                                                                                                            
+    1 9.118800e+01 # MU_R                                                                                                                             
+                                                                                                                                                      
+###################################                                                                                                                   
+## INFORMATION FOR MASS                                                                                                                               
+###################################                                                                                                                   
+Block mass                                                                                                                                            
+    5 4.700000e+00 # MB                                                                                                                               
+    6 1.730000e+02 # MT                                                                                                                               
+   15 1.777000e+00 # MTA                                                                                                                              
+   23 9.118800e+01 # MZ                                                                                                                               
+   25 1.250000e+02 # MH                                                                                                                               
+## Dependent parameters, given by model restrictions.                                                                                                 
+## Those values should be edited following the                                                                                                        
+## analytical expression. MG5 ignores those values                                                                                                    
+## but they are important for interfacing the output of MG5                                                                                           
+## to external program such as Pythia.                                                                                                                
+  1 0.000000 # d : 0.0                                                                                                                                
+  2 0.000000 # u : 0.0                                                                                                                                
+  3 0.000000 # s : 0.0                                                                                                                                
+  4 0.000000 # c : 0.0                                                                                                                                
+  11 0.000000 # e- : 0.0                                                                                                                              
+  12 0.000000 # ve : 0.0                                                                                                                              
+  13 0.000000 # mu- : 0.0                                                                                                                             
+  14 0.000000 # vm : 0.0                                                                                                                              
+  16 0.000000 # vt : 0.0                                                                                                                              
+  21 0.000000 # g : 0.0                                                                                                                               
+  22 0.000000 # a : 0.0                                                                                                                               
+  24 80.419002 # w+ : cmath.sqrt(MZ__exp__2/2. + cmath.sqrt(MZ__exp__4/4. - (aEW*cmath.pi*MZ__exp__2)/(Gf*sqrt__2)))                                  
+                                                                                                                                                      
+###################################                                                                                                                   
+## INFORMATION FOR SMINPUTS                                                                                                                           
+###################################                                                                                                                   
+Block sminputs                                                                                                                                        
+    1 1.325070e+02 # aEWM1                                                                                                                            
+    2 1.166390e-05 # Gf                                                                                                                               
+    3 1.180000e-01 # aS                                                                                                                               
+                                                                                                                                                      
+###################################                                                                                                                   
+## INFORMATION FOR YUKAWA                                                                                                                             
+###################################                                                                                                                   
+Block yukawa                                                                                                                                          
+    5 4.700000e+00 # ymb                                                                                                                              
+    6 1.730000e+02 # ymt                                                                                                                              
+   15 1.777000e+00 # ymtau                                                                                                                            
+                                                                                                                                                      
+###################################                                                                                                                   
+## INFORMATION FOR DECAY                                                                                                                              
+###################################                                                                                                                   
+DECAY   6 1.491500e+00 # WT                                                                                                                           
+DECAY  23 2.441404e+00 # WZ                                                                                                                           
+DECAY  24 2.047600e+00 # WW                                                                                                                           
+DECAY  25 6.382339e-03 # WH                                                                                                                           
+## Dependent parameters, given by model restrictions.                                                                                                 
+## Those values should be edited following the                                                                                                        
+## analytical expression. MG5 ignores those values                                                                                                    
+## but they are important for interfacing the output of MG5                                                                                           
+## to external program such as Pythia.                                                                                                                
+DECAY  1 0.000000 # d : 0.0                                                                                                                           
+DECAY  2 0.000000 # u : 0.0                                                                                                                           
+DECAY  3 0.000000 # s : 0.0                                                                                                                           
+DECAY  4 0.000000 # c : 0.0                                                                                                                           
+DECAY  5 0.000000 # b : 0.0                                                                                                                           
+DECAY  11 0.000000 # e- : 0.0                                                                                                                         
+DECAY  12 0.000000 # ve : 0.0                                                                                                                         
+DECAY  13 0.000000 # mu- : 0.0                                                                                                                        
+DECAY  14 0.000000 # vm : 0.0                                                                                                                         
+DECAY  15 0.000000 # ta- : 0.0                                                                                                                        
+DECAY  16 0.000000 # vt : 0.0                                                                                                                         
+DECAY  21 0.000000 # g : 0.0                                                                                                                          
+DECAY  22 0.000000 # a : 0.0                                                                                                                          
+#===========================================================                                                                                          
+# QUANTUM NUMBERS OF NEW STATE(S) (NON SM PDG CODE)                                                                                                   
+#===========================================================                                                                                          
+                                                                                                                                                      
+Block QNUMBERS 82  # gh                                                                                                                               
+        1 0  # 3 times electric charge                                                                                                                
+        2 1  # number of spin states (2S+1)                                                                                                           
+        3 8  # colour rep (1: singlet, 3: triplet, 8: octet)                                                                                          
+        4 1  # Particle/Antiparticle distinction (0=own anti)                                                                                         
+  </slha>
+  <MGRunCard>
+#***********************************************************************                                                                              
+#                        MadGraph5_aMC@NLO                             *                                                                              
+#                                                                      *                                                                              
+#                      run_card.dat aMC@NLO                            *                                                                              
+#                                                                      *                                                                              
+#  This file is used to set the parameters of the run.                 *                                                                              
+#                                                                      *                                                                              
+#  Some notation/conventions:                                          *                                                                              
+#                                                                      *                                                                              
+#   Lines starting with a hash (#) are info or comments                *                                                                              
+#                                                                      *                                                                              
+#   mind the format:   value    = variable     ! comment               *                                                                              
+#                                                                      *                                                                              
+#   Some of the values of variables can be list. These can either be   *                                                                              
+#   comma or space separated.                                          *                                                                              
+#                                                                      *                                                                              
+#   To display additional parameter, you can use the command:          *                                                                              
+#      update to_full                                                  *                                                                              
+#***********************************************************************                                                                              
+#                                                                                                                                                     
+#*******************                                                                                                                                  
+# Running parameters                                                                                                                                  
+#*******************                                                                                                                                  
+#                                                                                                                                                     
+#***********************************************************************                                                                              
+# Tag name for the run (one word)                                      *                                                                              
+#***********************************************************************                                                                              
+  WmZA_Exclusive_NLO	= run_tag ! name of the run                                                                                                      
+#***********************************************************************                                                                              
+# Number of LHE events (and their normalization) and the required      *                                                                              
+# (relative) accuracy on the Xsec.                                     *                                                                              
+# These values are ignored for fixed order runs                        *                                                                              
+#***********************************************************************                                                                              
+          5 = nevents                                                                                                                                 
+  0.001	= req_acc ! Required accuracy (-1=auto determined from nevents)                                                                               
+  10	= nevt_job ! Max number of events per job in event generation.                                                                                   
+                 !  (-1= no split).                                                                                                                   
+#***********************************************************************                                                                              
+# Normalize the weights of LHE events such that they sum or average to *                                                                              
+# the total cross section                                              *                                                                              
+#***********************************************************************                                                                              
+  average	= event_norm ! valid settings: average, sum, bias                                                                                           
+#***********************************************************************                                                                              
+# Number of points per itegration channel (ignored for aMC@NLO runs)   *                                                                              
+#***********************************************************************                                                                              
+  0.01	= req_acc_fo ! Required accuracy (-1=ignored, and use the                                                                                      
+ 	                   ! number of points and iter. below)                                                                                              
+# These numbers are ignored except if req_acc_FO is equal to -1                                                                                       
+  5000	= npoints_fo_grid ! number of points to setup grids                                                                                            
+  4	= niters_fo_grid ! number of iter. to setup grids                                                                                                 
+  10000	= npoints_fo ! number of points to compute Xsec                                                                                               
+  6	= niters_fo ! number of iter. to compute Xsec                                                                                                     
+#***********************************************************************                                                                              
+# Random number seed                                                   *                                                                              
+#***********************************************************************                                                                              
+         46 =  iseed                                                                                                                                  
+#***********************************************************************                                                                              
+# Collider type and energy                                             *                                                                              
+#***********************************************************************                                                                              
+  1	= lpp1 ! beam 1 type (0 = no PDF)                                                                                                                 
+  1	= lpp2 ! beam 2 type (0 = no PDF)                                                                                                                 
+  6500.0	= ebeam1 ! beam 1 energy in GeV                                                                                                              
+  6500.0	= ebeam2 ! beam 2 energy in GeV                                                                                                              
+#***********************************************************************                                                                              
+# PDF choice: this automatically fixes also alpha_s(MZ) and its evol.  *                                                                              
+#***********************************************************************                                                                              
+  lhapdf	= pdlabel ! PDF set                                                                                                                          
+  292000	= lhaid ! If pdlabel=lhapdf, this is the lhapdf number. Only                                                                                 
+              ! numbers for central PDF sets are allowed. Can be a list;                                                                              
+              ! PDF sets beyond the first are included via reweighting.                                                                               
+#***********************************************************************                                                                              
+# Include the NLO Monte Carlo subtr. terms for the following parton    *                                                                              
+# shower (HERWIG6 | HERWIGPP | PYTHIA6Q | PYTHIA6PT | PYTHIA8)         *                                                                              
+# WARNING: PYTHIA6PT works only for processes without FSR!!!!          *                                                                              
+#***********************************************************************                                                                              
+  PYTHIA8	= parton_shower                                                                                                                             
+  1.0	= shower_scale_factor ! multiply default shower starting                                                                                        
+                                  ! scale by this factor                                                                                              
+#***********************************************************************                                                                              
+# Renormalization and factorization scales                             *                                                                              
+# (Default functional form for the non-fixed scales is the sum of      *                                                                              
+# the transverse masses divided by two of all final state particles    *                                                                              
+# and partons. This can be changed in SubProcesses/set_scales.f or via *                                                                              
+# dynamical_scale_choice option)                                       *                                                                              
+#***********************************************************************                                                                              
+  False	= fixed_ren_scale ! if .true. use fixed ren scale                                                                                             
+  False	= fixed_fac_scale ! if .true. use fixed fac scale                                                                                             
+  91.188	= mur_ref_fixed ! fixed ren reference scale                                                                                                  
+  91.188	= muf_ref_fixed ! fixed fact reference scale                                                                                                 
+  -1	= dynamical_scale_choice ! Choose one (or more) of the predefined                                                                                
+           ! dynamical choices. Can be a list; scale choices beyond the                                                                               
+           ! first are included via reweighting                                                                                                       
+  1.0	= mur_over_ref ! ratio of current muR over reference muR                                                                                        
+  1.0	= muf_over_ref ! ratio of current muF over reference muF                                                                                        
+#***********************************************************************                                                                              
+# Reweight variables for scale dependence and PDF uncertainty          *                                                                              
+#***********************************************************************                                                                              
+  1.0, 2.0, 0.5	= rw_rscale ! muR factors to be included by reweighting                                                                               
+  1.0, 2.0, 0.5	= rw_fscale ! muF factors to be included by reweighting                                                                               
+  False	= reweight_scale ! Reweight to get scale variation using the                                                                                  
+            ! rw_rscale and rw_fscale factors. Should be a list of                                                                                    
+            ! booleans of equal length to dynamical_scale_choice to                                                                                   
+            ! specify for which choice to include scale dependence.                                                                                   
+  False	= reweight_pdf ! Reweight to get PDF uncertainty. Should be a                                                                                 
+            ! list booleans of equal length to lhaid to specify for                                                                                   
+            !  which PDF set to include the uncertainties.                                                                                            
+#***********************************************************************                                                                              
+# Store reweight information in the LHE file for off-line model-       *                                                                              
+# parameter reweighting at NLO+PS accuracy                             *                                                                              
+#***********************************************************************                                                                              
+  True	= store_rwgt_info ! Store info for reweighting in LHE file                                                                                     
+#***********************************************************************                                                                              
+# ickkw parameter:                                                     *                                                                              
+#   0: No merging                                                      *                                                                              
+#   3: FxFx Merging - WARNING! Applies merging only at the hard-event  *                                                                              
+#      level. After showering an MLM-type merging should be applied as *                                                                              
+#      well. See http://amcatnlo.cern.ch/FxFx_merging.htm for details. *                                                                              
+#   4: UNLOPS merging (with pythia8 only). No interface from within    *                                                                              
+#      MG5_aMC available, but available in Pythia8.                    *                                                                              
+#  -1: NNLL+NLO jet-veto computation. See arxiv:1412.8408 [hep-ph].    *                                                                              
+#***********************************************************************                                                                              
+  0	= ickkw                                                                                                                                           
+#***********************************************************************                                                                              
+#                                                                                                                                                     
+#***********************************************************************                                                                              
+# BW cutoff (M+/-bwcutoff*Gamma). Determines which resonances are      *                                                                              
+# written in the LHE event file                                        *                                                                              
+#***********************************************************************                                                                              
+  30.0	= bwcutoff                                                                                                                                     
+#***********************************************************************                                                                              
+# Cuts on the jets. Jet clustering is performed by FastJet.            *                                                                              
+#  - When matching to a parton shower, these generation cuts should be *                                                                              
+#    considerably softer than the analysis cuts.                       *                                                                              
+#  - More specific cuts can be specified in SubProcesses/cuts.f        *                                                                              
+#***********************************************************************                                                                              
+  1.0	= jetalgo ! FastJet jet algorithm (1=kT, 0=C/A, -1=anti-kT)                                                                                     
+  0.7	= jetradius ! The radius parameter for the jet algorithm                                                                                        
+  15.0	= ptj ! Min jet transverse momentum                                                                                                            
+  -1.0	= etaj ! Max jet abs(pseudo-rap) (a value .lt.0 means no cut)                                                                                  
+#***********************************************************************                                                                              
+# Cuts on the charged leptons (e+, e-, mu+, mu-, tau+ and tau-)        *                                                                              
+# More specific cuts can be specified in SubProcesses/cuts.f           *                                                                              
+#***********************************************************************                                                                              
+  20.0	= ptl ! Min lepton transverse momentum                                                                                                         
+  2.6	= etal ! Max lepton abs(pseudo-rap) (a value .lt.0 means no cut)                                                                                
+  0.0	= drll ! Min distance between opposite sign lepton pairs                                                                                        
+  0.0	= drll_sf ! Min distance between opp. sign same-flavor lepton pairs                                                                             
+  0.0	= mll ! Min inv. mass of all opposite sign lepton pairs                                                                                         
+  0.0	= mll_sf ! Min inv. mass of all opp. sign same-flavor lepton pairs                                                                              
+#***********************************************************************                                                                              
+# Photon-isolation cuts, according to hep-ph/9801442. When ptgmin=0,   *                                                                              
+# all the other parameters are ignored.                                *                                                                              
+# More specific cuts can be specified in SubProcesses/cuts.f           *                                                                              
+#***********************************************************************                                                                              
+  20.0	= ptgmin ! Min photon transverse momentum                                                                                                      
+  2.6	= etagamma ! Max photon abs(pseudo-rap)                                                                                                         
+  0.05	= r0gamma ! Radius of isolation code                                                                                                           
+  1.0	= xn ! n parameter of eq.(3.4) in hep-ph/9801442                                                                                                
+  1.0	= epsgamma ! epsilon_gamma parameter of eq.(3.4) in hep-ph/9801442                                                                              
+  True	= isoem ! isolate photons from EM energy (photons and leptons)                                                                                 
+#***********************************************************************                                                                              
+# Cuts associated to MASSIVE particles identified by their PDG codes.  *                                                                              
+# All cuts are applied to both particles and anti-particles, so use    *                                                                              
+# POSITIVE PDG CODES only. Example of the syntax is {6 : 100} or       *                                                                              
+# {6:100, 25:200} for multiple particles                               *                                                                              
+#***********************************************************************                                                                              
+  {}	= pt_min_pdg ! Min pT for a massive particle                                                                                                     
+  {}	= pt_max_pdg ! Max pT for a massive particle                                                                                                     
+  {}	= mxx_min_pdg ! inv. mass for any pair of (anti)particles                                                                                        
+#***********************************************************************                                                                              
+# For aMCfast+APPLGRID use in PDF fitting (http://amcfast.hepforge.org)*                                                                              
+#***********************************************************************                                                                              
+  0	= iappl ! aMCfast switch (0=OFF, 1=prepare grids, 2=fill grids)                                                                                   
+#***********************************************************************                                                                              
+#*********************************************************************                                                                                
+#  Additional hidden parameters                                                                                                                       
+#*********************************************************************                                                                                
+  1.0	= muf1_over_ref # hidden_parameter                                                                                                              
+  1.0	= muf2_over_ref # hidden_parameter                                                                                                              
+  91.188	= qes_ref_fixed # hidden_parameter                                                                                                           
+  False	= fixed_qes_scale # hidden_parameter                                                                                                          
+  0.5	= rw_rscale_down # hidden_parameter                                                                                                             
+  91.188	= muf1_ref_fixed # hidden_parameter                                                                                                          
+  1.0	= qes_over_ref # hidden_parameter                                                                                                               
+  292001	= pdf_set_min # hidden_parameter                                                                                                             
+  292102	= pdf_set_max # hidden_parameter                                                                                                             
+  4	= maxjetflavor # hidden_parameter                                                                                                                 
+  2.0	= rw_fscale_up # hidden_parameter                                                                                                               
+  0.5	= rw_fscale_down # hidden_parameter                                                                                                             
+  2.0	= rw_rscale_up # hidden_parameter                                                                                                               
+  91.188	= muf2_ref_fixed # hidden_parameter                                                                                                          
+  </MGRunCard>
+  <scalesfunctionalform>
+    muR  H_T/2 := sum_i mT(i)/2, i=final state
+    muF1 H_T/2 := sum_i mT(i)/2, i=final state
+    muF2 H_T/2 := sum_i mT(i)/2, i=final state
+    QES  H_T/2 := sum_i mT(i)/2, i=final state
+  </scalesfunctionalform>
+  <MonteCarloMasses>
+       1   0.000000E+00
+       2   0.000000E+00
+       3   0.000000E+00
+       4   0.000000E+00
+       5   0.000000E+00
+      11   0.000000E+00
+      13   0.000000E+00
+      15   0.000000E+00
+      21   0.000000E+00
+  </MonteCarloMasses>
+  </header>
+  <init>
+   2212   2212 0.65000000E+04 0.65000000E+04 -1 -1 292000 292000 -4   1
+ 0.73227655E-01 0.92385081E-04 0.80168853E-01      0
+  </init>
+  <event>
+  6      0 0.80168853E-01 0.12654409E+03 0.75467711E-02 0.10157868E+00
+       21 -1    0    0  502  501 0.00000000E+00 0.00000000E+00 0.41191419E+03 0.41191419E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+        3 -1    0    0  501    0 0.00000000E+00 0.00000000E+00 -.84515459E+02 0.84515459E+02 0.00000000E+00 0.0000E+00 0.9000E+01
+      -24  1    1    2    0    0 -.10736389E+02 0.16147093E+02 0.12419219E+03 0.14922103E+03 0.80419002E+02 0.0000E+00 0.9000E+01
+       23  1    1    2    0    0 0.12454585E+03 -.19237618E+02 0.79860614E+02 0.17485629E+03 0.91188000E+02 0.0000E+00 0.9000E+01
+       22  1    1    2    0    0 -.25885374E+02 0.13427828E+02 0.16181231E+02 0.33349533E+02 0.00000000E+00 0.0000E+00 0.9000E+01
+        4  1    1    2  502    0 -.87924086E+02 -.10337302E+02 0.10716469E+03 0.13900279E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+#aMCatNLO 2  0  0  1  2 0.11303953E+03 0.00000000E+00 -9  6  0 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00
+  <mgrwgt>
+ 0.1327322572D-01    2    2    0
+ 0.133616448218504D+03 0.000000000000000D+00 0.000000000000000D+00 0.133616448218504D+03
+ 0.133616448218504D+03 0.000000000000000D+00 0.000000000000000D+00 -.133616448218504D+03
+ 0.100142329286278D+03 -.415709909364912D+02 0.125218451306840D+02 0.409429635907330D+02
+ 0.127823315690378D+03 0.785041097483955D+02 -.246507809381721D+02 -.353976332800943D+02
+ 0.392672514603517D+02 -.369331188119043D+02 0.121289358074881D+02 -.554533031063872D+01
+ 0.000000000000000D+00 -.000000000000000D+00 -.000000000000000D+00 0.000000000000000D+00
+ 0.200740941130947D+03 0.000000000000000D+00 0.000000000000000D+00 0.200740941130947D+03
+ 0.173423100279783D+03 0.000000000000000D+00 0.000000000000000D+00 -.173423100279783D+03
+ 0.923013590705029D+02 -.107363894413070D+02 0.161470928053277D+02 0.409429635907330D+02
+ 0.159530555846763D+03 0.124545848984443D+03 -.192376184516033D+02 -.353976332800943D+02
+ 0.296834942063215D+02 -.258853739698597D+02 0.134278276159304D+02 -.554533031063872D+01
+ 0.926486322871429D+02 -.879240855732766D+02 -.103373019696548D+02 0.273178408511643D+02
+-.660142674408D-08 0.000000000000D+00 0.000000000000D+00 0.102623576002D-05 0.000000000000D+00  6 21 3 -24 23 22 4 2 0.82250854D-01 0.10017879D-01 0.31678339D+05 0.31678339D+05 0.31678339D+05 0.11298121D+01  1  2 13  3  6  1       -4 -.563995418859D-05 0.100000000000D+01
+0.132112618905D-04 0.000000000000D+00 0.000000000000D+00 0.102623576002D-05 0.173337927322D-08  6 21 3 -24 23 22 4 2 0.63371413D-01 0.13002378D-01 0.31678339D+05 0.31678339D+05 0.31678339D+05 0.11298121D+01  1  2  1  3  6  1       -4 0.132788656718D-01 0.100000000000D+01
+  </mgrwgt>
+  </event>
+  <event>
+  5      0 0.80168853E-01 0.14790882E+03 0.75467711E-02 0.78240460E-01
+        1 -1    0    0  501    0 0.00000000E+00 0.00000000E+00 0.10937998E+03 0.10937998E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+       -2 -1    0    0    0  501 0.00000000E+00 0.00000000E+00 -.10263471E+04 0.10263471E+04 0.00000000E+00 0.0000E+00 0.9000E+01
+      -24  1    1    2    0    0 0.41709033E+02 0.37307207E+02 -.81731577E+03 0.82316691E+03 0.80419002E+02 0.0000E+00 0.9000E+01
+       23  1    1    2    0    0 -.54343316E+02 -.92759838E+02 0.52264168E+02 0.15034752E+03 0.91188000E+02 0.0000E+00 0.9000E+01
+       22  1    1    2    0    0 0.12634283E+02 0.55452631E+02 -.15191549E+03 0.16221263E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+#aMCatNLO 1  0  0  2  2 0.74261774E+04 0.00000000E+00 -9  6  0 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00
+  <mgrwgt>
+ 0.2603898727D-01    3    2    0
+ 0.335054957739068D+03 0.000000000000000D+00 0.000000000000000D+00 0.335054957739068D+03
+ 0.335054957739068D+03 0.000000000000000D+00 0.000000000000000D+00 -.335054957739068D+03
+ 0.276732604070303D+03 0.417090330345573D+02 0.373072071108515D+02 -.258809287047569D+03
+ 0.326331949869186D+03 -.543433161123800D+02 -.927598380795062D+02 0.294312260354201D+03
+ 0.670453615386463D+02 0.126342830778227D+02 0.554526309686548D+02 -.355029733066320D+02
+ 0.000000000000000D+00 -.000000000000000D+00 -.000000000000000D+00 0.000000000000000D+00
+ 0.173752669322867D+05 0.000000000000000D+00 0.000000000000000D+00 0.173752669322867D+05
+ 0.838550780588075D+03 0.000000000000000D+00 0.000000000000000D+00 -.838550780588075D+03
+ 0.784533790450916D+03 0.423492210930679D+03 0.602244263255272D+03 -.258809287047569D+03
+ 0.550360100035000D+03 0.261040529618159D+03 0.373923954392343D+03 0.294312260354201D+03
+ 0.277322252791094D+03 0.136518128681572D+03 0.238767609446503D+03 -.355029733066320D+02
+ 0.166016015695978D+05 -.821050869230410D+03 -.121493582709412D+04 0.165367161516986D+05
+0.224220196049D-02 0.000000000000D+00 0.000000000000D+00 0.995733157650D-05 0.000000000000D+00  6 1 -2 -24 23 22 21 0 0.16827689D-01 0.15789955D+00 0.21877020D+05 0.21877020D+05 0.21877020D+05 0.11449799D+01  1  2  2  2  6  2       -2 0.218724162189D-01 0.100000000000D+01
+-.232992556757D-04 0.000000000000D+00 -.861064591361D-05 0.995733157650D-05 0.000000000000D+00  6 1 -2 -24 23 22 21 2 0.16827689D-01 0.15789955D+00 0.21877020D+05 0.21877020D+05 0.21877020D+05 0.11449799D+01  1  2  3  2  6  2       -2 -.297961271061D-03 0.100000000000D+01
+0.349106713688D-03 0.000000000000D+00 0.000000000000D+00 0.995733157650D-05 0.000000000000D+00  6 1 -2 -24 23 22 21 2 0.16827689D-01 0.15789955D+00 0.21877020D+05 0.21877020D+05 0.21877020D+05 0.11449799D+01  1  2 15  2  6  2       -2 0.446453232645D-02 0.100000000000D+01
+  </mgrwgt>
+  </event>
+  <event>
+  6      0 0.80168853E-01 0.22427103E+03 0.75467711E-02 0.97278211E-01
+        3 -1    0    0  501    0 0.00000000E+00 0.00000000E+00 0.22175139E+03 0.22175139E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+       21 -1    0    0  502  501 0.00000000E+00 0.00000000E+00 -.78572093E+03 0.78572093E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+      -24  1    1    2    0    0 -.20399685E+03 -.12128407E+02 -.15766645E+03 0.27034744E+03 0.80419002E+02 0.0000E+00 0.9000E+01
+       23  1    1    2    0    0 0.18048080E+03 0.30354079E+02 -.54284793E+03 0.58008087E+03 0.91188000E+02 0.0000E+00 0.9000E+01
+       22  1    1    2    0    0 -.13460986E+02 -.20976303E+02 0.10633286E+03 0.10921483E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+        4  1    1    2  502    0 0.36977039E+02 0.27506311E+01 0.30211975E+02 0.47829184E+02 0.00000000E+00 0.0000E+00 0.9000E+01
+#aMCatNLO 2  0  0  2  1 0.15150830E+03 0.00000000E+00 -9  6  0 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00
+  <mgrwgt>
+ 0.3846022544D-02    2    2    0
+ 0.376327120156253D+03 0.000000000000000D+00 0.000000000000000D+00 0.376327120156253D+03
+ 0.376327120156253D+03 0.000000000000000D+00 0.000000000000000D+00 -.376327120156253D+03
+ 0.210160265252391D+03 -.193437596626059D+03 -.113429297288110D+02 0.123836704286814D+02
+ 0.320037463200630D+03 0.195964692096705D+03 0.315058875714189D+02 -.233910121644351D+03
+ 0.222456511859485D+03 -.252709547064598D+01 -.201629578426079D+02 0.221526451215670D+03
+ 0.000000000000000D+00 0.000000000000000D+00 0.000000000000000D+00 0.000000000000000D+00
+ 0.457242368553220D+03 0.000000000000000D+00 0.000000000000000D+00 0.457242368553220D+03
+ 0.381055474533933D+03 0.000000000000000D+00 0.000000000000000D+00 -.381055474533933D+03
+ 0.219959960934699D+03 -.203996850265697D+03 -.121284066724564D+02 0.123836704286814D+02
+ 0.310682932237178D+03 0.180480796605067D+03 0.303540786158275D+02 -.233910121644351D+03
+ 0.222924139585782D+03 -.134609855285203D+02 -.209763030692605D+02 0.221526451215670D+03
+ 0.847308103294947D+02 0.369770391891496D+02 0.275063112588945D+01 0.761868940192878D+02
+-.581063831936D-06 0.000000000000D+00 0.000000000000D+00 0.928854460533D-06 0.000000000000D+00  6 3 21 -24 23 22 4 2 0.28078380D-01 0.14687095D+00 0.59070637D+05 0.59070637D+05 0.59070637D+05 0.11056374D+01  1  2 13  4  6  2       -4 -.172967233450D-04 0.100000000000D+01
+0.108049073238D-03 0.000000000000D+00 0.000000000000D+00 0.928854460533D-06 0.355338410205D-09  6 3 21 -24 23 22 4 2 0.34115598D-01 0.12088014D+00 0.59070637D+05 0.59070637D+05 0.59070637D+05 0.11056374D+01  1  2  1  4  6  2       -4 0.386331926721D-02 0.100000000000D+01
+  </mgrwgt>
+  </event>
+  <event>
+  5      0 0.80168853E-01 0.14677223E+03 0.75467711E-02 0.85817105E-01
+       -2 -1    0    0    0  501 0.00000000E+00 0.00000000E+00 0.14849323E+03 0.14849323E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+        1 -1    0    0  501    0 0.00000000E+00 0.00000000E+00 -.10982119E+04 0.10982119E+04 0.00000000E+00 0.0000E+00 0.9000E+01
+      -24  1    1    2    0    0 0.69067073E+02 0.53773537E+02 -.10336163E+04 0.10404286E+04 0.80419002E+02 0.0000E+00 0.9000E+01
+       23  1    1    2    0    0 -.41062782E+02 -.86060681E+02 0.94440413E+02 0.16225546E+03 0.91188000E+02 0.0000E+00 0.9000E+01
+       22  1    1    2    0    0 -.28004292E+02 0.32287144E+02 -.10542751E+02 0.44021013E+02 0.00000000E+00 0.0000E+00 0.9000E+01
+#aMCatNLO 1  0  0  1  1 0.79218907E+03 0.00000000E+00 -9  6  0 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00
+  <mgrwgt>
+ 0.2494104888D-01    5    2    0
+ 0.403827969105639D+03 0.000000000000000D+00 0.000000000000000D+00 0.403827969105639D+03
+ 0.403827969105639D+03 0.000000000000000D+00 0.000000000000000D+00 -.403827969105639D+03
+ 0.390590836349388D+03 0.690670733813229D+02 0.537735370468798D+02 -.372064687351205D+03
+ 0.361511032680355D+03 -.410627817759465D+02 -.860606807362502D+02 0.336574482974647D+03
+ 0.555540691815362D+02 -.280042916053765D+02 0.322871436893705D+02 0.354902043765586D+02
+ 0.000000000000000D+00 0.000000000000000D+00 0.000000000000000D+00 0.000000000000000D+00
+ 0.970026703816720D+03 0.000000000000000D+00 0.000000000000000D+00 0.970026703816720D+03
+ 0.720931469345921D+03 0.000000000000000D+00 0.000000000000000D+00 -.720931469345921D+03
+ 0.443102021309204D+03 0.191796665285020D+02 -.225991579825525D+03 -.372064687351205D+03
+ 0.527476309048024D+03 -.942589592367506D+02 -.384381153644245D+03 0.336574482974647D+03
+ 0.494348423002433D+02 -.342867306283472D+02 -.294433852999014D+01 0.354902043765586D+02
+ 0.670945000505170D+03 0.109366023336596D+03 0.613317071999760D+03 0.249095234470799D+03
+0.766271977113D-03 0.000000000000D+00 0.000000000000D+00 0.264014423139D-04 0.000000000000D+00  6 -2 1 -24 23 22 21 0 0.22845113D-01 0.16895567D+00 0.21542088D+05 0.21542088D+05 0.21542088D+05 0.11456255D+01  1  2  2  1  6  1       -2 0.177553147688D-01 0.100000000000D+01
+0.104499563614D-04 0.000000000000D+00 -.294268615616D-05 0.264014423139D-04 0.000000000000D+00  6 -2 1 -24 23 22 21 2 0.22845113D-01 0.16895567D+00 0.21542088D+05 0.21542088D+05 0.21542088D+05 0.11456255D+01  1  2  3  1  6  1       -2 0.317793665104D-03 0.100000000000D+01
+0.129195011996D-03 0.000000000000D+00 0.000000000000D+00 0.264014423139D-04 0.000000000000D+00  6 -2 1 -24 23 22 21 2 0.22845113D-01 0.16895567D+00 0.21542088D+05 0.21542088D+05 0.21542088D+05 0.11456255D+01  1  2 15  1  6  1       -2 0.392895003151D-02 0.100000000000D+01
+0.532106378050D-03 0.000000000000D+00 -.186277999622D-03 0.264014423139D-04 0.000000000000D+00  6 -2 1 -24 23 22 21 2 0.96378738D-01 0.16895567D+00 0.21542088D+05 0.21542088D+05 0.21542088D+05 0.11456255D+01  1  2  5  1  6  1       -2 0.105175799427D-02 0.100000000000D+01
+0.925063584655D-04 0.000000000000D+00 -.322094410263D-04 0.264014423139D-04 0.000000000000D+00  6 21 1 -24 23 22 2 2 0.96378738D-01 0.16895567D+00 0.21542088D+05 0.21542088D+05 0.21542088D+05 0.11456255D+01  1  2  5  3  6  1       -2 0.188723242305D-02 0.100000000000D+01
+  </mgrwgt>
+  </event>
+  <event>
+  6      0 0.80168853E-01 0.10225469E+03 0.75467711E-02 0.98768902E-01
+       -2 -1    0    0    0  501 0.00000000E+00 0.00000000E+00 0.12872553E+03 0.12872553E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+       21 -1    0    0  501  502 0.00000000E+00 0.00000000E+00 -.94257023E+03 0.94257023E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+      -24  1    1    2    0    0 -.94060217E+02 0.39389968E+02 -.45624835E+02 0.13765077E+03 0.80419002E+02 0.0000E+00 0.9000E+01
+       23  1    1    2    0    0 -.17488955E+02 0.41996212E+02 -.15652541E+03 0.18677527E+03 0.91188000E+02 0.0000E+00 0.9000E+01
+       22  1    1    2    0    0 -.23880460E+02 0.22268017E+02 0.52116928E+02 0.61500529E+02 0.00000000E+00 0.0000E+00 0.9000E+01
+       -1  1    1    2    0  502 0.13542963E+03 -.10365420E+03 -.66381139E+03 0.68536920E+03 0.00000000E+00 0.0000E+00 0.9000E+01
+#aMCatNLO 2  0  0  2  1 0.32881791E+02 0.00000000E+00 -9  6  0 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00 0.00000000E+00
+  <mgrwgt>
+ 0.2451939560D-02    1    2    0
+ 0.155999954752174D+03 0.000000000000000D+00 0.000000000000000D+00 0.155999954752174D+03
+ 0.155999954752174D+03 0.000000000000000D+00 0.000000000000000D+00 -.155999954752174D+03
+ 0.944114683641358D+02 -.485031496662377D+02 0.452181399447847D+01 0.856195508955491D+01
+ 0.134217684787931D+03 0.374670807031966D+02 -.656590599606601D-01 -.910788071853185D+02
+ 0.833707563522819D+02 0.110360689630411D+02 -.445615493451781D+01 0.825168520957636D+02
+ 0.000000000000000D+00 0.000000000000000D+00 -.000000000000000D+00 -.000000000000000D+00
+ 0.194031873387094D+03 0.000000000000000D+00 0.000000000000000D+00 0.194031873387094D+03
+ 0.625324347179226D+03 0.000000000000000D+00 0.000000000000000D+00 -.625324347179226D+03
+ 0.130151515858028D+03 -.940602173894654D+02 0.393899677007081D+02 0.856195508955491D+01
+ 0.136675330015646D+03 -.174889551898188D+02 0.419962119595767D+02 -.910788071853185D+02
+ 0.887421649766856D+02 -.238804603135255D+02 0.222680169788262D+02 0.825168520957636D+02
+ 0.463787209715962D+03 0.135429632892810D+03 -.103654196639111D+03 -.431292473792132D+03
+0.314813412014D-04 0.000000000000D+00 0.000000000000D+00 0.497887879219D-04 0.463713535169D-08  6 -2 21 -24 23 22 -1 2 0.19803928D-01 0.14501081D+00 0.47300070D+05 0.47300070D+05 0.47300070D+05 0.11140766D+01  1  2  1  4  6  2        1 0.245193955997D-02 0.100000000000D+01
+  </mgrwgt>
+  </event>
+</LesHouchesEvents>

@@ -1,0 +1,618 @@
+==== LHAPDF6 USING DEFAULT-TYPE LHAGLUE INTERFACE ====
+LHAPDF 6.2.1 loading /cvmfs/cms.cern.ch/slc6_amd64_gcc630/external/lhapdf/6.2.1-ghjeda2/share/LHAPDF/NNPDF30_nlo_nf_4_pdfas/NNPDF30_nlo_nf_4_pdfas_0000.dat
+NNPDF30_nlo_nf_4_pdfas PDF set, member #0, version 2; LHAPDF ID = 292000
+ ===============================================================
+ INFO: MadFKS read these parameters from FKS_params.dat                                                  
+ ===============================================================
+  > IRPoleCheckThreshold      =    1.0000000000000001E-005
+  > PrecisionVirtualAtRunTime =    1.0000000000000000E-003
+  > NHelForMCoverHels         =            4
+  > VirtualFraction           =    1.0000000000000000     
+  > MinVirtualFraction        =    5.0000000000000001E-003
+ ===============================================================
+ A PDF is used, so alpha_s(MZ) is going to be modified
+ Old value of alpha_s from param_card:   0.11799999999999999     
+ New value of alpha_s from PDF lhapdf :  0.11227348553523188     
+ using LHAPDF
+ *****************************************************
+ *               MadGraph/MadEvent                   *
+ *        --------------------------------           *
+ *          http://madgraph.hep.uiuc.edu             *
+ *          http://madgraph.phys.ucl.ac.be           *
+ *          http://madgraph.roma2.infn.it            *
+ *        --------------------------------           *
+ *                                                   *
+ *          PARAMETER AND COUPLING VALUES            *
+ *                                                   *
+ *****************************************************
+
+  External Params
+  ---------------------------------
+  
+ MU_R =    91.188000000000002     
+ aEWM1 =    132.50700000000001     
+ mdl_Gf =    1.1663900000000000E-005
+ aS =   0.11799999999999999     
+ mdl_ymb =    4.7000000000000002     
+ mdl_ymt =    173.00000000000000     
+ mdl_ymtau =    1.7769999999999999     
+ mdl_MT =    173.00000000000000     
+ mdl_MB =    4.7000000000000002     
+ mdl_MZ =    91.188000000000002     
+ mdl_MH =    125.00000000000000     
+ mdl_MTA =    1.7769999999999999     
+ mdl_WT =    1.4915000000000000     
+ mdl_WZ =    2.4414039999999999     
+ mdl_WW =    2.0476000000000001     
+ mdl_WH =    6.3823389999999999E-003
+  Internal Params
+  ---------------------------------
+  
+ mdl_conjg__CKM3x3 =    1.0000000000000000     
+ mdl_CKM22 =    1.0000000000000000     
+ mdl_lhv =    1.0000000000000000     
+ mdl_CKM3x3 =    1.0000000000000000     
+ mdl_conjg__CKM22 =    1.0000000000000000     
+ mdl_conjg__CKM33 =    1.0000000000000000     
+ mdl_Ncol =    3.0000000000000000     
+ mdl_CA =    3.0000000000000000     
+ mdl_TF =   0.50000000000000000     
+ mdl_CF =    1.3333333333333333     
+ mdl_complexi =  (  0.0000000000000000     ,  1.0000000000000000     )
+ mdl_MZ__exp__2 =    8315.2513440000002     
+ mdl_MZ__exp__4 =    69143404.913893804     
+ mdl_sqrt__2 =    1.4142135623730951     
+ mdl_MH__exp__2 =    15625.000000000000     
+ mdl_Ncol__exp__2 =    9.0000000000000000     
+ mdl_MB__exp__2 =    22.090000000000003     
+ mdl_MT__exp__2 =    29929.000000000000     
+ mdl_aEW =    7.5467711139788835E-003
+ mdl_MW =    80.419002445756163     
+ mdl_sqrt__aEW =    8.6872153846781555E-002
+ mdl_ee =   0.30795376724436879     
+ mdl_MW__exp__2 =    6467.2159543705357     
+ mdl_sw2 =   0.22224648578577766     
+ mdl_cw =   0.88190334743339216     
+ mdl_sqrt__sw2 =   0.47143025548407230     
+ mdl_sw =   0.47143025548407230     
+ mdl_g1 =   0.34919219678733299     
+ mdl_gw =   0.65323293034757990     
+ mdl_v =    246.21845810181637     
+ mdl_v__exp__2 =    60623.529110035903     
+ mdl_lam =   0.12886910601690263     
+ mdl_yb =    2.6995554250465490E-002
+ mdl_yt =   0.99366614581500623     
+ mdl_ytau =    1.0206617000654717E-002
+ mdl_muH =    88.388347648318430     
+ mdl_AxialZUp =  -0.18517701861793787     
+ mdl_AxialZDown =   0.18517701861793787     
+ mdl_VectorZUp =    7.5430507588273299E-002
+ mdl_VectorZDown =  -0.13030376310310560     
+ mdl_VectorAUp =   0.20530251149624587     
+ mdl_VectorADown =  -0.10265125574812294     
+ mdl_VectorWmDxU =   0.23095271737156670     
+ mdl_AxialWmDxU =  -0.23095271737156670     
+ mdl_VectorWpUxD =   0.23095271737156670     
+ mdl_AxialWpUxD =  -0.23095271737156670     
+ mdl_I1x33 =  (  2.6995554250465490E-002,  0.0000000000000000     )
+ mdl_I2x33 =  ( 0.99366614581500623     ,  0.0000000000000000     )
+ mdl_I3x33 =  ( 0.99366614581500623     ,  0.0000000000000000     )
+ mdl_I4x33 =  (  2.6995554250465490E-002,  0.0000000000000000     )
+ mdl_Vector_tbGp =  (-0.96667059156454072     ,  0.0000000000000000     )
+ mdl_Axial_tbGp =  ( -1.0206617000654716     , -0.0000000000000000     )
+ mdl_Vector_tbGm =  ( 0.96667059156454072     ,  0.0000000000000000     )
+ mdl_Axial_tbGm =  ( -1.0206617000654716     , -0.0000000000000000     )
+ mdl_gw__exp__2 =   0.42671326129048615     
+ mdl_cw__exp__2 =   0.77775351421422245     
+ mdl_ee__exp__2 =    9.4835522759998875E-002
+ mdl_sw__exp__2 =   0.22224648578577769     
+ mdl_yb__exp__2 =    7.2875994928982540E-004
+ mdl_yt__exp__2 =   0.98737240933884918     
+  Internal Params evaluated point by point
+  ----------------------------------------
+  
+ mdl_sqrt__aS =   0.34351128074635334     
+ mdl_G__exp__4 =    2.1987899468922913     
+ mdl_G__exp__2 =    1.4828317324943823     
+ mdl_R2MixedFactor_FIN_ =   -2.5040377713124864E-002
+ mdl_GWcft_UV_b_1EPS_ =   -3.1300472141406080E-003
+ mdl_GWcft_UV_t_1EPS_ =   -3.1300472141406080E-003
+ mdl_bWcft_UV_1EPS_ =   -1.8780283284843650E-002
+ mdl_tWcft_UV_1EPS_ =   -1.8780283284843650E-002
+ mdl_G__exp__3 =    1.8056676068262196     
+ mdl_MU_R__exp__2 =    8315.2513440000002     
+ mdl_GWcft_UV_b_FIN_ =   -1.8563438626678915E-002
+ mdl_GWcft_UV_t_FIN_ =    4.0087659331150384E-003
+ mdl_bWcft_UV_FIN_ =  -0.13642100947319838     
+ mdl_tWcft_UV_FIN_ =   -9.8778211443463623E-004
+  Couplings of loop_sm
+  ---------------------------------
+  
+       R2_DDA =   0.00000E+00   0.25704E-02
+       R2_UUA =  -0.00000E+00  -0.51409E-02
+    R2_UUZ_V2 =  -0.00000E+00  -0.72127E-02
+    R2_UUZ_V5 =   0.00000E+00   0.68702E-03
+      R2_sxcW =  -0.00000E+00  -0.11566E-01
+         GC_5 =   0.00000E+00   0.12177E+01
+       R2_QQq =   0.00000E+00   0.12520E-01
+         GC_1 =  -0.00000E+00  -0.10265E+00
+         GC_2 =   0.00000E+00   0.20530E+00
+         GC_7 =   0.00000E+00   0.57609E+00
+        GC_22 =   0.00000E+00   0.28804E+00
+        GC_23 =  -0.00000E+00  -0.27437E-01
+        GC_25 =   0.00000E+00   0.30795E+00
+        GC_26 =  -0.00000E+00  -0.35482E+00
+        GC_47 =   0.00000E+00   0.46191E+00
+
+ Collider parameters:
+ --------------------
+
+ Running at P P   machine @    13000.000000000000       GeV
+ PDF set = lhapdf 
+ alpha_s(Mz)= 0.1123 running at 2 loops.
+ alpha_s(Mz)= 0.1123 running at 2 loops.
+ Renormalization scale set on event-by-event basis
+ Factorization   scale set on event-by-event basis
+
+
+ Diagram information for  clustering has been set-up for nFKSprocess           1
+ Diagram information for  clustering has been set-up for nFKSprocess           2
+ Diagram information for  clustering has been set-up for nFKSprocess           3
+ Diagram information for  clustering has been set-up for nFKSprocess           4
+ getting user params
+Enter number of events and iterations: 
+ Number of events and iterations           -1          12
+Enter desired fractional accuracy: 
+ Desired fractional accuracy:    4.7041590664299998E-003
+ Enter alpha, beta for G_soft
+   Enter alpha<0 to set G_soft=1 (no ME soft)
+ for G_soft: alpha=   1.0000000000000000      , beta= -0.10000000000000001     
+ Enter alpha, beta for G_azi
+   Enter alpha>0 to set G_azi=0 (no azi corr)
+ for G_azi: alpha=  -1.0000000000000000      , beta= -0.10000000000000001     
+ Doing the S and H events together
+Suppress amplitude (0 no, 1 yes)? 
+ Using suppressed amplitude.
+Exact helicity sum (0 yes, n = number/event)? 
+ Do MC over helicities for the virtuals
+Enter Configuration Number: 
+Running Configuration Number:   11
+Enter running mode for MINT:
+0 to set-up grids, 1 to integrate, 2 to generate events
+ MINT running mode:           1
+Set the three folding parameters for MINT
+xi_i, phi_i, y_ij
+           1           1           1
+ 'all ', 'born', 'real', 'virt', 'novi' or 'grid'?
+ Enter 'born0' or 'virt0' to perform
+  a pure n-body integration (no S functions)
+ doing the all  of this channel
+ Normal integration (Sfunction != 1)
+ about to integrate           10          -1          12          11
+ imode is            1
+channel    1 :    11 F        0        0  0.3495E-02  0.0000E+00  0.5720E-02
+ ------- iteration           1
+ Update # PS points:          800  -->          800
+Using random seed offsets:    11 ,      1 ,      0
+  with seed                   33
+ Ranmar initialization seeds       11959        9408
+ Total number of FKS directories is           4
+ FKS process map (sum=           3 ) :
+           1 -->           2 :           1           3
+           2 -->           2 :           2           4
+ ================================
+ process combination map (specified per FKS dir):
+  1 map         1   2
+  1 inv. map    1   2
+  2 map         1   2
+  2 inv. map    1   2
+  3 map         1   2
+  3 inv. map    1   2
+  4 map         1   2
+  4 inv. map    1   2
+ ================================
+tau_min   1     1 : 0.17161E+03      --       0.19161E+03
+tau_min   2     1 : 0.17161E+03      --       0.19161E+03
+tau_min   3     1 : 0.17161E+03      --       0.19161E+03
+tau_min   4     1 : 0.17161E+03      --       0.19161E+03
+ bpower is   0.0000000000000000     
+ Scale values (may change event by event):
+ muR,  muR_reference:  0.109171D+03 0.109171D+03  1.00
+ muF1, muF1_reference: 0.109171D+03 0.109171D+03  1.00
+ muF2, muF2_reference: 0.109171D+03 0.109171D+03  1.00
+ QES,  QES_reference:  0.109171D+03 0.109171D+03  1.00
+  
+ muR_reference [functional form]:
+    H_T/2 := sum_i mT(i)/2, i=final state
+ muF1_reference [functional form]:
+    H_T/2 := sum_i mT(i)/2, i=final state
+ muF2_reference [functional form]:
+    H_T/2 := sum_i mT(i)/2, i=final state
+ QES_reference [functional form]: 
+    H_T/2 := sum_i mT(i)/2, i=final state
+  
+ alpha_s=  0.10917391305889068     
+ alpha_s value used for the virtuals is (for the first PS point):   0.10388082194951369     
+  ========================================================================================== 
+ {                                                                                          }
+ {       [32m                                                                            [0m       }
+ {       [32m                               ,,                                           [0m       }
+ {       [32m`7MMM.     ,MMF'             `7MM  `7MMF'                                   [0m       }
+ {       [32m  MMMb    dPMM                 MM    MM                                     [0m       }
+ {       [32m  M YM   ,M MM   ,6"Yb.   ,M""bMM    MM         ,pW"Wq.   ,pW"Wq.`7MMpdMAo. [0m       }
+ {       [32m  M  Mb  M' MM  8)   MM ,AP    MM    MM        6W'   `Wb 6W'   `Wb MM   `Wb [0m       }
+ {       [32m  M  YM.P'  MM   ,pm9MM 8MI    MM    MM      , 8M     M8 8M     M8 MM    M8 [0m       }
+ {       [32m  M  `YM'   MM  8M   MM `Mb    MM    MM     ,M YA.   ,A9 YA.   ,A9 MM   ,AP [0m       }
+ {       [32m.JML. `'  .JMML.`Moo9^Yo.`Wbmd"MML..JMMmmmmMMM  `Ybmd9'   `Ybmd9'  MMbmmd'  [0m       }
+ {       [32m                                                                   MM       [0m       }
+ {       [32m                                                                 .JMML.     [0m       }
+ {       [32m[0mv2.6.5 (2018-02-03), Ref: arXiv:1103.0621v2, arXiv:1405.0301[32m                [0m       }
+ {       [32m                                                                            [0m       }
+ {                                                                                          }
+  ========================================================================================== 
+ ===============================================================
+ INFO: MadLoop read these parameters from ../MadLoop5_resources/MadLoopParams.dat                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
+ ===============================================================
+  > MLReductionLib            = 6|7|1
+
+  +----------------------------------------------------------------+
+  |                                                                |
+  |  Ninja - version 1.1.0                                         |
+  |                                                                |
+  |  Author: Tiziano Peraro                                        |
+  |                                                                |
+  |  Based on:                                                     |
+  |                                                                |
+  |      P. Mastrolia, E. Mirabella and T. Peraro,                 |
+  |      "Integrand reduction of one-loop scattering amplitudes    |
+  |      through Laurent series expansion,"                        |
+  |      JHEP 1206 (2012) 095  [arXiv:1203.0291 [hep-ph]].         |
+  |                                                                |
+  |      T. Peraro,                                                |
+  |      "Ninja: Automated Integrand Reduction via Laurent         |
+  |      Expansion for One-Loop Amplitudes,"                       |
+  |      Comput.Phys.Commun. 185 (2014) [arXiv:1403.1229 [hep-ph]] |
+  |                                                                |
+  +----------------------------------------------------------------+
+
+
+  > CTModeRun                 =           -1
+  > MLStabThres               =    1.0000000000000000E-003
+  > NRotations_DP             =            0
+  > NRotations_QP             =            0
+  > CTStabThres               =    1.0000000000000000E-002
+  > CTLoopLibrary             =            2
+  > CTModeInit                =            1
+  > CheckCycle                =            3
+  > MaxAttempts               =           10
+  > UseLoopFilter             =  F
+  > HelicityFilterLevel       =            2
+  > ImprovePSPoint            =            2
+  > DoubleCheckHelicityFilter =  T
+  > LoopInitStartOver         =  F
+  > HelInitStartOver          =  F
+  > ZeroThres                 =    1.0000000000000001E-009
+  > OSThres                   =    1.0000000000000000E-008
+  > WriteOutFilters           =  T
+  > UseQPIntegrandForNinja    =  T
+  > UseQPIntegrandForCutTools =  T
+  > IREGIMODE                 =            2
+  > IREGIRECY                 =  T
+  > COLLIERMode               =            1
+  > COLLIERRequiredAccuracy   =    1.0000000000000000E-008
+  > COLLIERCanOutput          =  F
+  > COLLIERComputeUVpoles     =  T
+  > COLLIERComputeIRpoles     =  T
+  > COLLIERGlobalCache        =           -1
+  > COLLIERUseCacheForPoles   =  F
+  > COLLIERUseInternalStabilityTest =  T
+ ===============================================================
+  
+------------------------------------------------------------------------
+|              You are using CutTools - Version 1.9.3                  |
+|              Authors: G. Ossola, C. Papadopoulos, R. Pittau          |
+|              Published in JHEP 0803:042,2008                         |
+|              http://www.ugr.es/~pittau/CutTools                      |
+|                                                                      |
+|              Compiler with  34  significant digits detetected        |
+ ---------------------------------------------------------------------- 
+   
+########################################################################
+#                                                                      #
+#                      You are using OneLOop-3.6                       #
+#                                                                      #
+# for the evaluation of 1-loop scalar 1-, 2-, 3- and 4-point functions #
+#                                                                      #
+# author: Andreas van Hameren <hamerenREMOVETHIS@ifj.edu.pl>           #
+#   date: 18-02-2015                                                   #
+#                                                                      #
+# Please cite                                                          #
+#    A. van Hameren,                                                   #
+#      Comput.Phys.Commun. 182 (2011) 2427-2438, arXiv:1007.4716       #
+#    A. van Hameren, C.G. Papadopoulos and R. Pittau,                  #
+#      JHEP 0909:106,2009, arXiv:0903.4665                             #
+# in publications with results obtained with the help of this program. #
+#                                                                      #
+########################################################################
+########################################################################
+#                                                                      #
+#                      You are using OneLOop-3.6                       #
+#                                                                      #
+# for the evaluation of 1-loop scalar 1-, 2-, 3- and 4-point functions #
+#                                                                      #
+# author: Andreas van Hameren <hamerenREMOVETHIS@ifj.edu.pl>           #
+#   date: 18-02-2015                                                   #
+#                                                                      #
+# Please cite                                                          #
+#    A. van Hameren,                                                   #
+#      Comput.Phys.Commun. 182 (2011) 2427-2438, arXiv:1007.4716       #
+#    A. van Hameren, C.G. Papadopoulos and R. Pittau,                  #
+#      JHEP 0909:106,2009, arXiv:0903.4665                             #
+# in publications with results obtained with the help of this program. #
+#                                                                      #
+########################################################################
+ ---- POLES CANCELLED ----
+ABS integral  = 0.4305E-02  +/-  0.5281E-03  (  12.268 %)
+Integral      = 0.3871E-02  +/-  0.5265E-03  (  13.599 %)
+Virtual       = -.7102E-04  +/-  0.4092E-04  (  57.623 %)
+Virtual ratio = 0.7670E+01  +/-  0.1209E+01  (  15.767 %)
+ABS virtual   = 0.7371E-04  +/-  0.4092E-04  (  55.512 %)
+Born*ao2pi    = 0.5351E-07  +/-  0.2852E-07  (  53.301 %)
+Chi^2 per d.o.f. 0.0000E+00
+accumulated results ABS integral  = 0.4305E-02  +/-  0.5281E-03  (  12.268 %)
+accumulated results Integral      = 0.3871E-02  +/-  0.5265E-03  (  13.599 %)
+accumulated results Virtual       = -.7102E-04  +/-  0.4092E-04  (  57.623 %)
+accumulated results Virtual ratio = 0.7670E+01  +/-  0.1209E+01  (  15.767 %)
+accumulated results ABS virtual   = 0.7371E-04  +/-  0.4092E-04  (  55.512 %)
+accumulated results Born*ao2pi    = 0.5351E-07  +/-  0.2852E-07  (  53.301 %)
+accumulated result Chi^2 per DoF = 0.0000E+00
+channel    1 :    11 F        0        0  0.4305E-02  0.3871E-02  0.5720E-02
+ ------- iteration           2
+ Update # PS points:         1600  -->         1600
+ABS integral  = 0.4363E-02  +/-  0.7339E-03  (  16.822 %)
+Integral      = 0.4230E-02  +/-  0.7340E-03  (  17.353 %)
+Virtual       = -.2736E-04  +/-  0.1877E-04  (  68.601 %)
+Virtual ratio = 0.9198E+01  +/-  0.1233E+01  (  13.410 %)
+ABS virtual   = 0.4688E-04  +/-  0.1876E-04  (  40.005 %)
+Born*ao2pi    = 0.5511E-07  +/-  0.1958E-07  (  35.524 %)
+Chi^2= 0.2088E-02
+accumulated results ABS integral  = 0.4329E-02  +/-  0.4287E-03  (   9.902 %)
+accumulated results Integral      = 0.4021E-02  +/-  0.4278E-03  (  10.639 %)
+accumulated results Virtual       = -.4109E-04  +/-  0.1706E-04  (  41.521 %)
+accumulated results Virtual ratio = 0.8427E+01  +/-  0.8635E+00  (  10.248 %)
+accumulated results ABS virtual   = 0.5532E-04  +/-  0.1705E-04  (  30.823 %)
+accumulated results Born*ao2pi    = 0.5446E-07  +/-  0.1614E-07  (  29.639 %)
+accumulated result Chi^2 per DoF = 0.2088E-02
+channel    1 :    11 F        0        0  0.4329E-02  0.4021E-02  0.5720E-02
+ ------- iteration           3
+ Update # PS points:         3200  -->         3200
+ABS integral  = 0.3306E-02  +/-  0.2206E-03  (   6.673 %)
+Integral      = 0.3090E-02  +/-  0.2208E-03  (   7.144 %)
+Virtual       = -.2543E-04  +/-  0.1362E-04  (  53.568 %)
+Virtual ratio = 0.9396E+01  +/-  0.9457E+00  (  10.065 %)
+ABS virtual   = 0.4356E-04  +/-  0.1362E-04  (  31.262 %)
+Born*ao2pi    = 0.6801E-07  +/-  0.2129E-07  (  31.303 %)
+Chi^2= 0.2481E+01
+accumulated results ABS integral  = 0.3654E-02  +/-  0.1962E-03  (   5.369 %)
+accumulated results Integral      = 0.3407E-02  +/-  0.1962E-03  (   5.758 %)
+accumulated results Virtual       = -.3238E-04  +/-  0.1065E-04  (  32.874 %)
+accumulated results Virtual ratio = 0.8889E+01  +/-  0.6377E+00  (   7.174 %)
+accumulated results ABS virtual   = 0.4878E-04  +/-  0.1064E-04  (  21.813 %)
+accumulated results Born*ao2pi    = 0.6030E-07  +/-  0.1286E-07  (  21.329 %)
+accumulated result Chi^2 per DoF = 0.1242E+01
+channel    1 :    11 F        0        0  0.3654E-02  0.3407E-02  0.5720E-02
+ ------- iteration           4
+ Update # PS points:         6400  -->         6400
+ABS integral  = 0.3029E-02  +/-  0.1597E-03  (   5.271 %)
+Integral      = 0.2887E-02  +/-  0.1607E-03  (   5.566 %)
+Virtual       = -.8499E-05  +/-  0.2071E-04  ( 243.624 %)
+Virtual ratio = 0.1127E+02  +/-  0.8906E+00  (   7.901 %)
+ABS virtual   = 0.7907E-04  +/-  0.2069E-04  (  26.173 %)
+Born*ao2pi    = 0.8323E-07  +/-  0.1459E-07  (  17.533 %)
+Chi^2= 0.3084E+01
+accumulated results ABS integral  = 0.3309E-02  +/-  0.1238E-03  (   3.742 %)
+accumulated results Integral      = 0.3121E-02  +/-  0.1243E-03  (   3.983 %)
+accumulated results Virtual       = -.2427E-04  +/-  0.9468E-05  (  39.005 %)
+accumulated results Virtual ratio = 0.9883E+01  +/-  0.5185E+00  (   5.246 %)
+accumulated results ABS virtual   = 0.5906E-04  +/-  0.9463E-05  (  16.021 %)
+accumulated results Born*ao2pi    = 0.7104E-07  +/-  0.9649E-08  (  13.582 %)
+accumulated result Chi^2 per DoF = 0.1856E+01
+accumulated results last 3 iterations ABS integral  = 0.3254E-02  +/-  0.1274E-03  (   3.915 %)
+accumulated results last 3 iterations Integral      = 0.3088E-02  +/-  0.1279E-03  (   4.142 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.1600E+01
+channel    1 :    11 F        0        0  0.3309E-02  0.3121E-02  0.5720E-02
+ ------- iteration           5
+ Update # PS points:        12800  -->        12800
+ABS integral  = 0.3430E-02  +/-  0.1390E-03  (   4.052 %)
+Integral      = 0.3308E-02  +/-  0.1409E-03  (   4.259 %)
+Virtual       = 0.2124E-04  +/-  0.2590E-04  ( 121.975 %)
+Virtual ratio = 0.1042E+02  +/-  0.7235E+00  (   6.942 %)
+ABS virtual   = 0.1092E-03  +/-  0.2590E-04  (  23.712 %)
+Born*ao2pi    = 0.9528E-07  +/-  0.1821E-07  (  19.111 %)
+Chi^2= 0.2098E+00
+accumulated results ABS integral  = 0.3366E-02  +/-  0.9245E-04  (   2.747 %)
+accumulated results Integral      = 0.3209E-02  +/-  0.9321E-04  (   2.905 %)
+accumulated results Virtual       = -.1209E-04  +/-  0.8893E-05  (  73.542 %)
+accumulated results Virtual ratio = 0.1011E+02  +/-  0.4214E+00  (   4.169 %)
+accumulated results ABS virtual   = 0.7248E-04  +/-  0.8888E-05  (  12.262 %)
+accumulated results Born*ao2pi    = 0.7944E-07  +/-  0.8526E-08  (  10.733 %)
+accumulated result Chi^2 per DoF = 0.1444E+01
+accumulated results last 3 iterations ABS integral  = 0.3283E-02  +/-  0.9468E-04  (   2.884 %)
+accumulated results last 3 iterations Integral      = 0.3134E-02  +/-  0.9551E-04  (   3.048 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.8274E+00
+channel    1 :    11 F        0        0  0.3366E-02  0.3209E-02  0.5720E-02
+ ------- iteration           6
+ Update # PS points:        25600  -->        25600
+ABS integral  = 0.3402E-02  +/-  0.1514E-03  (   4.451 %)
+Integral      = 0.3266E-02  +/-  0.1513E-03  (   4.634 %)
+Virtual       = -.7140E-05  +/-  0.8315E-05  ( 116.465 %)
+Virtual ratio = 0.1032E+02  +/-  0.3697E+00  (   3.581 %)
+ABS virtual   = 0.5869E-04  +/-  0.8311E-05  (  14.160 %)
+Born*ao2pi    = 0.7659E-07  +/-  0.8532E-08  (  11.140 %)
+Chi^2= 0.2146E-01
+accumulated results ABS integral  = 0.3380E-02  +/-  0.7891E-04  (   2.335 %)
+accumulated results Integral      = 0.3231E-02  +/-  0.7937E-04  (   2.457 %)
+accumulated results Virtual       = -.9533E-05  +/-  0.6074E-05  (  63.713 %)
+accumulated results Virtual ratio = 0.1022E+02  +/-  0.2779E+00  (   2.719 %)
+accumulated results ABS virtual   = 0.6536E-04  +/-  0.6071E-05  (   9.288 %)
+accumulated results Born*ao2pi    = 0.7802E-07  +/-  0.6031E-08  (   7.730 %)
+accumulated result Chi^2 per DoF = 0.1160E+01
+accumulated results last 3 iterations ABS integral  = 0.3308E-02  +/-  0.8619E-04  (   2.605 %)
+accumulated results last 3 iterations Integral      = 0.3175E-02  +/-  0.8679E-04  (   2.733 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.1092E+01
+channel    1 :    11 F        0        0  0.3380E-02  0.3231E-02  0.5720E-02
+ ------- iteration           7
+ Update # PS points:        51200  -->        51200
+ABS integral  = 0.3330E-02  +/-  0.7073E-04  (   2.124 %)
+Integral      = 0.3196E-02  +/-  0.7023E-04  (   2.197 %)
+Virtual       = 0.2560E-05  +/-  0.9892E-05  ( 386.351 %)
+Virtual ratio = 0.1095E+02  +/-  0.3544E+00  (   3.237 %)
+ABS virtual   = 0.8194E-04  +/-  0.9889E-05  (  12.068 %)
+Born*ao2pi    = 0.9066E-07  +/-  0.7509E-08  (   8.282 %)
+Chi^2= 0.1120E+00
+accumulated results ABS integral  = 0.3353E-02  +/-  0.5267E-04  (   1.571 %)
+accumulated results Integral      = 0.3212E-02  +/-  0.5259E-04  (   1.637 %)
+accumulated results Virtual       = -.4932E-05  +/-  0.5176E-05  ( 104.939 %)
+accumulated results Virtual ratio = 0.1054E+02  +/-  0.2187E+00  (   2.075 %)
+accumulated results ABS virtual   = 0.7167E-04  +/-  0.5174E-05  (   7.219 %)
+accumulated results Born*ao2pi    = 0.8365E-07  +/-  0.4702E-08  (   5.621 %)
+accumulated result Chi^2 per DoF = 0.9851E+00
+accumulated results last 3 iterations ABS integral  = 0.3365E-02  +/-  0.5819E-04  (   1.729 %)
+accumulated results last 3 iterations Integral      = 0.3233E-02  +/-  0.5805E-04  (   1.795 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.1304E+00
+channel    1 :    11 F        0        0  0.3353E-02  0.3212E-02  0.5720E-02
+ ------- iteration           8
+ Update # PS points:       102400  -->       102400
+ABS integral  = 0.3382E-02  +/-  0.6624E-04  (   1.958 %)
+Integral      = 0.3265E-02  +/-  0.6916E-04  (   2.118 %)
+Virtual       = 0.2279E-04  +/-  0.2028E-04  (  88.994 %)
+Virtual ratio = 0.1033E+02  +/-  0.2264E+00  (   2.192 %)
+ABS virtual   = 0.1157E-03  +/-  0.2028E-04  (  17.520 %)
+Born*ao2pi    = 0.1058E-06  +/-  0.9454E-08  (   8.937 %)
+Chi^2= 0.5945E-01
+accumulated results ABS integral  = 0.3366E-02  +/-  0.4123E-04  (   1.225 %)
+accumulated results Integral      = 0.3235E-02  +/-  0.4186E-04  (   1.294 %)
+accumulated results Virtual       = 0.7040E-06  +/-  0.5015E-05  ( 712.364 %)
+accumulated results Virtual ratio = 0.1044E+02  +/-  0.1573E+00  (   1.507 %)
+accumulated results ABS virtual   = 0.8063E-04  +/-  0.5013E-05  (   6.217 %)
+accumulated results Born*ao2pi    = 0.9100E-07  +/-  0.4210E-08  (   4.626 %)
+accumulated result Chi^2 per DoF = 0.8528E+00
+accumulated results last 3 iterations ABS integral  = 0.3367E-02  +/-  0.4606E-04  (   1.368 %)
+accumulated results last 3 iterations Integral      = 0.3241E-02  +/-  0.4686E-04  (   1.446 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.7880E-01
+channel    1 :    11 F        0        0  0.3366E-02  0.3235E-02  0.5720E-02
+ ------- iteration           9
+ Update # PS points:       204800  -->       204800
+                                                            
+         *******************************************        
+         *              C O L L I E R              *        
+         *                                         *        
+         *        Complex One-Loop Library         *        
+         *      In Extended Regularizations        *        
+         *                                         *        
+         *    by A.Denner, S.Dittmaier, L.Hofer    *        
+         *                                         *        
+         *              version 1.2.5              *        
+         *                                         *        
+         *******************************************        
+                                                            
+ABS integral  = 0.3454E-02  +/-  0.1032E-03  (   2.988 %)
+Integral      = 0.3283E-02  +/-  0.1034E-03  (   3.149 %)
+Virtual       = 0.9645E-06  +/-  0.8537E-05  ( 885.110 %)
+Virtual ratio = 0.1029E+02  +/-  0.1502E+00  (   1.460 %)
+ABS virtual   = 0.7908E-04  +/-  0.8536E-05  (  10.793 %)
+Born*ao2pi    = 0.8807E-07  +/-  0.4777E-08  (   5.424 %)
+Chi^2= 0.3673E+00
+accumulated results ABS integral  = 0.3391E-02  +/-  0.3828E-04  (   1.129 %)
+accumulated results Integral      = 0.3249E-02  +/-  0.3880E-04  (   1.194 %)
+accumulated results Virtual       = 0.8004E-06  +/-  0.4324E-05  ( 540.247 %)
+accumulated results Virtual ratio = 0.1036E+02  +/-  0.1086E+00  (   1.048 %)
+accumulated results ABS virtual   = 0.8006E-04  +/-  0.4323E-05  (   5.400 %)
+accumulated results Born*ao2pi    = 0.8963E-07  +/-  0.3158E-08  (   3.524 %)
+accumulated result Chi^2 per DoF = 0.7921E+00
+accumulated results last 3 iterations ABS integral  = 0.3388E-02  +/-  0.4378E-04  (   1.292 %)
+accumulated results last 3 iterations Integral      = 0.3248E-02  +/-  0.4448E-04  (   1.370 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.2781E+00
+channel    1 :    11 F        0        0  0.3391E-02  0.3249E-02  0.5720E-02
+ ------- iteration          10
+ Update # PS points:       409600  -->       409600
+ABS integral  = 0.3382E-02  +/-  0.2767E-04  (   0.818 %)
+Integral      = 0.3226E-02  +/-  0.2786E-04  (   0.864 %)
+Virtual       = -.5108E-05  +/-  0.4888E-05  (  95.682 %)
+Virtual ratio = 0.1021E+02  +/-  0.1096E+00  (   1.074 %)
+ABS virtual   = 0.7722E-04  +/-  0.4887E-05  (   6.328 %)
+Born*ao2pi    = 0.8821E-07  +/-  0.3617E-08  (   4.101 %)
+Chi^2= 0.2144E-01
+accumulated results ABS integral  = 0.3386E-02  +/-  0.2243E-04  (   0.662 %)
+accumulated results Integral      = 0.3235E-02  +/-  0.2263E-04  (   0.700 %)
+accumulated results Virtual       = -.1973E-05  +/-  0.3239E-05  ( 164.131 %)
+accumulated results Virtual ratio = 0.1028E+02  +/-  0.7715E-01  (   0.750 %)
+accumulated results ABS virtual   = 0.7873E-04  +/-  0.3238E-05  (   4.113 %)
+accumulated results Born*ao2pi    = 0.8897E-07  +/-  0.2379E-08  (   2.674 %)
+accumulated result Chi^2 per DoF = 0.7065E+00
+accumulated results last 3 iterations ABS integral  = 0.3391E-02  +/-  0.2479E-04  (   0.731 %)
+accumulated results last 3 iterations Integral      = 0.3241E-02  +/-  0.2507E-04  (   0.774 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.1480E+00
+channel    1 :    11 F        0        0  0.3386E-02  0.3235E-02  0.5720E-02
+ ------- iteration          11
+ Update # PS points:       819200  -->       819200
+ABS integral  = 0.3424E-02  +/-  0.2147E-04  (   0.627 %)
+Integral      = 0.3272E-02  +/-  0.2175E-04  (   0.665 %)
+Virtual       = 0.2145E-06  +/-  0.4368E-05  ( ******* %)
+Virtual ratio = 0.1020E+02  +/-  0.7877E-01  (   0.772 %)
+ABS virtual   = 0.8349E-04  +/-  0.4367E-05  (   5.231 %)
+Born*ao2pi    = 0.9075E-07  +/-  0.2626E-08  (   2.894 %)
+Chi^2= 0.7518E+00
+accumulated results ABS integral  = 0.3405E-02  +/-  0.1551E-04  (   0.455 %)
+accumulated results Integral      = 0.3254E-02  +/-  0.1568E-04  (   0.482 %)
+accumulated results Virtual       = -.1042E-05  +/-  0.2602E-05  ( 249.724 %)
+accumulated results Virtual ratio = 0.1024E+02  +/-  0.5512E-01  (   0.538 %)
+accumulated results ABS virtual   = 0.8075E-04  +/-  0.2601E-05  (   3.221 %)
+accumulated results Born*ao2pi    = 0.8981E-07  +/-  0.1763E-08  (   1.963 %)
+accumulated result Chi^2 per DoF = 0.7110E+00
+accumulated results last 3 iterations ABS integral  = 0.3412E-02  +/-  0.1674E-04  (   0.491 %)
+accumulated results last 3 iterations Integral      = 0.3257E-02  +/-  0.1691E-04  (   0.519 %)
+accumulated result last 3 iterrations Chi^2 per DoF = 0.3073E+00
+ Found desired accuracy
+channel    1 :    11 F        0        0  0.3405E-02  0.3254E-02  0.5720E-02
+Thanks for using LHAPDF 6.2.1. Please make sure to cite the paper:
+  Eur.Phys.J. C75 (2015) 3, 132  (http://arxiv.org/abs/1412.7420)
+ -------
+ Final result [ABS]:   3.4857551372156322E-003  +/-   1.5723609650839216E-005
+ Final result:   3.2541780857703656E-003  +/-   1.5681256467202318E-005
+ chi**2 per D.o.F.:  0.71102682352744462     
+ Satistics from MadLoop:
+   Total points tried:                                     14512
+   Stability unknown:                                          0
+   Stable PS point:                                        14512
+   Unstable PS point (and rescued):                            0
+   Exceptional PS point (unstable and not rescued):            0
+   Double precision used:                                  14512
+   Quadruple precision used:                                   0
+   Initialization phase-space points:                          0
+   Unknown return code (100):                                  0
+   Unknown return code (10):                                   0
+   Unit return code distribution (1):               
+ #Unit            6  =        14510
+ #Unit            7  =            2
+ Time spent in Born :    170.202896    
+ Time spent in PS_Generation :    0.00000000    
+ Time spent in Reals_evaluation:    2064.50439    
+ Time spent in MCsubtraction :    618.254761    
+ Time spent in Counter_terms :    839.036133    
+ Time spent in Integrated_CT :    19.2279816    
+ Time spent in Virtuals :    39.2953682    
+ Time spent in FxFx_cluster :    0.00000000    
+ Time spent in Nbody_prefactor :    221.358948    
+ Time spent in N1body_prefactor :    189.364105    
+ Time spent in Adding_alphas_pdf :    40.9961319    
+ Time spent in Reweight_scale :    0.00000000    
+ Time spent in Reweight_pdf :    0.00000000    
+ Time spent in Filling_plots :    0.00000000    
+ Time spent in Applying_cuts :    23.2181091    
+ Time spent in Sum_ident_contr :    3.32293606    
+ Time spent in Pick_unwgt :    0.00000000    
+ Time spent in Write_events :    0.00000000    
+ Time spent in Other_tasks :    129.663574    
+ Time spent in Total :    4358.44482    
+Time in seconds: 4360
