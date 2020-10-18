@@ -1,16 +1,19 @@
+# Scheme 1 
+## p p > l nl a l+ l- [QCD]
+/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+
+# Scheme 2
+## p p > w l+ l- a [QCD], w > l nl ( madspin )
+/x5/cms/jwkim/WZA_gridpack_store/WZG_scheme2_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+
+# Scheme 4
+## p p > w- z a [QCD], w- > l- nl, z > l+ l- ( madspin )
+/x5/cms/jwkim/WZA_gridpack_store/WmZA_Exlusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+
+
+# Old
 ## p p > l nl a z [QCD]
 /x5/cms/jwkim/WZA_gridpack_store/WZAToLNuLLA_4f_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
 
 ## p p > l nl a l+ l- [QCD] ( 5 evts )
 /x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_5evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
-
-## p p > l nl a l+ l- [QCD]( 250 evts )
-/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
-
-## p p > w+ z a [QCD]  (madspin) w+ > l+ vl, z > l+ l-
-/x5/cms/jwkim/WZA_gridpack_store/WpZA_Exlusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
-
-## p p > w- z a [QCD]  (madspin) w- > l- vl~, z > l+ l-
-/x5/cms/jwkim/WZA_gridpack_store/WmZA_Exlusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
-
-
