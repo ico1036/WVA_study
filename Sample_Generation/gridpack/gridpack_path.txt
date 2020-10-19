@@ -5,6 +5,10 @@
 # Scheme 2
 ## p p > w l+ l- a [QCD], w > l nl ( madspin )
 /x5/cms/jwkim/WZA_gridpack_store/WZG_scheme2_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
+  
+# Scheme 3
+## p p > z l vl a [QCD], z > l+ l- ( madspin )  
+/x5/cms/jwkim/WZA_gridpack_store/WZG_scheme3_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz  
 
 # Scheme 4
 ## p p > w- z a [QCD], w- > l- nl, z > l+ l- ( madspin )
