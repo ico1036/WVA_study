@@ -2,9 +2,15 @@
 
 TopDir=`pwd`
 
-RunN=$1
-Idx=$2
-MaxEvents=$3
+#RunN=$1
+#Idx=$2
+#MaxEvents=$3
+
+RunN=1
+Idx=0
+MaxEvents=5
+
+
 
 Name="LNuLLA"
 s1root="s1_${Name}_${RunN}_${Idx}.root"

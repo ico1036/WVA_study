@@ -1,6 +1,5 @@
 #!/bin/bash
 
-cd /afs/cern.ch/cms/PPD/PdmV/work/McM/submit/SUS-RunIIAutumn18DRPremix-00011/
 
 export SCRAM_ARCH=slc6_amd64_gcc700
 
@@ -16,8 +15,6 @@ eval `scram runtime -sh`
 scram b
 cd ../..
 
-# PdmV proxy
-export X509_USER_PROXY=/afs/cern.ch/user/p/pdmvserv/private/$HOSTNAME/voms_proxy.cert
 
 # Maximum validation duration: 28800s
 # Margin for validation duration: 20%
@@ -31,11 +28,13 @@ export X509_USER_PROXY=/afs/cern.ch/user/p/pdmvserv/private/$HOSTNAME/voms_proxy
 # According to 1.0000 efficiency, up to 10000 / 1.0000 = 10000 events should run
 # Clamp (put value) 1313 within 1 and 10000 -> 1313
 # It is estimated that this validation will produce: 1313 * 1.0000 = 1313 events
-EVENTS=1313
+EVENTS=5
 
 
 # cmsDriver command
-cmsDriver.py  --python_filename SUS-RunIIAutumn18DRPremix-00011_1_cfg.py --eventcontent PREMIXRAW --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM-RAW --fileout file:SUS-RunIIAutumn18DRPremix-00011_0.root --pileup_input "dbs:/Neutrino_E-10_gun/RunIISummer17PrePremix-PUAutumn18_102X_upgrade2018_realistic_v15-v1/GEN-SIM-DIGI-RAW" --conditions 102X_upgrade2018_realistic_v15 --step DIGI,DATAMIX,L1,DIGI2RAW,HLT:@relval2018 --procModifiers premix_stage2 --geometry DB:Extended --filein "dbs:/WZG_TuneCP5_13TeV-amcatnlo-pythia8/RunIIFall18wmLHEGS-102X_upgrade2018_realistic_v11-v1/GEN-SIM" --datamix PreMix --era Run2_2018 --no_exec --mc -n $EVENTS || exit $? ;
+cmsDriver.py  --python_filename SUS-RunIIAutumn18DRPremix-00011_1_cfg.py --eventcontent PREMIXRAW --customise Configuration/DataProcessing/Utils.addMonitoring --datatier GEN-SIM-RAW --fileout file:SUS-RunIIAutumn18DRPremix-00011_0.root --pileup_input "dbs:/Neutrino_E-10_gun/RunIISummer17PrePremix-PUAutumn18_102X_upgrade2018_realistic_v15-v1/GEN-SIM-DIGI-RAW" --conditions 102X_upgrade2018_realistic_v15 --step DIGI,DATAMIX,L1,DIGI2RAW,HLT:@relval2018 --procModifiers premix_stage2 --geometry DB:Extended --filein file:/x5/cms/jwkim/Generator/pp2WVG_madspin_CMSWorkFlow/CMSSW_10_2_6/src/SUS-RunIIFall18wmLHEGS-00028.root --datamix PreMix --era Run2_2018 --no_exec --mc -n $EVENTS || exit $? ;
+
+
 
 # cmsDriver command
 cmsDriver.py  --python_filename SUS-RunIIAutumn18DRPremix-00011_2_cfg.py --eventcontent AODSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier AODSIM --fileout file:SUS-RunIIAutumn18DRPremix-00011.root --conditions 102X_upgrade2018_realistic_v15 --step RAW2DIGI,L1Reco,RECO,RECOSIM,EI --procModifiers premix_stage2 --filein file:SUS-RunIIAutumn18DRPremix-00011_0.root --era Run2_2018 --runUnscheduled --no_exec --mc -n $EVENTS || exit $? ;

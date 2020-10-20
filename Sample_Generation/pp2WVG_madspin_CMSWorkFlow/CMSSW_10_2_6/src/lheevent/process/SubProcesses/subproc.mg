@@ -1,2 +1,0 @@
-P0_dux_wmza
-P0_uxd_wmza

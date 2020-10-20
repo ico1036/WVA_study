@@ -1,8 +1,0 @@
-
-   --------------------------------------------------------------
-      Summary:
-      Process p p > w- z a [QCD]
-      Run at p-p collider (6500.0 + 6500.0 GeV)
-      Number of events generated: 5
-      Total cross section: 2.715e-02 +- 5.4e-05 pb
-   --------------------------------------------------------------

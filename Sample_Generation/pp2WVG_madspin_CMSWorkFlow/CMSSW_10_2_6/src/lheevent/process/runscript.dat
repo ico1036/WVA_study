@@ -1,7 +1,0 @@
-madspin=OFF
-reweight=OFF
-done
-set nevents 5
-set iseed 46
-set nevt_job 10
-done

@@ -21,7 +21,11 @@ MaxEvents=$4
 FirstEvent=`expr ${Idx} \* ${MaxEvents} + 1`
 s1cfg=${s1root/.root/.py}
 s1LHEroot="inLHE_${s1root}"
-GridPack="${TopDir}/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+
+## Type the gridpack that you use here
+#GridPack="/x5/cms/jwkim/WZA_gridpack_store/WZA_inclusive_NLO_250evt_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+GridPack="/x5/cms/jwkim/WZA_gridpack_store/WZG_scheme2_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+
 
 cat << EOF > $s1cfg
 # Auto generated configuration file
