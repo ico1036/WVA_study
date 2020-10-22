@@ -8,8 +8,7 @@ TopDir=`pwd`
 
 RunN=1
 Idx=0
-MaxEvents=5
-
+MaxEvents=10
 
 
 Name="LNuLLA"
