@@ -36,6 +36,7 @@ define l- = e- mu- ta-
 
 
 
-generate p p > w+ z a [QCD]
+generate p p > w+ z a [QCD] @0
+
 
 output WpZA_Exlusive_NLO -nojpeg

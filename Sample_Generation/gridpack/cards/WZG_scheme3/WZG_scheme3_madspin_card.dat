@@ -23,7 +23,6 @@ set max_running_process 1
 
 # specify the decay for the final state particles
 
-set spinmode none
 define l+ = e+ mu+ ta+
 define l- = e- mu- ta-
 
