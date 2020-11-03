@@ -21,7 +21,7 @@ MaxEvents=$4
 FirstEvent=`expr ${Idx} \* ${MaxEvents} + 1`
 s1cfg=${s1root/.root/.py}
 s1LHEroot="inLHE_${s1root}"
-GridPack="/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/gridpack/WmZA_Exlusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz"
+GridPack=${TopDir}/WmZA_Exlusive_NLO_slc6_amd64_gcc630_CMSSW_9_3_16_tarball.tar.xz
 
 cat << EOF > $s1cfg
 # Auto generated configuration file
