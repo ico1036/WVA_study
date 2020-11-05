@@ -12,23 +12,23 @@ process.MessageLogger.cerr.FwkReport.reportEvery =50  ## --How often you're upda
 
 
 process.source = cms.Source("PoolSource",
-	# replace 'myfile.root' with the source file you want to use
-	fileNames = cms.untracked.vstring(
-		'file:/x5/cms/jwkim/gitdir/WVG/Sample_Generation/GenSim/out_pp2lnlall_250evts_step1/SUS-RunIIFall18wmLHEGS-00028.root'
-		#'file:/x5/cms/jwkim/gitdir/WVG/Sample_Generation/GenSim/out_pp2lnlaz_step1/SUS-RunIIFall18wmLHEGS-00028.root'
-	)
+    # replace 'myfile.root' with the source file you want to use
+    fileNames = cms.untracked.vstring(
+        #'file:/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/outputs/Scheme4_Wm/s1_LNuLLA_1_0.root'
+        'file:/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/outputs/Scheme1/s1_LNuLLA_1_0.root'
+    )
 )
-	
+
 
 process.load("SimGeneral.HepPDTESSource.pythiapdt_cfi")
 process.printTree = cms.EDAnalyzer("ParticleTreeDrawer",
-	src = cms.InputTag("genParticles"),                                                                 
-	printP4 = cms.untracked.bool(False),
-	printPtEtaPhi = cms.untracked.bool(False),
-	printVertex = cms.untracked.bool(False),
-	printStatus = cms.untracked.bool(False),
-	printIndex = cms.untracked.bool(False),
-	status = cms.untracked.vint32( 3 )
+    src = cms.InputTag("genParticles"),
+    printP4 = cms.untracked.bool(False),
+    printPtEtaPhi = cms.untracked.bool(False),
+    printVertex = cms.untracked.bool(False),
+    printStatus = cms.untracked.bool(False),
+    printIndex = cms.untracked.bool(False),
+    status = cms.untracked.vint32( 3 )
 )
 
 
@@ -44,15 +44,16 @@ process.printTree = cms.EDAnalyzer("ParticleListDrawer",
 
 
 process.TFileService = cms.Service("TFileService",
-	fileName = cms.string("test_gen_tree.root")
+    fileName = cms.string("test_gen_tree.root")
 )
 
 process.GenInfo = cms.EDAnalyzer('GenInfo',
 
-	GenParticles = cms.InputTag("genParticles"),
+    GenParticles = cms.InputTag("genParticles"),
 )
 
 
 process.p = cms.Path(process.GenInfo
 #*process.printTree
 )
+
