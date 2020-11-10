@@ -12,6 +12,7 @@
 #include "FWCore/Framework/interface/one/EDAnalyzer.h"
 #include "DataFormats/HepMCCandidate/interface/GenParticle.h"
 #include "DataFormats/HepMCCandidate/interface/GenParticleFwd.h"
+#include "SimDataFormats/GeneratorProducts/interface/GenEventInfoProduct.h"
 #include "vector"
 #include "TTree.h"
 #include "TH1F.h"
@@ -44,18 +45,23 @@ private:
    virtual void analyze(const edm::Event&, const edm::EventSetup&) override;
    virtual void endJob() override;
 
-	edm::EDGetTokenT<reco::GenParticleCollection> genToken_;//--used to access GenParticleCollection
+	edm::EDGetTokenT<reco::GenParticleCollection> genToken_; //--used to access GenParticleCollection
+	edm::EDGetTokenT<GenEventInfoProduct> generatorToken_; //--used to access Negative Weight
+	
+	size_t nEvt;
+	size_t nEvt_Pos;
+	size_t nEvt_Neg;
 
-   TH1F* h1_typeLL;
-   TH1F* h1_typeLN;
-   TH1F* h1_typeP ;
+	TH1F* h1_typeLL;
+	TH1F* h1_typeLN;
+	TH1F* h1_typeP ;
 
-   TH1F* h1_phoPt;
-   TH1F* h1_phoPt_HAD;
-   TH1F* h1_phoPt_FSR;
+	TH1F* h1_phoPt;
+	TH1F* h1_phoPt_HAD;
+	TH1F* h1_phoPt_FSR;
 
-   TH1F* h1_nDauZ ;
-   TH1F* h1_nDauW ;
+	TH1F* h1_nDauZ ;
+	TH1F* h1_nDauW ;
 
 	TH1F* h1_mZDau   ; 
 	TH1F* h1_mZDauLL ; 
@@ -69,18 +75,23 @@ private:
 // CONSTRUCTOR
 GenInfo::GenInfo(const edm::ParameterSet& iConfig) {
 	genToken_ = consumes<reco::GenParticleCollection>(iConfig.getParameter<edm::InputTag>("GenParticles")); //-- GenParticle
+	generatorToken_ = consumes<GenEventInfoProduct>(iConfig.getParameter<edm::InputTag>("Generator")); //--GenEventInfoProduct
+	
+	nEvt = 0;
+	nEvt_Pos = 0;
+	nEvt_Neg = 0;
 
-   edm::Service<TFileService> fs;
-   h1_typeLL = fs->make<TH1F>("h1_typeLL","h1_typeLL", 10, 0, 10);
-   h1_typeLN = fs->make<TH1F>("h1_typeLN","h1_typeLN", 10, 0, 10);
-   h1_typeP  = fs->make<TH1F>("h1_typeP" ,"h1_typeP" , 10, 0, 10);
+	edm::Service<TFileService> fs;
+	h1_typeLL = fs->make<TH1F>("h1_typeLL","h1_typeLL", 10, 0, 10);
+	h1_typeLN = fs->make<TH1F>("h1_typeLN","h1_typeLN", 10, 0, 10);
+	h1_typeP  = fs->make<TH1F>("h1_typeP" ,"h1_typeP" , 10, 0, 10);
 
-   h1_phoPt = fs->make<TH1F>("h1_phoPt","h1_phoPt",1000,0,1000);
-   h1_phoPt_HAD = fs->make<TH1F>("h1_phoPt_HAD","h1_phoPt_HAD",1000,0,1000);
-   h1_phoPt_FSR = fs->make<TH1F>("h1_phoPt_FSR","h1_phoPt_FSR",1000,0,1000);
+	h1_phoPt = fs->make<TH1F>("h1_phoPt","h1_phoPt",1000,0,1000);
+	h1_phoPt_HAD = fs->make<TH1F>("h1_phoPt_HAD","h1_phoPt_HAD",1000,0,1000);
+	h1_phoPt_FSR = fs->make<TH1F>("h1_phoPt_FSR","h1_phoPt_FSR",1000,0,1000);
 
-   h1_nDauZ = fs->make<TH1F>("h1_nDauZ","h1_nDauZ",10,0,10);
-   h1_nDauW = fs->make<TH1F>("h1_nDauW","h1_nDauW",10,0,10);
+	h1_nDauZ = fs->make<TH1F>("h1_nDauZ","h1_nDauZ",10,0,10);
+	h1_nDauW = fs->make<TH1F>("h1_nDauW","h1_nDauW",10,0,10);
 	
 	h1_mZDau   = fs->make<TH1F>("h1_mZDau"  ,"h1_mZDau"  ,200,0,200);
 	h1_mZDauLL = fs->make<TH1F>("h1_mZDauLL","h1_mZDauLL",200,0,200);
@@ -90,7 +101,15 @@ GenInfo::GenInfo(const edm::ParameterSet& iConfig) {
 
 } // CONSTRUCTOR END
 
-GenInfo::~GenInfo() {}
+
+// DESTRUCTOR
+GenInfo::~GenInfo() {
+
+	std::cout << "Number of Event " << nEvt << " PosWeight " << nEvt_Pos << " NegEvent " << nEvt_Neg << " " << std::endl;
+
+} // DESTRUCTOR END
+
+
 
 
 // MEHTOD: Find Index of Particle
@@ -140,28 +159,41 @@ void GenInfo::GetDaughters(edm::Handle<GenParticleCollection> genParticles, size
 
 // Event Loop Start
 void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
-   using namespace edm;
+	using namespace edm;
 	using std::cout;
 	using std::endl;
 
-   edm::Handle<GenParticleCollection> genParticles;
-   iEvent.getByLabel("genParticles", genParticles);
+	nEvt++;
+	size_t runN = iEvent.id().run();
+	size_t evtN = iEvent.id().event();
+	size_t lumN = iEvent.id().luminosityBlock();
+	
+	edm::Handle<GenEventInfoProduct> gen_event_info;
+	iEvent.getByLabel("generator", gen_event_info);
 
-   bool findZ = false;
-   bool findW = false;
-   bool findP = false;
-   bool findLL = false;
-   int numHardLep = 0;
-   int numHardZLep = 0;
-   int numHardNeu = 0;
 
-   int typeLL = 0;
-   int typeLN = 0;
-   int typeP  = 0;
+	double genWeight = gen_event_info->weight();
+	cout << runN << " " << lumN << " " << evtN << " " << genWeight << endl;	
+	(gen_event_info->weight() < 0) ? nEvt_Neg++ : nEvt_Pos++;
 
-   size_t idxZ = 0;
-   size_t idxW = 0;
-   size_t idxP = 0;
+	edm::Handle<GenParticleCollection> genParticles;
+	iEvent.getByLabel("genParticles", genParticles);
+
+	bool findZ = false;
+	bool findW = false;
+	bool findP = false;
+	bool findLL = false;
+	int numHardLep = 0;
+	int numHardZLep = 0;
+	int numHardNeu = 0;
+
+	int typeLL = 0;
+	int typeLN = 0;
+	int typeP  = 0;
+
+	size_t idxZ = 0;
+	size_t idxW = 0;
+	size_t idxP = 0;
 
    const GenParticle & pHard2 = (*genParticles)[2];
    const GenParticle & pHard3 = (*genParticles)[3];

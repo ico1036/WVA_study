@@ -1,4 +1,5 @@
 import FWCore.ParameterSet.Config as cms
+#import glob
 
 
 maxevent=-1
@@ -11,11 +12,21 @@ process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(maxevent) )
 process.MessageLogger.cerr.FwkReport.reportEvery =50  ## --How often you're updated on the progress
 
 
+'''
+input_file = glob.glob('../../../../CMSSW_WorkFlow/Scheme1_Large/condorOut/s1_LNuLLA_3775483_*.root')
+input_files=[]
+for i in input_file:
+	j = 'file:' + i
+	input_files.append(j)
+print(input_files)
+'''
+
+
 process.source = cms.Source("PoolSource",
     # replace 'myfile.root' with the source file you want to use
     fileNames = cms.untracked.vstring(
-        #'file:/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/outputs/Scheme4_Wm/s1_LNuLLA_1_0.root'
-        'file:/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/outputs/Scheme1/s1_LNuLLA_1_0.root'
+        'file:../../../../CMSSW_WorkFlow/Scheme1_Large/condorOut/s1_LNuLLA_3775483_0.root'
+#		 input_files
     )
 )
 
@@ -30,6 +41,8 @@ process.printTree = cms.EDAnalyzer("ParticleTreeDrawer",
     printIndex = cms.untracked.bool(False),
     status = cms.untracked.vint32( 3 )
 )
+
+
 
 
 process.load("SimGeneral.HepPDTESSource.pythiapdt_cfi")
