@@ -173,7 +173,7 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 
 
 	double genWeight = gen_event_info->weight();
-	cout << runN << " " << lumN << " " << evtN << " " << genWeight << endl;	
+	//cout << runN << " " << lumN << " " << evtN << " " << genWeight << endl;	
 	(gen_event_info->weight() < 0) ? nEvt_Neg++ : nEvt_Pos++;
 
 	edm::Handle<GenParticleCollection> genParticles;
@@ -243,7 +243,7 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
       typeLN = 2;
    }
 
-   // Intermediate W -- decya to W Z and un-recognized vectorbosons decay to leptonically 
+   // Intermediate W -- decay to W Z and un-recognized vectorbosons decay to leptonically 
    if(!findZ && !findLL) {
       if(idxW != 0) { // yes W boson
          std::vector<size_t> wDauIndexes;
@@ -257,7 +257,7 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
             if(dauAId == 11 or dauAId == 13 or dauAId == 15) numWLep++;
             if(dauAId == 12 or dauAId == 14 or dauAId == 16) numWNeu++;
          }
-         if(numWNeu == 1 && numWLep > 2) { // Whynot numWlep ==2  ?
+         if(numWNeu == 1 && numWLep > 2) {
             typeLL = 3;
             typeLN = 3;
          }
@@ -312,9 +312,9 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 // ------------Fill histogram
 
    // Fill particle type
-   h1_typeLL->Fill(typeLL);
-   h1_typeLN->Fill(typeLN);
-   h1_typeP ->Fill(typeP );
+   h1_typeLL->Fill(typeLL,gen_event_info->weight());
+   h1_typeLN->Fill(typeLN,gen_event_info->weight());
+   h1_typeP ->Fill(typeP,gen_event_info->weight());
 
    // Photon index FSR or Hardprocess
    if(idxP == 0) idxP = fsrMaxPIdx;  
@@ -323,13 +323,13 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
    
 
 	// Fill Photon
-	h1_phoPt->Fill(phoGen.pt()); // All photon PT
-	if(typeP == 1) h1_phoPt_HAD->Fill(phoGen.pt()); // Hard photon
-	if(typeP == 2 or typeP == 3) h1_phoPt_FSR->Fill(phoGen.pt()); // FSR photon
+	h1_phoPt->Fill(phoGen.pt(),gen_event_info->weight()); // All photon PT
+	if(typeP == 1) h1_phoPt_HAD->Fill(phoGen.pt(),gen_event_info->weight()); // Hard photon
+	if(typeP == 2 or typeP == 3) h1_phoPt_FSR->Fill(phoGen.pt(),gen_event_info->weight()); // FSR photon
 
 	// Fill Z boson
 	if(typeLL == 1) {
-		h1_nDauZ->Fill(zDauIndexes.size()); // N of Daughter from ....
+		h1_nDauZ->Fill(zDauIndexes.size(),gen_event_info->weight()); // N of Daughter from ....
 		TLorentzVector zDauVec;
 		TLorentzVector zDauLLVec;
 
@@ -346,14 +346,14 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 				zDauVec += dVec;
 			}
    	  }
-		h1_mZDau->Fill(zDauVec.M());  // ll
-		h1_mZDauLL->Fill(zDauLLVec.M()); // lla
+		h1_mZDau->Fill(zDauVec.M(),gen_event_info->weight());  // ll
+		h1_mZDauLL->Fill(zDauLLVec.M(),gen_event_info->weight()); // lla
 	}
 
 
 	// Fill W boson
 	if(typeLN == 1 or typeLN == 3) {
-		h1_nDauW->Fill(wDauIndexes.size());
+		h1_nDauW->Fill(wDauIndexes.size(),gen_event_info->weight());
 		TLorentzVector wDauVec;
 		TLorentzVector wDauLLVec;
 	   for(std::vector<size_t>::iterator it=wDauIndexes.begin(); it!=wDauIndexes.end(); it++) {
@@ -366,8 +366,8 @@ void GenInfo::analyze(const edm::Event& iEvent, const edm::EventSetup& iSetup) {
 				wDauVec += dVec;
 			}
    	}
-		h1_mWDau->Fill(wDauVec.M());
-		h1_mWDauLL->Fill(wDauLLVec.M());
+		h1_mWDau->Fill(wDauVec.M(),gen_event_info->weight());
+		h1_mWDauLL->Fill(wDauLLVec.M(),gen_event_info->weight());
 	}
 
 
