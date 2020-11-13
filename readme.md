@@ -1,12 +1,4 @@
-## Directories  
 
- - **gridpack** : Gridpakc path, genproduction card info
- - **CMS_workFlow** : CMS workflow original (~NanoAOD)
- - **CMS_workFlow_auto**: CMS workflow one click excute
- - **CMS_workFlow_condor**: CMS workflow mult-processing using condor  
- - **Gen_Level_study**: About Gen-Level study  
- 
----
 
 ### CMSSW Workflow output file ( GenSIM, AOD, MINIAOD, NANO AOD ) locations:  
  - Scheme 1  

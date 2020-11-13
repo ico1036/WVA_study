@@ -1,6 +1,5 @@
 import FWCore.ParameterSet.Config as cms
-#import glob
-
+import glob
 
 maxevent=-1
 
@@ -12,22 +11,45 @@ process.maxEvents = cms.untracked.PSet( input = cms.untracked.int32(maxevent) )
 process.MessageLogger.cerr.FwkReport.reportEvery =50  ## --How often you're updated on the progress
 
 
-'''
-input_file = glob.glob('../../../../CMSSW_WorkFlow/Scheme1_Large/condorOut/s1_LNuLLA_3775483_*.root')
-input_files=[]
-for i in input_file:
-	j = 'file:' + i
-	input_files.append(j)
-print(input_files)
-'''
+# ---- Grep file path ----------------------------#
 
+# Scheme 1
+infiles = glob.glob("/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme1_Large/condorOut/s1*.root") ; outfile_name = "scheme1.root"
+
+# Scheme 2
+#infiles = glob.glob("/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme2_Large/condorOut/s1*.root") ; outfile_name = "scheme2.root"
+
+# Scheme 3
+#infiles = glob.glob("/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme3_Large/condorOut/s1*.root") ; outfile_name = "scheme3.root"
+
+# Sheme 4
+#infiles1 = glob.glob("/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme4_Wm_Large/condorOut/s1*.root") ; outfile_name = "scheme4.root"
+#infiles2 = glob.glob("/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme4_Wp_Large/condorOut/s1*.root") 
+#infiles = infiles1 + infiles2
+
+
+file_list=[]
+for f in infiles:
+
+#->- For Scheme 3 --------------- There is empty file
+#	if f == '/home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme3_Large/condorOut/s1_LNuLLA_41_144.root':
+#		continue;
+#<---------------------------------
+
+	file_list.append('file:' + f)
+
+
+# ---------------------------------------------
+
+
+
+
+
+print("Number of files: ",len(file_list))
 
 process.source = cms.Source("PoolSource",
     # replace 'myfile.root' with the source file you want to use
-    fileNames = cms.untracked.vstring(
-        'file:../../../../CMSSW_WorkFlow/Scheme1_Large/condorOut/s1_LNuLLA_3775483_0.root'
-#		 input_files
-    )
+    fileNames = cms.untracked.vstring(file_list)
 )
 
 
@@ -43,8 +65,6 @@ process.printTree = cms.EDAnalyzer("ParticleTreeDrawer",
 )
 
 
-
-
 process.load("SimGeneral.HepPDTESSource.pythiapdt_cfi")
 process.printTree = cms.EDAnalyzer("ParticleListDrawer",
   maxEventsToPrint = cms.untracked.int32(maxevent),
@@ -57,12 +77,13 @@ process.printTree = cms.EDAnalyzer("ParticleListDrawer",
 
 
 process.TFileService = cms.Service("TFileService",
-    fileName = cms.string("test_gen_tree.root")
+    fileName = cms.string(outfile_name)
 )
 
 process.GenInfo = cms.EDAnalyzer('GenInfo',
 
     GenParticles = cms.InputTag("genParticles"),
+	Generator = cms.InputTag("generator")
 )
 
 
