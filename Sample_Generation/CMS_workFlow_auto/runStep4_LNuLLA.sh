@@ -1,15 +1,12 @@
 #!/bin/bash
 
-#s3root=`readlink -e $1`
-#s4root=`basename $2`
+s3root=`readlink -e $1`
+s4root=`basename $2`
 
 
-s3root=`ls condorOut/s3_LNuLLA_3775483_*.root`
-s4root='step4.root'
 
 
-#s4cfg=${s4root/.root/.py}
-s4cfg='step4_cfg.py'
+s4cfg=${s4root/.root/.py}
 
 export SCRAM_ARCH=slc6_amd64_gcc700
 source /cvmfs/cms.cern.ch/cmsset_default.sh
