@@ -32,4 +32,4 @@ EVENTS=5
 
 
 # cmsDriver command
-cmsDriver.py  --python_filename SUS-RunIIAutumn18NanoAOD-00004_1_cfg.py --eventcontent NANOEDMAODSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier NANOAODSIM --fileout file:SUS-RunIIAutumn18NanoAOD-00004.root --conditions 102X_upgrade2018_realistic_v15 --step NANO --filein file:SUS-RunIIAutumn18MiniAOD-00011.root --era Run2_2018 --no_exec --mc -n $EVENTS || exit $? ;
+cmsDriver.py  --python_filename SUS-RunIIAutumn18NanoAOD-00004_1_cfg.py --eventcontent NANOAODSIM --customise Configuration/DataProcessing/Utils.addMonitoring --datatier NANOAODSIM --fileout file:SUS-RunIIAutumn18NanoAOD-00004.root --conditions 102X_upgrade2018_realistic_v15 --step NANO --filein file:SUS-RunIIAutumn18MiniAOD-00011.root --era Run2_2018 --no_exec --mc -n $EVENTS || exit $? ;
