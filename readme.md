@@ -18,10 +18,10 @@
 ---
 
 ### NanoAOD Location ( For Coffea )
- - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme1_Large/step4_sample.root [9600 evts]
- - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme2_Large/step4_sample.root [8200 evts]
- - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme3_Large/step4_sample.root [8450 evts]
- - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme4_Large/step4_sample.root [17150 evts]
+ - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme1_Large/step4_nano.root [9600 evts]
+ - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme2_Large/step4_nano.root [8200 evts]
+ - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme3_Large/step4_nano.root [8450 evts]
+ - /home/jwkim/SL6_WZG_study/CMSSW_WorkFlow/Scheme4_Large/step4_nano.root [17150 evts]
 
 ~                                                                                                                                           
 ~                                                                                                                                           
