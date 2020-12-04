@@ -1,0 +1,50 @@
+04-Dec-2020 15:55:49 KST  Initiating request to open file file:Scheme2Wm_Large/condorOut/s1_LNuLLA_49_1.root
+04-Dec-2020 15:55:50 KST  Successfully opened file file:Scheme2Wm_Large/condorOut/s1_LNuLLA_49_1.root
+Begin processing the 1st record. Run 49, Event 51, LumiSection 1 on stream 0 at 04-Dec-2020 16:01:14.324 KST
+      0.005222      0.000005      0.006033             0
+ 
+04-Dec-2020 16:01:14 KST  Closed file file:Scheme2Wm_Large/condorOut/s1_LNuLLA_49_1.root
+
+------------------------------------
+GenXsecAnalyzer:
+------------------------------------
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Overall cross-section summary 
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Process		xsec_before [pb]		passed	nposw	nnegw	tried	nposw	nnegw 	xsec_match [pb]			accepted [%]	 event_eff [%]
+0		5.222e-03 +/- 5.391e-06		50	45	5	50	45	5	5.222e-03 +/- 5.391e-06		100.0 +/- 0.0	100.0 +/- 0.0
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------- 
+Total		5.222e-03 +/- 5.391e-06		50	45	5	50	45	5	5.222e-03 +/- 5.391e-06		100.0 +/- 0.0	100.0 +/- 0.0
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+Before matching: total cross section = 5.222e-03 +- 5.391e-06 pb
+After matching: total cross section = 5.222e-03 +- 5.391e-06 pb
+Matching efficiency = 1.0 +/- 0.0   [TO BE USED IN MCM]
+Filter efficiency (taking into account weights)= (0.241215) / (0.241215) = 1.000e+00 +- 0.000e+00
+Filter efficiency (event-level)= (50) / (50) = 1.000e+00 +- 0.000e+00    [TO BE USED IN MCM]
+
+After filter: final cross section = 5.222e-03 +- 5.391e-06 pb
+After filter: final fraction of events with negative weights = 1.000e-01 +- 4.243e-03
+After filter: final equivalent lumi for 1M events (1/fb) = 1.226e+05 +- 2.085e+03
+
+=============================================
+
+MessageLogger Summary
+
+ type     category        sev    module        subroutine        count    total
+ ---- -------------------- -- ---------------- ----------------  -----    -----
+    1 GenXSecAnalyzer      -w GenXSecAnalyzer:                      15       15
+    2 fileAction           -s file_close                             1        1
+    3 fileAction           -s file_open                              2        2
+
+ type    category    Examples: run/evt        run/evt          run/evt
+ ---- -------------------- ---------------- ---------------- ----------------
+    1 GenXSecAnalyzer      EndJob           EndJob           EndJob
+    2 fileAction           PostGlobalEndRun                  
+    3 fileAction           pre-events       pre-events       
+
+Severity    # Occurrences   Total Occurrences
+--------    -------------   -----------------
+Warning                15                  15
+System                  3                   3
+
+dropped waiting message count 0
