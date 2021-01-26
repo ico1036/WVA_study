@@ -1,3 +1,15 @@
+## Status JW
+ - Processor 에서 OSSF cut 적용시 Particle 수가 늘어나는 문제 해결  
+ - Processor 에서 PT, Eta cut 적용 안 되는 문제 해결  
+ - Goodrun 적용 전/후 이벤트 차이 검증  
+ - Trigger Eff weighting 
+ - PU weighting 넣기  
+ - ID scale factor 적용  
+ - MC 전부 다 넣고 Plotting  
+ - Coffea hist draw 코드 최적화  
+ - Coffea hist 메뉴얼 제작
+
+
 ## Status DY  
  - Signal event 10만개 이상 Gen  
  - Analysis script -> 이벤트 개수 Flow 정확히 이해(Event Sel, OSSF 전/후 차이 등 )  
