@@ -1,5 +1,6 @@
 ## Status JW 
-  - Trigger Eff weighting 
+### Low PT 영역과 Z peck 근처 MC가 높다 -->  
+ - Trigger Eff weighting 
  - PU weighting 넣기  
  - ID scale factor 적용  
  - MC 전부 다 넣고 Plotting  
