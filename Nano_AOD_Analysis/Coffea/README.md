@@ -1,5 +1,4 @@
-## Status JW
- - Processor 에서 OSSF cut 적용시 Particle 수가 늘어나는 문제 해결  
+## Status JW 
  - Processor 에서 PT, Eta cut 적용 안 되는 문제 해결  
  - Goodrun 적용 전/후 이벤트 차이 검증  
  - Trigger Eff weighting 
