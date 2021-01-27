@@ -1,7 +1,5 @@
 ## Status JW 
- - Processor 에서 PT, Eta cut 적용 안 되는 문제 해결  
- - Goodrun 적용 전/후 이벤트 차이 검증  
- - Trigger Eff weighting 
+  - Trigger Eff weighting 
  - PU weighting 넣기  
  - ID scale factor 적용  
  - MC 전부 다 넣고 Plotting  
