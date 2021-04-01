@@ -7,6 +7,9 @@
  - **Gen_Level_study**: About Gen-Level study  
  
 ---
+## Official gridpack  
+/home/jwkim/SL6_WZG_study/gridpacks/official/WZAToLNuLLA_4f_NLO_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz  
+
 
 ### CMSSW Workflow output file ( GenSIM, AOD, MINIAOD, NANO EDM AOD ) locations:  
  - Scheme 1  
