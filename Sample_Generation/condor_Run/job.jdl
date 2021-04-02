@@ -1,0 +1,21 @@
+executable = run_LNuLLA.sh
+universe = vanilla
+output   = condorLog/condorLog_$(Cluster)_$(Process).stdout
+error    = condorLog/condorLog_$(Cluster)_$(Process).stderr
+log      = /dev/null
+should_transfer_files = yes
+when_to_transfer_output = ON_EXIT
+use_x509userproxy = True
+
+
+
+transfer_input_files = run_LNuLLA.sh, runStep1_LNuLLA.sh, runStep2_LNuLLA.sh, runStep3_LNuLLA.sh, runStep4_LNuLLA.sh,/hcp/data/data02/jwkim2/WORK/tmp_WVG/CMSSW_Workflow/gridpack/official/WZAToLNuLLA_4f_NLO_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz,/tmp/x509up_u556800431
+transfer_output_files = condorOut 
+requirements = (machine != "cms-gpu01.sdfarm.kr")
+requirements = $(requirements) && ( HasSingularity == true )
+#+SingularityImage = "/cvmfs/singularity.opensciencegrid.org/cmssw/cms:rhel6-m202001"
+
+
+arguments = $(Cluster) $(Process) 200
+queue 50
+
